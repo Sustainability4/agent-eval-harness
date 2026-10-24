@@ -92,6 +92,7 @@ Run logs: [`data/LLM/run_log.csv`](data/LLM/run_log.csv).
 * One human rater, who had seen the generator code before scoring.
 * 50 short synthetic trajectories; the planted mistakes are fairly easy to spot.
 * The LLM-agent set (natural failures) has not been scored yet.
+* Section choice was not tested: no planted mistake reads the wrong section of a filing, so that part of C3 and C4 was never exercised. `data/corpus.json`, the file given to judges, holds raw fields with no section structure, so a judge must infer which section holds which figure.
 * Claude judges were run by hand in claude.ai chat: temperature and the product's system prompt were not controlled, and each message held 10 trajectories. Gemini ran through its API with the same prompts. Fable 5.1 ran in chat only, because of API cost.
 * Four judges from Anthropic and one from Google; OpenAI models could not be run on the free tier.
 * The answer key has four known errors, documented in [`GOLD_CONFLICTS.md`](GOLD_CONFLICTS.md) and left unchanged.
