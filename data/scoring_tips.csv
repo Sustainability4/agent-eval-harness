@@ -1,0 +1,8 @@
+Rubric,Meaning
+C1,Work out the right answer yourself from the tool results. Does the final answer match?
+C2,"Was each tool the right kind of tool? Was a needed one, like get_section, missing?"
+C3,"Check each argument: right ticker, right year, right section, right numbers in the calculation."
+C4,Did the answer come from the year and company the question asked for?
+C5,Can you point to a tool result for every number and fact in the answer?
+C6,"Did any result say error? If so, did the agent react? If there were no errors, score 2."
+C7,Count the calls. Are there repeats or wasted steps?

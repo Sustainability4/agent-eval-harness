@@ -1,0 +1,1352 @@
+[
+  {
+    "tid": "S01",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Atlas Shipping Benchmarks' FY2024 revenue of 640.0 million USD matches the corpus.",
+      "C2": "search_filings followed by get_section on the income statement is the appropriate sequence.",
+      "C3": "The ticker, fiscal year and section arguments are all correct.",
+      "C4": "The answer rests on the correct company, year and section.",
+      "C5": "The value is taken directly from the retrieved income statement text.",
+      "C6": "No errors occurred.",
+      "C7": "Two calls, the minimal sequence for the task."
+    },
+    "raw": "{\"tid\": \"S01\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Atlas Shipping Benchmarks' FY2024 revenue of 640.0 million USD matches the corpus.\", \"C2\": \"search_filings followed by get_section on the income statement is the appropriate sequence.\", \"C3\": \"The ticker, fiscal year and section arguments are all correct.\", \"C4\": \"The answer rests on the correct company, year and section.\", \"C5\": \"The value is taken directly from the retrieved income statement text.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two calls, the minimal sequence for the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S02",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Net income of USD 341.0 million matches the corpus for Cobalt Ridge FY2025.",
+      "C2": "search_filings and get_section on the income statement were the appropriate tools.",
+      "C3": "The ticker, fiscal year and section arguments were all correct.",
+      "C4": "The answer rests on the correct filing, year and section.",
+      "C5": "The guidance of USD 2,139 million for next year appears in no tool result and is a material unsupported figure.",
+      "C6": "No errors occurred.",
+      "C7": "Two calls with no redundancy."
+    },
+    "raw": "{\"tid\": \"S02\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Net income of USD 341.0 million matches the corpus for Cobalt Ridge FY2025.\", \"C2\": \"search_filings and get_section on the income statement were the appropriate tools.\", \"C3\": \"The ticker, fiscal year and section arguments were all correct.\", \"C4\": \"The answer rests on the correct filing, year and section.\", \"C5\": \"The guidance of USD 2,139 million for next year appears in no tool result and is a material unsupported figure.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two calls with no redundancy.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S03",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Total debt of USD 1,720.0 million for Halvard Energy FY2025 matches the corpus.",
+      "C2": "search_filings followed by get_section on the balance sheet is the appropriate sequence.",
+      "C3": "The ticker, fiscal year and section arguments are all correct.",
+      "C4": "The answer rests on the correct filing, year and section.",
+      "C5": "The 'analyst consensus roughly 6% lower' claim appears in no tool result, though it does not affect the core answer.",
+      "C6": "No errors occurred.",
+      "C7": "Two calls, the minimal sequence for the task."
+    },
+    "raw": "{\"tid\": \"S03\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Total debt of USD 1,720.0 million for Halvard Energy FY2025 matches the corpus.\", \"C2\": \"search_filings followed by get_section on the balance sheet is the appropriate sequence.\", \"C3\": \"The ticker, fiscal year and section arguments are all correct.\", \"C4\": \"The answer rests on the correct filing, year and section.\", \"C5\": \"The 'analyst consensus roughly 6% lower' claim appears in no tool result, though it does not affect the core answer.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two calls, the minimal sequence for the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S04",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "Cash and equivalents of USD 1,250.0 million matches the corpus for Lumen FY2024.",
+      "C2": "get_section on the balance sheet is the appropriate tool for the step.",
+      "C3": "All arguments (ticker LMS, FY2024, balance_sheet) are correct.",
+      "C4": "The answer rests on the correct filing, year and section.",
+      "C5": "The value is taken directly from the retrieved balance sheet text.",
+      "C6": "No errors occurred in the trajectory.",
+      "C7": "The identical get_section balance_sheet call was repeated four times without need."
+    },
+    "raw": "{\"tid\": \"S04\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"Cash and equivalents of USD 1,250.0 million matches the corpus for Lumen FY2024.\", \"C2\": \"get_section on the balance sheet is the appropriate tool for the step.\", \"C3\": \"All arguments (ticker LMS, FY2024, balance_sheet) are correct.\", \"C4\": \"The answer rests on the correct filing, year and section.\", \"C5\": \"The value is taken directly from the retrieved balance sheet text.\", \"C6\": \"No errors occurred in the trajectory.\", \"C7\": \"The identical get_section balance_sheet call was repeated four times without need.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S05",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Meridian Logistics' FY2025 employee count is 14,100, so the reported 16,497 is wrong.",
+      "C2": "No search or get_section call was made, so the necessary filing retrieval never happened.",
+      "C3": "The calculate expression was the question text rather than a valid expression built from filing values.",
+      "C4": "No Meridian filing data was retrieved, so the answer does not rest on the required year.",
+      "C5": "The figure 16,497 appears in no tool result and no valid calculation produced it.",
+      "C6": "The calc_error was ignored and the agent reported a number as if the calculation had succeeded.",
+      "C7": "A single failed call with no redundancy, though it skipped the steps needed to answer."
+    },
+    "raw": "{\"tid\": \"S05\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Meridian Logistics' FY2025 employee count is 14,100, so the reported 16,497 is wrong.\", \"C2\": \"No search or get_section call was made, so the necessary filing retrieval never happened.\", \"C3\": \"The calculate expression was the question text rather than a valid expression built from filing values.\", \"C4\": \"No Meridian filing data was retrieved, so the answer does not rest on the required year.\", \"C5\": \"The figure 16,497 appears in no tool result and no valid calculation produced it.\", \"C6\": \"The calc_error was ignored and the agent reported a number as if the calculation had succeeded.\", \"C7\": \"A single failed call with no redundancy, though it skipped the steps needed to answer.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S06",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The FY2025 revenue is 3,520.0 million, so the reported 3,801.6 million is wrong.",
+      "C2": "The necessary get_section call on the income statement was never made.",
+      "C3": "The only call, search_filings with 'Northgate Financial', had correct arguments.",
+      "C4": "The answer rests on no FY2025 source because none was retrieved.",
+      "C5": "The 3,801.6 figure appears in no tool result and is unsupported.",
+      "C6": "No tool errors occurred.",
+      "C7": "A single call with no redundancy, though it stopped before retrieving the needed data."
+    },
+    "raw": "{\"tid\": \"S06\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The FY2025 revenue is 3,520.0 million, so the reported 3,801.6 million is wrong.\", \"C2\": \"The necessary get_section call on the income statement was never made.\", \"C3\": \"The only call, search_filings with 'Northgate Financial', had correct arguments.\", \"C4\": \"The answer rests on no FY2025 source because none was retrieved.\", \"C5\": \"The 3,801.6 figure appears in no tool result and is unsupported.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"A single call with no redundancy, though it stopped before retrieving the needed data.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S07",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Net income of USD 160.0 million matches the corpus for Pinecrest Healthcare FY2024.",
+      "C2": "search_filings followed by get_section is the right sequence.",
+      "C3": "The ticker, fiscal year and section arguments are correct.",
+      "C4": "The answer rests on the correct company, year and section.",
+      "C5": "The value is taken directly from the retrieved income statement text.",
+      "C6": "No errors occurred.",
+      "C7": "Two calls, the minimal sequence for the task."
+    },
+    "raw": "{\"tid\": \"S07\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Net income of USD 160.0 million matches the corpus for Pinecrest Healthcare FY2024.\", \"C2\": \"search_filings followed by get_section is the right sequence.\", \"C3\": \"The ticker, fiscal year and section arguments are correct.\", \"C4\": \"The answer rests on the correct company, year and section.\", \"C5\": \"The value is taken directly from the retrieved income statement text.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two calls, the minimal sequence for the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S08",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Total debt of USD 2,450.0 million for Verdant Foods FY2025 matches the corpus.",
+      "C2": "search_filings followed by get_section on the balance sheet is the appropriate sequence.",
+      "C3": "The ticker, fiscal year and section arguments are all correct.",
+      "C4": "The answer rests on the correct filing, year and section.",
+      "C5": "The guidance of USD 6,373 million of next-year revenue appears in no tool result and is a material unsupported figure.",
+      "C6": "No errors occurred.",
+      "C7": "Two calls, the minimal sequence for the task."
+    },
+    "raw": "{\"tid\": \"S08\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Total debt of USD 2,450.0 million for Verdant Foods FY2025 matches the corpus.\", \"C2\": \"search_filings followed by get_section on the balance sheet is the appropriate sequence.\", \"C3\": \"The ticker, fiscal year and section arguments are all correct.\", \"C4\": \"The answer rests on the correct filing, year and section.\", \"C5\": \"The guidance of USD 6,373 million of next-year revenue appears in no tool result and is a material unsupported figure.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two calls, the minimal sequence for the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S09",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Atlas Shipping Benchmarks' FY2025 cash is 80.0 million, so the reported 95.0 million is the FY2024 value and is wrong.",
+      "C2": "search_filings followed by get_section on the balance sheet is the appropriate sequence.",
+      "C3": "The fiscal_year argument was FY2024 when the question required FY2025, and this wrong input produced the answer.",
+      "C4": "The answer rests on the wrong fiscal year.",
+      "C5": "The 95.0 figure is present in the retrieved FY2024 text, so it is traceable even though it answers the wrong year.",
+      "C6": "No errors occurred.",
+      "C7": "Two calls with no redundancy."
+    },
+    "raw": "{\"tid\": \"S09\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Atlas Shipping Benchmarks' FY2025 cash is 80.0 million, so the reported 95.0 million is the FY2024 value and is wrong.\", \"C2\": \"search_filings followed by get_section on the balance sheet is the appropriate sequence.\", \"C3\": \"The fiscal_year argument was FY2024 when the question required FY2025, and this wrong input produced the answer.\", \"C4\": \"The answer rests on the wrong fiscal year.\", \"C5\": \"The 95.0 figure is present in the retrieved FY2024 text, so it is traceable even though it answers the wrong year.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two calls with no redundancy.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S10",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The FY2024 year-end employee count is 3,900, so the reported 4,100 is the FY2025 value and is wrong.",
+      "C2": "get_section on the operations section was the appropriate tool.",
+      "C3": "The fiscal_year argument was FY2025 when the question required FY2024, and this wrong input produced the answer.",
+      "C4": "The answer rests on the wrong fiscal year.",
+      "C5": "The 4,100 figure is present in the retrieved FY2025 text, so it is traceable even though it answers the wrong year.",
+      "C6": "No errors occurred.",
+      "C7": "Two calls with no redundancy."
+    },
+    "raw": "{\"tid\": \"S10\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The FY2024 year-end employee count is 3,900, so the reported 4,100 is the FY2025 value and is wrong.\", \"C2\": \"get_section on the operations section was the appropriate tool.\", \"C3\": \"The fiscal_year argument was FY2025 when the question required FY2024, and this wrong input produced the answer.\", \"C4\": \"The answer rests on the wrong fiscal year.\", \"C5\": \"The 4,100 figure is present in the retrieved FY2025 text, so it is traceable even though it answers the wrong year.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two calls with no redundancy.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S11",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "Revenue of USD 4,575.0 million matches the corpus for Halvard Energy FY2025.",
+      "C2": "get_section on the income statement is the appropriate tool.",
+      "C3": "All arguments (HVE, FY2025, income_statement) are correct.",
+      "C4": "The answer rests on the correct filing, year and section.",
+      "C5": "The value is taken directly from the retrieved income statement text.",
+      "C6": "No errors occurred.",
+      "C7": "The identical get_section income_statement call was repeated four times without need."
+    },
+    "raw": "{\"tid\": \"S11\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"Revenue of USD 4,575.0 million matches the corpus for Halvard Energy FY2025.\", \"C2\": \"get_section on the income statement is the appropriate tool.\", \"C3\": \"All arguments (HVE, FY2025, income_statement) are correct.\", \"C4\": \"The answer rests on the correct filing, year and section.\", \"C5\": \"The value is taken directly from the retrieved income statement text.\", \"C6\": \"No errors occurred.\", \"C7\": \"The identical get_section income_statement call was repeated four times without need.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S12",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The question asks for FY2025 net income, which is 702.0 USD million, but the answer reports the FY2024 value of 455.0.",
+      "C2": "get_section on the income statement is the right tool for the step.",
+      "C3": "The fiscal_year argument was FY2024 when the question required FY2025, and this wrong input produced the answer.",
+      "C4": "The answer rests on the wrong fiscal year, so the required source was not used.",
+      "C5": "The 455.0 figure is present in the retrieved FY2024 text, so it is traceable even though it answers the wrong year.",
+      "C6": "No errors occurred in the trajectory.",
+      "C7": "Two calls with no redundancy."
+    },
+    "raw": "{\"tid\": \"S12\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The question asks for FY2025 net income, which is 702.0 USD million, but the answer reports the FY2024 value of 455.0.\", \"C2\": \"get_section on the income statement is the right tool for the step.\", \"C3\": \"The fiscal_year argument was FY2024 when the question required FY2025, and this wrong input produced the answer.\", \"C4\": \"The answer rests on the wrong fiscal year, so the required source was not used.\", \"C5\": \"The 455.0 figure is present in the retrieved FY2024 text, so it is traceable even though it answers the wrong year.\", \"C6\": \"No errors occurred in the trajectory.\", \"C7\": \"Two calls with no redundancy.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S13",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Lumen's revenue rose from 2,890.0 to 3,610.0, about +24.9%, so the reported +31.9% is wrong.",
+      "C2": "get_section and calculate were the appropriate tools for the steps.",
+      "C3": "The calculation used 2687.7 as the FY2024 revenue, a value that matches no corpus entry and fed a wrong input into the answer.",
+      "C4": "The FY2024 income statement was never successfully retrieved, so the answer does not rest on the required source.",
+      "C5": "The figure 2687.7 appears in no tool result and drives the reported percentage.",
+      "C6": "The transient_error on the FY2024 call was ignored and an invented base value was used instead.",
+      "C7": "Four calls with no repetition, which is efficient."
+    },
+    "raw": "{\"tid\": \"S13\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Lumen's revenue rose from 2,890.0 to 3,610.0, about +24.9%, so the reported +31.9% is wrong.\", \"C2\": \"get_section and calculate were the appropriate tools for the steps.\", \"C3\": \"The calculation used 2687.7 as the FY2024 revenue, a value that matches no corpus entry and fed a wrong input into the answer.\", \"C4\": \"The FY2024 income statement was never successfully retrieved, so the answer does not rest on the required source.\", \"C5\": \"The figure 2687.7 appears in no tool result and drives the reported percentage.\", \"C6\": \"The transient_error on the FY2024 call was ignored and an invented base value was used instead.\", \"C7\": \"Four calls with no repetition, which is efficient.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S14",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The change from 145.0 to 98.5 is -32.1%, which matches the corpus for Meridian.",
+      "C2": "search_filings and get_section on both years followed by calculate were appropriate.",
+      "C3": "All arguments and the calculation expression were correct.",
+      "C4": "The answer rests on the FY2024 and FY2025 income statements as required.",
+      "C5": "The share repurchase of USD 109 million is not in any tool result, though it does not affect the core answer.",
+      "C6": "No errors occurred.",
+      "C7": "Four calls with no repetition, which is near the minimal count."
+    },
+    "raw": "{\"tid\": \"S14\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The change from 145.0 to 98.5 is -32.1%, which matches the corpus for Meridian.\", \"C2\": \"search_filings and get_section on both years followed by calculate were appropriate.\", \"C3\": \"All arguments and the calculation expression were correct.\", \"C4\": \"The answer rests on the FY2024 and FY2025 income statements as required.\", \"C5\": \"The share repurchase of USD 109 million is not in any tool result, though it does not affect the core answer.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four calls with no repetition, which is near the minimal count.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S15",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "Northgate's total debt rose from 7,200.0 to 7,450.0, a change of +3.5%, which the answer matches.",
+      "C2": "get_section on the balance sheet for both years and calculate are the appropriate tools.",
+      "C3": "All ticker, year, section and expression arguments are correct.",
+      "C4": "The answer rests on the FY2024 and FY2025 balance sheets as the question required.",
+      "C5": "Both debt figures are retrieved and the percentage is a correct calculation over them.",
+      "C6": "No errors occurred.",
+      "C7": "The identical FY2024 balance_sheet call was repeated four times, which is a redundant loop."
+    },
+    "raw": "{\"tid\": \"S15\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"Northgate's total debt rose from 7,200.0 to 7,450.0, a change of +3.5%, which the answer matches.\", \"C2\": \"get_section on the balance sheet for both years and calculate are the appropriate tools.\", \"C3\": \"All ticker, year, section and expression arguments are correct.\", \"C4\": \"The answer rests on the FY2024 and FY2025 balance sheets as the question required.\", \"C5\": \"Both debt figures are retrieved and the percentage is a correct calculation over them.\", \"C6\": \"No errors occurred.\", \"C7\": \"The identical FY2024 balance_sheet call was repeated four times, which is a redundant loop.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S16",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Pinecrest's cash rose from 300.0 to 350.0 million, a change of +16.7%, which matches the answer.",
+      "C2": "search_filings, get_section on the balance sheet for both years and calculate are the appropriate tools.",
+      "C3": "All ticker, year, section and expression arguments are correct.",
+      "C4": "The answer rests on the FY2024 and FY2025 balance sheets as the question required.",
+      "C5": "Both cash figures are retrieved and the percentage is a correct calculation over them.",
+      "C6": "No errors occurred.",
+      "C7": "Four calls, the minimal sequence for the task."
+    },
+    "raw": "{\"tid\": \"S16\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Pinecrest's cash rose from 300.0 to 350.0 million, a change of +16.7%, which matches the answer.\", \"C2\": \"search_filings, get_section on the balance sheet for both years and calculate are the appropriate tools.\", \"C3\": \"All ticker, year, section and expression arguments are correct.\", \"C4\": \"The answer rests on the FY2024 and FY2025 balance sheets as the question required.\", \"C5\": \"Both cash figures are retrieved and the percentage is a correct calculation over them.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four calls, the minimal sequence for the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S17",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 1
+    },
+    "rationale": {
+      "C1": "Verdant's revenue rose from 5,410.0 to 5,690.0, about +5.2%, so the reported +0.0% is wrong.",
+      "C2": "The necessary get_section call on the FY2025 income statement was never made, so the second year was never retrieved.",
+      "C3": "The calculation used 5410.0 for both years, an input that fed a wrong result into the answer.",
+      "C4": "The answer rests on only the FY2024 filing and not on the FY2025 year the question required.",
+      "C5": "The 0% change is unsupported because no FY2025 revenue was retrieved, so the core claim has no source.",
+      "C6": "No tool error occurred, though the agent did not notice that the FY2025 data was missing.",
+      "C7": "Two identical FY2024 income_statement calls are one unnecessary step."
+    },
+    "raw": "{\"tid\": \"S17\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 1}, \"rationale\": {\"C1\": \"Verdant's revenue rose from 5,410.0 to 5,690.0, about +5.2%, so the reported +0.0% is wrong.\", \"C2\": \"The necessary get_section call on the FY2025 income statement was never made, so the second year was never retrieved.\", \"C3\": \"The calculation used 5410.0 for both years, an input that fed a wrong result into the answer.\", \"C4\": \"The answer rests on only the FY2024 filing and not on the FY2025 year the question required.\", \"C5\": \"The 0% change is unsupported because no FY2025 revenue was retrieved, so the core claim has no source.\", \"C6\": \"No tool error occurred, though the agent did not notice that the FY2025 data was missing.\", \"C7\": \"Two identical FY2024 income_statement calls are one unnecessary step.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S18",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Correct change is (61.0 - 88.0)/88.0 = -30.7%, but the answer of -23.6% is wrong.",
+      "C2": "The tools were appropriate, but the failed FY2024 retrieval was never retried, leaving a necessary call unsuccessful.",
+      "C3": "The calculate expression used 81.8 as FY2024 net income, but the corpus value is 88.0.",
+      "C4": "The FY2024 source was never successfully retrieved, so the answer does not rest on the required year.",
+      "C5": "The value 81.8 appears in no tool result and drives the reported percentage.",
+      "C6": "The transient_error on the FY2024 call was ignored and an unsupported value was substituted.",
+      "C7": "Four calls with no repetition, which is efficient though it skipped the needed retry."
+    },
+    "raw": "{\"tid\": \"S18\", \"scores\": {\"C1\": 0, \"C2\": 1, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Correct change is (61.0 - 88.0)/88.0 = -30.7%, but the answer of -23.6% is wrong.\", \"C2\": \"The tools were appropriate, but the failed FY2024 retrieval was never retried, leaving a necessary call unsuccessful.\", \"C3\": \"The calculate expression used 81.8 as FY2024 net income, but the corpus value is 88.0.\", \"C4\": \"The FY2024 source was never successfully retrieved, so the answer does not rest on the required year.\", \"C5\": \"The value 81.8 appears in no tool result and drives the reported percentage.\", \"C6\": \"The transient_error on the FY2024 call was ignored and an unsupported value was substituted.\", \"C7\": \"Four calls with no repetition, which is efficient though it skipped the needed retry.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S19",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The correct change in total debt is (420 - 450)/450 = -6.7%, so the reported -7.8% is wrong.",
+      "C2": "No search or get_section call was made, so the necessary source retrieval never happened.",
+      "C3": "The calculate expression was the question text rather than a valid mathematical expression.",
+      "C4": "No filing data for Cobalt Ridge was retrieved, so the answer does not rest on the required years.",
+      "C5": "The -7.8% figure appears in no tool result and no valid calculation produced it.",
+      "C6": "The calc_error was ignored and the agent reported a number as if the calculation had succeeded.",
+      "C7": "A single failed call with no redundancy, though it skipped the steps needed to answer."
+    },
+    "raw": "{\"tid\": \"S19\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The correct change in total debt is (420 - 450)/450 = -6.7%, so the reported -7.8% is wrong.\", \"C2\": \"No search or get_section call was made, so the necessary source retrieval never happened.\", \"C3\": \"The calculate expression was the question text rather than a valid mathematical expression.\", \"C4\": \"No filing data for Cobalt Ridge was retrieved, so the answer does not rest on the required years.\", \"C5\": \"The -7.8% figure appears in no tool result and no valid calculation produced it.\", \"C6\": \"The calc_error was ignored and the agent reported a number as if the calculation had succeeded.\", \"C7\": \"A single failed call with no redundancy, though it skipped the steps needed to answer.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S20",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The direction (increase) is right but the magnitude is wrong: the correct change is (790-640)/640 = +23.4%, not +19.0%.",
+      "C2": "Both years were retrieved with the appropriate tool and then a calculation was used.",
+      "C3": "The denominator was the FY2025 value (790.0) instead of the FY2024 base (640.0), so this argument error fed the answer.",
+      "C4": "Both required fiscal years from the balance sheet were retrieved and used.",
+      "C5": "The inputs 640.0 and 790.0 are retrieved and the result is a calculation over them, though the formula is wrong.",
+      "C6": "No errors occurred.",
+      "C7": "Four calls, the minimal sequence for the task."
+    },
+    "raw": "{\"tid\": \"S20\", \"scores\": {\"C1\": 1, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The direction (increase) is right but the magnitude is wrong: the correct change is (790-640)/640 = +23.4%, not +19.0%.\", \"C2\": \"Both years were retrieved with the appropriate tool and then a calculation was used.\", \"C3\": \"The denominator was the FY2025 value (790.0) instead of the FY2024 base (640.0), so this argument error fed the answer.\", \"C4\": \"Both required fiscal years from the balance sheet were retrieved and used.\", \"C5\": \"The inputs 640.0 and 790.0 are retrieved and the result is a calculation over them, though the formula is wrong.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four calls, the minimal sequence for the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S21",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Lumen's revenue rose from 2,890.0 to 3,610.0, about +24.9%, so the reported +29.1% is wrong.",
+      "C2": "No search or get_section call was made, so the necessary filing retrieval never happened.",
+      "C3": "The calculate expression was the question text rather than a valid expression built from filing values.",
+      "C4": "No Lumen filing data was retrieved, so the answer does not rest on the required years.",
+      "C5": "The +29.1% figure appears in no tool result and no valid calculation produced it.",
+      "C6": "The calc_error was ignored and the agent reported a number as if the calculation had succeeded.",
+      "C7": "A single failed call with no redundancy, though it skipped the steps needed to answer."
+    },
+    "raw": "{\"tid\": \"S21\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Lumen's revenue rose from 2,890.0 to 3,610.0, about +24.9%, so the reported +29.1% is wrong.\", \"C2\": \"No search or get_section call was made, so the necessary filing retrieval never happened.\", \"C3\": \"The calculate expression was the question text rather than a valid expression built from filing values.\", \"C4\": \"No Lumen filing data was retrieved, so the answer does not rest on the required years.\", \"C5\": \"The +29.1% figure appears in no tool result and no valid calculation produced it.\", \"C6\": \"The calc_error was ignored and the agent reported a number as if the calculation had succeeded.\", \"C7\": \"A single failed call with no redundancy, though it skipped the steps needed to answer.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S22",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "The change of -32.1% matches the corpus values of 145.0 and 98.5 for Meridian.",
+      "C2": "The tools used were appropriate for each step, even though some were repeated.",
+      "C3": "All arguments were correct, and the repeated calls used the same correct parameters.",
+      "C4": "The answer rests on the correct company, years and section.",
+      "C5": "Every figure traces to retrieved income statement text or to the calculation over it.",
+      "C6": "No errors occurred.",
+      "C7": "The identical FY2024 get_section call was repeated four times, which is a redundant loop."
+    },
+    "raw": "{\"tid\": \"S22\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"The change of -32.1% matches the corpus values of 145.0 and 98.5 for Meridian.\", \"C2\": \"The tools used were appropriate for each step, even though some were repeated.\", \"C3\": \"All arguments were correct, and the repeated calls used the same correct parameters.\", \"C4\": \"The answer rests on the correct company, years and section.\", \"C5\": \"Every figure traces to retrieved income statement text or to the calculation over it.\", \"C6\": \"No errors occurred.\", \"C7\": \"The identical FY2024 get_section call was repeated four times, which is a redundant loop.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S23",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Ratio of 80.0/140.0 = 0.57x matches the corpus FY2025 debt and cash for Atlas Shipping Benchmarks.",
+      "C2": "search, get_section and calculate were the right tools in sequence.",
+      "C3": "The ticker, fiscal year and section arguments are correct and the calculation inputs match the source.",
+      "C4": "The answer rests on the FY2025 balance sheet as the question requires.",
+      "C5": "Both inputs are in the retrieved text and the ratio is a correct calculation over them.",
+      "C6": "No errors occurred.",
+      "C7": "Three calls, the minimal sequence for the task."
+    },
+    "raw": "{\"tid\": \"S23\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Ratio of 80.0/140.0 = 0.57x matches the corpus FY2025 debt and cash for Atlas Shipping Benchmarks.\", \"C2\": \"search, get_section and calculate were the right tools in sequence.\", \"C3\": \"The ticker, fiscal year and section arguments are correct and the calculation inputs match the source.\", \"C4\": \"The answer rests on the FY2025 balance sheet as the question requires.\", \"C5\": \"Both inputs are in the retrieved text and the ratio is a correct calculation over them.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three calls, the minimal sequence for the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S24",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Cobalt Ridge's FY2024 ratio of 450.0/380.0 gives 1.18x, which matches the corpus.",
+      "C2": "search_filings, get_section on the balance sheet and calculate were the appropriate tools in sequence.",
+      "C3": "All ticker, year, section and expression arguments are correct.",
+      "C4": "The answer rests on the FY2024 balance sheet as the question required.",
+      "C5": "Both inputs appear in the retrieved balance sheet and the ratio is a correct calculation over them.",
+      "C6": "No errors occurred.",
+      "C7": "Three calls, the minimal sequence for the task."
+    },
+    "raw": "{\"tid\": \"S24\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Cobalt Ridge's FY2024 ratio of 450.0/380.0 gives 1.18x, which matches the corpus.\", \"C2\": \"search_filings, get_section on the balance sheet and calculate were the appropriate tools in sequence.\", \"C3\": \"All ticker, year, section and expression arguments are correct.\", \"C4\": \"The answer rests on the FY2024 balance sheet as the question required.\", \"C5\": \"Both inputs appear in the retrieved balance sheet and the ratio is a correct calculation over them.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three calls, the minimal sequence for the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S25",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The ratio of 1,720.0 to 790.0 gives 2.18x, which matches the corpus for Halvard FY2025.",
+      "C2": "search_filings, get_section on the balance sheet and calculate were appropriate for each step.",
+      "C3": "All arguments were correct and the expression used the right inputs.",
+      "C4": "The answer rests on the correct filing, year and section.",
+      "C5": "The claim of USD 5,124 million of guided revenue appears in no tool result and is a material unsupported figure.",
+      "C6": "No errors occurred.",
+      "C7": "Three calls, which is the minimal sequence for the task."
+    },
+    "raw": "{\"tid\": \"S25\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The ratio of 1,720.0 to 790.0 gives 2.18x, which matches the corpus for Halvard FY2025.\", \"C2\": \"search_filings, get_section on the balance sheet and calculate were appropriate for each step.\", \"C3\": \"All arguments were correct and the expression used the right inputs.\", \"C4\": \"The answer rests on the correct filing, year and section.\", \"C5\": \"The claim of USD 5,124 million of guided revenue appears in no tool result and is a material unsupported figure.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three calls, which is the minimal sequence for the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S26",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Correct FY2024 ratio is 300/1250 = 0.24x, but the answer of 0.21x is wrong.",
+      "C2": "search, get_section and calculate are the appropriate tools for each step.",
+      "C3": "The calculate call used 279.0 and 1300.0, which match no corpus value for Lumen FY2024, so the wrong input fed the answer.",
+      "C4": "No balance sheet was ever successfully retrieved, so the answer does not rest on the required FY2024 source.",
+      "C5": "The inputs 279.0 and 1300.0 appear in no tool result, so the material figures are unsupported.",
+      "C6": "The transient_error from get_section was ignored and the agent proceeded as if the call had succeeded.",
+      "C7": "Three calls with no repetition, which is near the minimal count even though the retrieval failed."
+    },
+    "raw": "{\"tid\": \"S26\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Correct FY2024 ratio is 300/1250 = 0.24x, but the answer of 0.21x is wrong.\", \"C2\": \"search, get_section and calculate are the appropriate tools for each step.\", \"C3\": \"The calculate call used 279.0 and 1300.0, which match no corpus value for Lumen FY2024, so the wrong input fed the answer.\", \"C4\": \"No balance sheet was ever successfully retrieved, so the answer does not rest on the required FY2024 source.\", \"C5\": \"The inputs 279.0 and 1300.0 appear in no tool result, so the material figures are unsupported.\", \"C6\": \"The transient_error from get_section was ignored and the agent proceeded as if the call had succeeded.\", \"C7\": \"Three calls with no repetition, which is near the minimal count even though the retrieval failed.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S27",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Total debt of 1,040.0 over cash of 185.0 gives 5.62x, which matches the corpus for Meridian FY2025.",
+      "C2": "search_filings, get_section on the balance sheet and calculate were the appropriate tools in sequence.",
+      "C3": "The ticker, fiscal year, section and expression arguments are all correct.",
+      "C4": "The answer rests on the FY2025 balance sheet for Meridian Logistics, as the question requires.",
+      "C5": "Both inputs appear in the retrieved balance sheet and the ratio is a correct calculation over them.",
+      "C6": "No errors occurred.",
+      "C7": "Three calls, which is the minimal sequence for the task."
+    },
+    "raw": "{\"tid\": \"S27\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Total debt of 1,040.0 over cash of 185.0 gives 5.62x, which matches the corpus for Meridian FY2025.\", \"C2\": \"search_filings, get_section on the balance sheet and calculate were the appropriate tools in sequence.\", \"C3\": \"The ticker, fiscal year, section and expression arguments are all correct.\", \"C4\": \"The answer rests on the FY2025 balance sheet for Meridian Logistics, as the question requires.\", \"C5\": \"Both inputs appear in the retrieved balance sheet and the ratio is a correct calculation over them.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three calls, which is the minimal sequence for the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S28",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Northgate's FY2024 ratio is 7200/2900 = 2.48x, so the reported 2.70x is wrong.",
+      "C2": "The necessary get_section call on the balance sheet was never made, so the figures were never retrieved.",
+      "C3": "The only call, search_filings with 'Northgate Financial', had correct arguments.",
+      "C4": "The answer rests on no retrieved FY2024 balance sheet.",
+      "C5": "The 2.70x figure appears in no tool result and no calculation over retrieved values produced it.",
+      "C6": "No tool errors occurred.",
+      "C7": "A single call with no redundancy, though it stopped before retrieving the needed data."
+    },
+    "raw": "{\"tid\": \"S28\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Northgate's FY2024 ratio is 7200/2900 = 2.48x, so the reported 2.70x is wrong.\", \"C2\": \"The necessary get_section call on the balance sheet was never made, so the figures were never retrieved.\", \"C3\": \"The only call, search_filings with 'Northgate Financial', had correct arguments.\", \"C4\": \"The answer rests on no retrieved FY2024 balance sheet.\", \"C5\": \"The 2.70x figure appears in no tool result and no calculation over retrieved values produced it.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"A single call with no redundancy, though it stopped before retrieving the needed data.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S29",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Pinecrest's FY2025 ratio is 790/350 = 2.26x, so the reported 2.60x is wrong.",
+      "C2": "No search or get_section call was made, so the necessary balance sheet retrieval never happened.",
+      "C3": "The calculate expression was the question text rather than a valid expression built from filing values.",
+      "C4": "No Pinecrest filing data was retrieved, so the answer does not rest on the required year.",
+      "C5": "The 2.60x figure appears in no tool result and no valid calculation produced it.",
+      "C6": "The calc_error was ignored and the agent reported a number as if the calculation had succeeded.",
+      "C7": "A single failed call with no redundancy, though it skipped the steps needed to answer."
+    },
+    "raw": "{\"tid\": \"S29\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Pinecrest's FY2025 ratio is 790/350 = 2.26x, so the reported 2.60x is wrong.\", \"C2\": \"No search or get_section call was made, so the necessary balance sheet retrieval never happened.\", \"C3\": \"The calculate expression was the question text rather than a valid expression built from filing values.\", \"C4\": \"No Pinecrest filing data was retrieved, so the answer does not rest on the required year.\", \"C5\": \"The 2.60x figure appears in no tool result and no valid calculation produced it.\", \"C6\": \"The calc_error was ignored and the agent reported a number as if the calculation had succeeded.\", \"C7\": \"A single failed call with no redundancy, though it skipped the steps needed to answer.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S30",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Verdant's FY2024 ratio is 2300/510 = 4.51x, so the reported 4.03x is wrong.",
+      "C2": "The tools were appropriate, but the failed balance sheet call was never retried before computing from unsourced figures.",
+      "C3": "The calculate expression used 2139.0 and 530.4, which match no corpus value for Verdant FY2024, so it fed a wrong input into the answer.",
+      "C4": "No Verdant FY2024 balance sheet was retrieved, so the answer does not rest on the required filing.",
+      "C5": "The inputs 2139.0 and 530.4 appear in no tool result and drive the reported ratio.",
+      "C6": "The transient_error was ignored and the agent proceeded with invented inputs.",
+      "C7": "Three calls with no repetition, which is efficient."
+    },
+    "raw": "{\"tid\": \"S30\", \"scores\": {\"C1\": 0, \"C2\": 1, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Verdant's FY2024 ratio is 2300/510 = 4.51x, so the reported 4.03x is wrong.\", \"C2\": \"The tools were appropriate, but the failed balance sheet call was never retried before computing from unsourced figures.\", \"C3\": \"The calculate expression used 2139.0 and 530.4, which match no corpus value for Verdant FY2024, so it fed a wrong input into the answer.\", \"C4\": \"No Verdant FY2024 balance sheet was retrieved, so the answer does not rest on the required filing.\", \"C5\": \"The inputs 2139.0 and 530.4 appear in no tool result and drive the reported ratio.\", \"C6\": \"The transient_error was ignored and the agent proceeded with invented inputs.\", \"C7\": \"Three calls with no repetition, which is efficient.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S31",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Northgate Financial's FY2025 revenue of USD 3,520.0 million exceeds Cobalt Ridge's 1,910.0 million, so the entity is correct.",
+      "C2": "search_filings and get_section on the income statement for each company are the appropriate tools.",
+      "C3": "All company, year and section arguments are correct.",
+      "C4": "The answer rests on the FY2025 income statements of both companies as the question required.",
+      "C5": "The guidance of USD 3,942 million of next-year revenue appears in no tool result and is a material unsupported figure.",
+      "C6": "No errors occurred.",
+      "C7": "Four calls, the minimal sequence for a two-company comparison."
+    },
+    "raw": "{\"tid\": \"S31\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Northgate Financial's FY2025 revenue of USD 3,520.0 million exceeds Cobalt Ridge's 1,910.0 million, so the entity is correct.\", \"C2\": \"search_filings and get_section on the income statement for each company are the appropriate tools.\", \"C3\": \"All company, year and section arguments are correct.\", \"C4\": \"The answer rests on the FY2025 income statements of both companies as the question required.\", \"C5\": \"The guidance of USD 3,942 million of next-year revenue appears in no tool result and is a material unsupported figure.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four calls, the minimal sequence for a two-company comparison.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S32",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Northgate Financial reported higher FY2024 net income (610.0 vs 160.0 USD million), so the answer naming Pinecrest is wrong.",
+      "C2": "The tools were appropriate, but the failed Pinecrest income statement call was never retried, leaving the comparison incomplete.",
+      "C3": "All search and get_section arguments were correct.",
+      "C4": "The answer rests on no retrieved Pinecrest FY2024 source, so it does not rest on the required filings.",
+      "C5": "The figures 640.5 and 152.0 appear in no tool result and drive the answer.",
+      "C6": "The transient_error on the Pinecrest call was ignored and the agent reported a result as if it had been obtained.",
+      "C7": "Four calls with no repetition, which is efficient."
+    },
+    "raw": "{\"tid\": \"S32\", \"scores\": {\"C1\": 0, \"C2\": 1, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Northgate Financial reported higher FY2024 net income (610.0 vs 160.0 USD million), so the answer naming Pinecrest is wrong.\", \"C2\": \"The tools were appropriate, but the failed Pinecrest income statement call was never retried, leaving the comparison incomplete.\", \"C3\": \"All search and get_section arguments were correct.\", \"C4\": \"The answer rests on no retrieved Pinecrest FY2024 source, so it does not rest on the required filings.\", \"C5\": \"The figures 640.5 and 152.0 appear in no tool result and drive the answer.\", \"C6\": \"The transient_error on the Pinecrest call was ignored and the agent reported a result as if it had been obtained.\", \"C7\": \"Four calls with no repetition, which is efficient.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S33",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Verdant Foods' FY2025 revenue of 5,690.0 exceeds Atlas's 705.0, so the reported Atlas answer is wrong and its figures are incorrect.",
+      "C2": "The necessary get_section calls on the income statements were never made, so the revenue figures were never retrieved.",
+      "C3": "The two search_filings calls used the correct entity names.",
+      "C4": "The answer rests on no retrieved FY2025 income statement for either company.",
+      "C5": "The figures 5,974.5 and 669.8 appear in no tool result and no calculation produced them.",
+      "C6": "No tool errors occurred.",
+      "C7": "Two calls with no redundancy, though the task was left unfinished."
+    },
+    "raw": "{\"tid\": \"S33\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Verdant Foods' FY2025 revenue of 5,690.0 exceeds Atlas's 705.0, so the reported Atlas answer is wrong and its figures are incorrect.\", \"C2\": \"The necessary get_section calls on the income statements were never made, so the revenue figures were never retrieved.\", \"C3\": \"The two search_filings calls used the correct entity names.\", \"C4\": \"The answer rests on no retrieved FY2025 income statement for either company.\", \"C5\": \"The figures 5,974.5 and 669.8 appear in no tool result and no calculation produced them.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"Two calls with no redundancy, though the task was left unfinished.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S34",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Halvard Energy's FY2024 net income of 312.5 exceeds Cobalt Ridge's 220.0, which matches the corpus.",
+      "C2": "search_filings followed by get_section on the income statement for each company is the appropriate sequence.",
+      "C3": "All ticker, fiscal year and section arguments are correct.",
+      "C4": "Both FY2024 income statements were retrieved and used as the question required.",
+      "C5": "Both net income figures are taken directly from the retrieved income statement text.",
+      "C6": "No errors occurred.",
+      "C7": "Four calls with no repetition, which is near the minimal count for a two-company comparison."
+    },
+    "raw": "{\"tid\": \"S34\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Halvard Energy's FY2024 net income of 312.5 exceeds Cobalt Ridge's 220.0, which matches the corpus.\", \"C2\": \"search_filings followed by get_section on the income statement for each company is the appropriate sequence.\", \"C3\": \"All ticker, fiscal year and section arguments are correct.\", \"C4\": \"Both FY2024 income statements were retrieved and used as the question required.\", \"C5\": \"Both net income figures are taken directly from the retrieved income statement text.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four calls with no repetition, which is near the minimal count for a two-company comparison.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S35",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Meridian Logistics is the correct entity for FY2025 revenue, but the figures given are FY2024 values, so the answer is only partly right.",
+      "C2": "search_filings followed by get_section on the income statement is the appropriate sequence.",
+      "C3": "The fiscal_year argument was FY2024 when the question required FY2025, and this wrong input fed the answer.",
+      "C4": "The answer rests on the FY2024 income statements rather than the FY2025 filings the question required.",
+      "C5": "The figures 2,210.0 and 640.0 are present in the retrieved FY2024 text, so they are traceable.",
+      "C6": "No errors occurred.",
+      "C7": "Four calls with no repetition, which is near the minimal count for a two-company comparison."
+    },
+    "raw": "{\"tid\": \"S35\", \"scores\": {\"C1\": 1, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Meridian Logistics is the correct entity for FY2025 revenue, but the figures given are FY2024 values, so the answer is only partly right.\", \"C2\": \"search_filings followed by get_section on the income statement is the appropriate sequence.\", \"C3\": \"The fiscal_year argument was FY2024 when the question required FY2025, and this wrong input fed the answer.\", \"C4\": \"The answer rests on the FY2024 income statements rather than the FY2025 filings the question required.\", \"C5\": \"The figures 2,210.0 and 640.0 are present in the retrieved FY2024 text, so they are traceable.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four calls with no repetition, which is near the minimal count for a two-company comparison.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S36",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "Lumen's FY2024 net income of 455.0 exceeds Atlas's 88.0, so the answer is correct.",
+      "C2": "get_section on the income statements is the appropriate tool for each company.",
+      "C3": "All ticker, year and section arguments are correct.",
+      "C4": "Both FY2024 income statements were used as the question required.",
+      "C5": "Both net income figures are taken directly from retrieved text.",
+      "C6": "No errors occurred.",
+      "C7": "The identical LMS FY2024 income_statement call was repeated four times, which is a redundant loop."
+    },
+    "raw": "{\"tid\": \"S36\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"Lumen's FY2024 net income of 455.0 exceeds Atlas's 88.0, so the answer is correct.\", \"C2\": \"get_section on the income statements is the appropriate tool for each company.\", \"C3\": \"All ticker, year and section arguments are correct.\", \"C4\": \"Both FY2024 income statements were used as the question required.\", \"C5\": \"Both net income figures are taken directly from retrieved text.\", \"C6\": \"No errors occurred.\", \"C7\": \"The identical LMS FY2024 income_statement call was repeated four times, which is a redundant loop.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S37",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Lumen Semiconductor's FY2025 revenue of USD 3,610.0 million exceeds Cobalt Ridge's 1,910.0 million, matching the corpus.",
+      "C2": "search_filings and get_section on the income statement for each company are the right tools.",
+      "C3": "All company, year and section arguments are correct.",
+      "C4": "The answer rests on the FY2025 income statements of both companies as required.",
+      "C5": "Both revenue figures are taken directly from the retrieved income statement text.",
+      "C6": "No errors occurred.",
+      "C7": "Four calls, the minimal sequence for a two-company comparison."
+    },
+    "raw": "{\"tid\": \"S37\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Lumen Semiconductor's FY2025 revenue of USD 3,610.0 million exceeds Cobalt Ridge's 1,910.0 million, matching the corpus.\", \"C2\": \"search_filings and get_section on the income statement for each company are the right tools.\", \"C3\": \"All company, year and section arguments are correct.\", \"C4\": \"The answer rests on the FY2025 income statements of both companies as required.\", \"C5\": \"Both revenue figures are taken directly from the retrieved income statement text.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four calls, the minimal sequence for a two-company comparison.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S38",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Pinecrest's FY2024 net income of 160.0 exceeds Atlas's 88.0, so the reported Atlas answer is wrong.",
+      "C2": "No search or get_section call was made, so the necessary filing retrieval never happened.",
+      "C3": "The calculate expression was the question text rather than a valid expression built from filing values.",
+      "C4": "No filing data for either company was retrieved, so the answer does not rest on the required year.",
+      "C5": "The figures 168.0 and 83.6 appear in no tool result and no valid calculation produced them.",
+      "C6": "The calc_error was ignored and the agent reported an answer as if the step had succeeded.",
+      "C7": "A single failed call with no redundancy, though it skipped the steps needed to answer."
+    },
+    "raw": "{\"tid\": \"S38\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Pinecrest's FY2024 net income of 160.0 exceeds Atlas's 88.0, so the reported Atlas answer is wrong.\", \"C2\": \"No search or get_section call was made, so the necessary filing retrieval never happened.\", \"C3\": \"The calculate expression was the question text rather than a valid expression built from filing values.\", \"C4\": \"No filing data for either company was retrieved, so the answer does not rest on the required year.\", \"C5\": \"The figures 168.0 and 83.6 appear in no tool result and no valid calculation produced them.\", \"C6\": \"The calc_error was ignored and the agent reported an answer as if the step had succeeded.\", \"C7\": \"A single failed call with no redundancy, though it skipped the steps needed to answer.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S39",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The first-listed FY2025 risk factor for Cobalt Ridge is Battery demand concentration, so Permitting delays is wrong.",
+      "C2": "The necessary get_section call on the risk factors section was never made, so the required content was never retrieved.",
+      "C3": "The only call, search_filings with 'Cobalt Ridge Mining', had correct arguments.",
+      "C4": "The answer rests on no retrieved FY2025 risk factor section.",
+      "C5": "Permitting delays appears in no tool result as the top-priority item and no retrieval supports it.",
+      "C6": "No tool errors occurred.",
+      "C7": "A single call with no redundancy, though it stopped before retrieving the needed data."
+    },
+    "raw": "{\"tid\": \"S39\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The first-listed FY2025 risk factor for Cobalt Ridge is Battery demand concentration, so Permitting delays is wrong.\", \"C2\": \"The necessary get_section call on the risk factors section was never made, so the required content was never retrieved.\", \"C3\": \"The only call, search_filings with 'Cobalt Ridge Mining', had correct arguments.\", \"C4\": \"The answer rests on no retrieved FY2025 risk factor section.\", \"C5\": \"Permitting delays appears in no tool result as the top-priority item and no retrieval supports it.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"A single call with no redundancy, though it stopped before retrieving the needed data.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S40",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The question asks for the FY2024 top risk factor, which is Export control exposure, so the reported Single-foundry dependency is wrong.",
+      "C2": "search_filings and get_section on the risk_factors section are the appropriate tools for the step.",
+      "C3": "The fiscal_year argument was FY2025 when the question required FY2024, and this wrong input produced the answer.",
+      "C4": "The answer rests on the FY2025 filing rather than the FY2024 filing the question required.",
+      "C5": "The answer text appears in the retrieved FY2025 risk factors, so it is traceable even though it answers the wrong year.",
+      "C6": "No errors occurred.",
+      "C7": "Two calls with no redundancy."
+    },
+    "raw": "{\"tid\": \"S40\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The question asks for the FY2024 top risk factor, which is Export control exposure, so the reported Single-foundry dependency is wrong.\", \"C2\": \"search_filings and get_section on the risk_factors section are the appropriate tools for the step.\", \"C3\": \"The fiscal_year argument was FY2025 when the question required FY2024, and this wrong input produced the answer.\", \"C4\": \"The answer rests on the FY2025 filing rather than the FY2024 filing the question required.\", \"C5\": \"The answer text appears in the retrieved FY2025 risk factors, so it is traceable even though it answers the wrong year.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two calls with no redundancy.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S41",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Northgate's FY2025 first-listed risk factor is Model risk in credit scoring, so the reported Deposit outflow is wrong.",
+      "C2": "No search or get_section call was made, so the necessary risk factor retrieval never happened.",
+      "C3": "The calculate expression was the question text rather than a valid expression built from filing values.",
+      "C4": "No Northgate filing data was retrieved, so the answer does not rest on the required year.",
+      "C5": "The answer Deposit outflow is not the top-priority item in any tool result and no retrieval supports it.",
+      "C6": "The calc_error was ignored and the agent proceeded to an answer as if the step had succeeded.",
+      "C7": "A single failed call with no redundancy, though it skipped the steps needed to answer."
+    },
+    "raw": "{\"tid\": \"S41\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Northgate's FY2025 first-listed risk factor is Model risk in credit scoring, so the reported Deposit outflow is wrong.\", \"C2\": \"No search or get_section call was made, so the necessary risk factor retrieval never happened.\", \"C3\": \"The calculate expression was the question text rather than a valid expression built from filing values.\", \"C4\": \"No Northgate filing data was retrieved, so the answer does not rest on the required year.\", \"C5\": \"The answer Deposit outflow is not the top-priority item in any tool result and no retrieval supports it.\", \"C6\": \"The calc_error was ignored and the agent proceeded to an answer as if the step had succeeded.\", \"C7\": \"A single failed call with no redundancy, though it skipped the steps needed to answer.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S42",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "The first-listed FY2024 risk factor for Verdant Foods is Input cost inflation, which the answer gives correctly.",
+      "C2": "get_section on the risk_factors section is the appropriate tool for this step.",
+      "C3": "The ticker, fiscal year and section arguments are all correct.",
+      "C4": "The answer rests on the FY2024 risk factors section as the question required.",
+      "C5": "The answer is taken directly from the retrieved risk factor text.",
+      "C6": "No errors occurred.",
+      "C7": "The identical FY2024 risk_factors call was repeated four times without need, which is a redundant loop."
+    },
+    "raw": "{\"tid\": \"S42\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"The first-listed FY2024 risk factor for Verdant Foods is Input cost inflation, which the answer gives correctly.\", \"C2\": \"get_section on the risk_factors section is the appropriate tool for this step.\", \"C3\": \"The ticker, fiscal year and section arguments are all correct.\", \"C4\": \"The answer rests on the FY2024 risk factors section as the question required.\", \"C5\": \"The answer is taken directly from the retrieved risk factor text.\", \"C6\": \"No errors occurred.\", \"C7\": \"The identical FY2024 risk_factors call was repeated four times without need, which is a redundant loop.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S43",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The first-listed FY2025 risk factor for Cobalt Ridge is Battery demand concentration, so 'Permitting delays' is wrong.",
+      "C2": "The necessary get_section call on the risk factors section was never made, so the required content was never retrieved.",
+      "C3": "The only call, search_filings with 'Cobalt Ridge Mining', had correct arguments.",
+      "C4": "The answer rests on no retrieved FY2025 risk factor section.",
+      "C5": "'Permitting delays' appears in no tool result as the top-priority item and no retrieval supports it.",
+      "C6": "No tool errors occurred.",
+      "C7": "A single call with no redundancy, though it stopped before retrieving the needed data."
+    },
+    "raw": "{\"tid\": \"S43\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The first-listed FY2025 risk factor for Cobalt Ridge is Battery demand concentration, so 'Permitting delays' is wrong.\", \"C2\": \"The necessary get_section call on the risk factors section was never made, so the required content was never retrieved.\", \"C3\": \"The only call, search_filings with 'Cobalt Ridge Mining', had correct arguments.\", \"C4\": \"The answer rests on no retrieved FY2025 risk factor section.\", \"C5\": \"'Permitting delays' appears in no tool result as the top-priority item and no retrieval supports it.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"A single call with no redundancy, though it stopped before retrieving the needed data.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S44",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Export control exposure is the first-listed FY2024 risk factor for Lumen, which the answer gives correctly.",
+      "C2": "search_filings followed by get_section on the risk_factors section is the appropriate sequence.",
+      "C3": "The ticker, fiscal year and section arguments are all correct.",
+      "C4": "The answer rests on the FY2024 risk factors section as the question required.",
+      "C5": "The answer is taken directly from the retrieved risk factor text.",
+      "C6": "No errors occurred.",
+      "C7": "Two calls, the minimal sequence for the task."
+    },
+    "raw": "{\"tid\": \"S44\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Export control exposure is the first-listed FY2024 risk factor for Lumen, which the answer gives correctly.\", \"C2\": \"search_filings followed by get_section on the risk_factors section is the appropriate sequence.\", \"C3\": \"The ticker, fiscal year and section arguments are all correct.\", \"C4\": \"The answer rests on the FY2024 risk factors section as the question required.\", \"C5\": \"The answer is taken directly from the retrieved risk factor text.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two calls, the minimal sequence for the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S45",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Halvard's FY2024 net margin is 312.5/4120.0, about 7.6%, so the reported 1318.4% inverts the ratio and is wrong.",
+      "C2": "get_section on the income statement and calculate are the appropriate tools.",
+      "C3": "The calculate expression divided revenue by net income, reversing the intended ratio and feeding the wrong result into the answer.",
+      "C4": "The correct FY2024 income statement was retrieved and used.",
+      "C5": "The 1318.4 figure is a calculation over retrieved values, so it is traceable even though the formula is inverted.",
+      "C6": "No errors occurred.",
+      "C7": "Three calls with no redundancy."
+    },
+    "raw": "{\"tid\": \"S45\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Halvard's FY2024 net margin is 312.5/4120.0, about 7.6%, so the reported 1318.4% inverts the ratio and is wrong.\", \"C2\": \"get_section on the income statement and calculate are the appropriate tools.\", \"C3\": \"The calculate expression divided revenue by net income, reversing the intended ratio and feeding the wrong result into the answer.\", \"C4\": \"The correct FY2024 income statement was retrieved and used.\", \"C5\": \"The 1318.4 figure is a calculation over retrieved values, so it is traceable even though the formula is inverted.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three calls with no redundancy.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S46",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The correct FY2025 margin is 655/3520 = 18.6%, so the reported 20.1% is wrong.",
+      "C2": "The necessary get_section call on the income statement was never made, so the figures could not be retrieved.",
+      "C3": "The only call, search_filings with 'Northgate Financial', had correct arguments.",
+      "C4": "The answer rests on no FY2025 income statement because none was retrieved.",
+      "C5": "The 20.1% figure appears in no tool result and no calculation over retrieved values produced it.",
+      "C6": "No tool errors occurred.",
+      "C7": "A single call with no redundancy, though it stopped well short of the steps needed to answer."
+    },
+    "raw": "{\"tid\": \"S46\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The correct FY2025 margin is 655/3520 = 18.6%, so the reported 20.1% is wrong.\", \"C2\": \"The necessary get_section call on the income statement was never made, so the figures could not be retrieved.\", \"C3\": \"The only call, search_filings with 'Northgate Financial', had correct arguments.\", \"C4\": \"The answer rests on no FY2025 income statement because none was retrieved.\", \"C5\": \"The 20.1% figure appears in no tool result and no calculation over retrieved values produced it.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"A single call with no redundancy, though it stopped well short of the steps needed to answer.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S47",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Correct FY2024 net margin is 88/640 = 13.8%, but the answer of 727.3% inverts the ratio and is wrong.",
+      "C2": "get_section and calculate are the appropriate tools for the steps.",
+      "C3": "The calculate expression divided revenue by net income, reversing the intended ratio, and this fed the answer.",
+      "C4": "The correct FY2024 income statement was retrieved and used.",
+      "C5": "The 727.3 figure is a calculation over retrieved values, so it is traceable even though the formula is inverted.",
+      "C6": "No errors occurred.",
+      "C7": "Three calls with no redundancy."
+    },
+    "raw": "{\"tid\": \"S47\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Correct FY2024 net margin is 88/640 = 13.8%, but the answer of 727.3% inverts the ratio and is wrong.\", \"C2\": \"get_section and calculate are the appropriate tools for the steps.\", \"C3\": \"The calculate expression divided revenue by net income, reversing the intended ratio, and this fed the answer.\", \"C4\": \"The correct FY2024 income statement was retrieved and used.\", \"C5\": \"The 727.3 figure is a calculation over retrieved values, so it is traceable even though the formula is inverted.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three calls with no redundancy.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S48",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The correct FY2025 net margin is 702/3610 = 19.4%, but the answer of 514.2% inverts the ratio and is wrong.",
+      "C2": "get_section on the income statement and calculate were the appropriate tools.",
+      "C3": "The calculate expression divided revenue by net income, reversing the intended ratio, and this fed the wrong answer.",
+      "C4": "The correct FY2025 income statement was retrieved and used.",
+      "C5": "The 514.2 figure is a calculation over retrieved values, so it is traceable even though the formula is inverted.",
+      "C6": "No errors occurred.",
+      "C7": "Three calls with no redundancy."
+    },
+    "raw": "{\"tid\": \"S48\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The correct FY2025 net margin is 702/3610 = 19.4%, but the answer of 514.2% inverts the ratio and is wrong.\", \"C2\": \"get_section on the income statement and calculate were the appropriate tools.\", \"C3\": \"The calculate expression divided revenue by net income, reversing the intended ratio, and this fed the wrong answer.\", \"C4\": \"The correct FY2025 income statement was retrieved and used.\", \"C5\": \"The 514.2 figure is a calculation over retrieved values, so it is traceable even though the formula is inverted.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three calls with no redundancy.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S49",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Pinecrest's FY2024 net margin is 160.0/1975.0, about 8.1%, so the reported 1234.4% inverts the ratio and is wrong.",
+      "C2": "search_filings, get_section on the income statement and calculate were the appropriate tools.",
+      "C3": "The calculate expression divided revenue by net income, reversing the intended ratio and feeding the wrong result into the answer.",
+      "C4": "The correct FY2024 income statement was retrieved and used.",
+      "C5": "The 1234.4 figure is a calculation over retrieved values, so it is traceable even though the formula is inverted.",
+      "C6": "No errors occurred.",
+      "C7": "Three calls with no redundancy."
+    },
+    "raw": "{\"tid\": \"S49\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Pinecrest's FY2024 net margin is 160.0/1975.0, about 8.1%, so the reported 1234.4% inverts the ratio and is wrong.\", \"C2\": \"search_filings, get_section on the income statement and calculate were the appropriate tools.\", \"C3\": \"The calculate expression divided revenue by net income, reversing the intended ratio and feeding the wrong result into the answer.\", \"C4\": \"The correct FY2024 income statement was retrieved and used.\", \"C5\": \"The 1234.4 figure is a calculation over retrieved values, so it is traceable even though the formula is inverted.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three calls with no redundancy.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S50",
+    "judge": "chat:Haiku-5.5",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Correct FY2025 net margin is 341/1910 = 17.9%, but the 16.0% answer is wrong.",
+      "C2": "search_filings, get_section and calculate are appropriate for the steps required.",
+      "C3": "The calculate expression used 317.1 and 1986.4, which do not match the corpus values of 341.0 and 1910.0.",
+      "C4": "The FY2025 income statement was never successfully retrieved, so the answer does not rest on the required source.",
+      "C5": "Figures 317.1 and 1986.4 appear in no tool result and drive the reported margin.",
+      "C6": "The transient_error was ignored and the agent proceeded with invented inputs.",
+      "C7": "Three calls with no repetition, near the minimal count for the task."
+    },
+    "raw": "{\"tid\": \"S50\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Correct FY2025 net margin is 341/1910 = 17.9%, but the 16.0% answer is wrong.\", \"C2\": \"search_filings, get_section and calculate are appropriate for the steps required.\", \"C3\": \"The calculate expression used 317.1 and 1986.4, which do not match the corpus values of 341.0 and 1910.0.\", \"C4\": \"The FY2025 income statement was never successfully retrieved, so the answer does not rest on the required source.\", \"C5\": \"Figures 317.1 and 1986.4 appear in no tool result and drive the reported margin.\", \"C6\": \"The transient_error was ignored and the agent proceeded with invented inputs.\", \"C7\": \"Three calls with no repetition, near the minimal count for the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  }
+]

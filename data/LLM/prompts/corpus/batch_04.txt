@@ -1,0 +1,224 @@
+You are an expert evaluator of AI agent trajectories for a model-risk validation team.
+You will score 10 trajectories against a seven-criterion rubric, each one independently. Scores are integers 0, 1 or 2.
+Judge only what is in each trajectory. A claim in the final answer is supported only if a tool result
+in that trajectory contains it or it is a correct calculation over such results.
+Reply with exactly one JSON array and nothing else, one object per trajectory, in the order given:
+[{"tid": "<trajectory id>", "scores": {"C1": int, ..., "C7": int}, "rationale": {"C1": "<one sentence>", ..., "C7": "<one sentence>"}}, ...]
+
+RUBRIC
+C1 Final answer correctness — Is the final answer correct and complete for the question asked?
+  2: Correct value, unit and entity; within tolerance for numeric answers.
+  1: Partially correct: right direction or entity but wrong magnitude, missing unit, or incomplete comparison.
+  0: Wrong, missing, or answers a different question.
+
+C2 Tool selection — Did the agent choose the right tools for each step?
+  2: Every tool call is the appropriate tool for what the step needed.
+  1: One unnecessary or mis-chosen tool call that did not derail the task.
+  0: Wrong tool for a necessary step, or a necessary tool never called.
+
+C3 Tool arguments — Were the arguments to each tool call correct (right entity, year, section, expression)?
+  2: All arguments correct.
+  1: One argument error that was later corrected, or a harmless one.
+  0: An argument error that fed a wrong input into the answer.
+
+C4 Context freshness and sourcing — Did the answer rest on the specific filing, year and section the question required?
+  2: All required sources retrieved and used; no stale or wrong-year context.
+  1: Required source retrieved but a stale or extra source also influenced the answer.
+  0: Answer rests on the wrong year, wrong company or wrong section.
+
+C5 Groundedness — Is every factual claim in the final answer supported by a tool result in the trajectory?
+  2: All claims traceable to retrieved text or a calculation over it.
+  1: A minor embellishment not supported by retrieval but not affecting the core answer.
+  0: A material number or fact appears that no tool result supports.
+
+C6 Error handling — When a tool returned an error or empty result, did the agent notice and recover?
+  2: No errors occurred, or every error was detected and handled (retry, alternative, or honest abstention).
+  1: Error noticed but recovery was partial or clumsy.
+  0: Error ignored and the agent proceeded as if the call had succeeded.
+
+C7 Efficiency — Did the agent reach the answer without redundant, repeated or wandering steps?
+  2: At or near the minimal step count for the task.
+  1: One or two unnecessary steps.
+  0: Repeated identical calls, loops, or more than double the necessary steps.
+
+==================== S34 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S34
+QUESTION: Which company reported higher net income in FY2024: Cobalt Ridge Mining or Halvard Energy?
+
+[plan] Find both filings, read the same section for each, compare the values.
+[tool_call #1] search_filings({"query": "Cobalt Ridge Mining"})
+[tool_result #1] {"results": [{"company": "Cobalt Ridge Mining", "ticker": "CRM", "fiscal_year": "FY2024"}, {"company": "Cobalt Ridge Mining", "ticker": "CRM", "fiscal_year": "FY2025"}]}
+[tool_call #2] search_filings({"query": "Halvard Energy"})
+[tool_result #2] {"results": [{"company": "Halvard Energy", "ticker": "HVE", "fiscal_year": "FY2024"}, {"company": "Halvard Energy", "ticker": "HVE", "fiscal_year": "FY2025"}]}
+[tool_call #3] get_section({"ticker": "CRM", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #3] {"ticker": "CRM", "fiscal_year": "FY2024", "section": "income_statement", "text": "Cobalt Ridge Mining (CRM) FY2024 income statement. Total revenue: USD 1,580.0 million. Net income: USD 220.0 million."}
+[tool_call #4] get_section({"ticker": "HVE", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #4] {"ticker": "HVE", "fiscal_year": "FY2024", "section": "income_statement", "text": "Halvard Energy (HVE) FY2024 income statement. Total revenue: USD 4,120.0 million. Net income: USD 312.5 million."}
+[final_answer] Halvard Energy (312.5 vs 220.0 USD million)
+
+==================== S33 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S33
+QUESTION: Which company reported higher revenue in FY2025: Atlas Shipping Benchmarks or Verdant Foods?
+
+[plan] Find both filings, read the same section for each, compare the values.
+[tool_call #1] search_filings({"query": "Atlas Shipping Benchmarks"})
+[tool_result #1] {"results": [{"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2024"}, {"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2025"}]}
+[tool_call #2] search_filings({"query": "Verdant Foods"})
+[tool_result #2] {"results": [{"company": "Verdant Foods", "ticker": "VRF", "fiscal_year": "FY2024"}, {"company": "Verdant Foods", "ticker": "VRF", "fiscal_year": "FY2025"}]}
+[final_answer] Atlas Shipping Benchmarks (5,974.5 vs 669.8 USD million)
+
+==================== S42 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S42
+QUESTION: What does Verdant Foods list as its highest-priority risk factor in its FY2024 filing?
+
+[plan] Find the filing, read the risk factors section, report the first-listed item.
+[tool_call #1] search_filings({"query": "Verdant Foods"})
+[tool_result #1] {"results": [{"company": "Verdant Foods", "ticker": "VRF", "fiscal_year": "FY2024"}, {"company": "Verdant Foods", "ticker": "VRF", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "VRF", "fiscal_year": "FY2024", "section": "risk_factors"})
+[tool_result #2] {"ticker": "VRF", "fiscal_year": "FY2024", "section": "risk_factors", "text": "Verdant Foods (VRF) FY2024 risk factors, in order of stated priority: (1) Input cost inflation (2) Retailer concentration (3) Product recall"}
+[tool_call #3] get_section({"ticker": "VRF", "fiscal_year": "FY2024", "section": "risk_factors"})
+[tool_result #3] {"ticker": "VRF", "fiscal_year": "FY2024", "section": "risk_factors", "text": "Verdant Foods (VRF) FY2024 risk factors, in order of stated priority: (1) Input cost inflation (2) Retailer concentration (3) Product recall"}
+[tool_call #4] get_section({"ticker": "VRF", "fiscal_year": "FY2024", "section": "risk_factors"})
+[tool_result #4] {"ticker": "VRF", "fiscal_year": "FY2024", "section": "risk_factors", "text": "Verdant Foods (VRF) FY2024 risk factors, in order of stated priority: (1) Input cost inflation (2) Retailer concentration (3) Product recall"}
+[tool_call #5] get_section({"ticker": "VRF", "fiscal_year": "FY2024", "section": "risk_factors"})
+[tool_result #5] {"ticker": "VRF", "fiscal_year": "FY2024", "section": "risk_factors", "text": "Verdant Foods (VRF) FY2024 risk factors, in order of stated priority: (1) Input cost inflation (2) Retailer concentration (3) Product recall"}
+[final_answer] Input cost inflation
+
+==================== S13 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S13
+QUESTION: By what percentage did Lumen Semiconductor's revenue change from FY2024 to FY2025?
+
+[plan] Find the filing, read both fiscal years, compute the percentage change.
+[tool_call #1] search_filings({"query": "Lumen Semiconductor"})
+[tool_result #1] {"results": [{"company": "Lumen Semiconductor", "ticker": "LMS", "fiscal_year": "FY2024"}, {"company": "Lumen Semiconductor", "ticker": "LMS", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "LMS", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #2] {"error": "transient_error: filing service unavailable, retry"}
+[tool_call #3] get_section({"ticker": "LMS", "fiscal_year": "FY2025", "section": "income_statement"})
+[tool_result #3] {"ticker": "LMS", "fiscal_year": "FY2025", "section": "income_statement", "text": "Lumen Semiconductor (LMS) FY2025 income statement. Total revenue: USD 3,610.0 million. Net income: USD 702.0 million."}
+[tool_call #4] calculate({"expression": "(3610.0 - 2687.7) / 2890.0 * 100"})
+[tool_result #4] {"result": 31.913495}
+[final_answer] +31.9%
+
+==================== S15 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S15
+QUESTION: By what percentage did Northgate Financial's total debt change from FY2024 to FY2025?
+
+[plan] Find the filing, read both fiscal years, compute the percentage change.
+[tool_call #1] search_filings({"query": "Northgate Financial"})
+[tool_result #1] {"results": [{"company": "Northgate Financial", "ticker": "NGF", "fiscal_year": "FY2024"}, {"company": "Northgate Financial", "ticker": "NGF", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "NGF", "fiscal_year": "FY2024", "section": "balance_sheet"})
+[tool_result #2] {"ticker": "NGF", "fiscal_year": "FY2024", "section": "balance_sheet", "text": "Northgate Financial (NGF) FY2024 balance sheet. Total debt: USD 7,200.0 million. Cash and equivalents: USD 2,900.0 million."}
+[tool_call #3] get_section({"ticker": "NGF", "fiscal_year": "FY2024", "section": "balance_sheet"})
+[tool_result #3] {"ticker": "NGF", "fiscal_year": "FY2024", "section": "balance_sheet", "text": "Northgate Financial (NGF) FY2024 balance sheet. Total debt: USD 7,200.0 million. Cash and equivalents: USD 2,900.0 million."}
+[tool_call #4] get_section({"ticker": "NGF", "fiscal_year": "FY2024", "section": "balance_sheet"})
+[tool_result #4] {"ticker": "NGF", "fiscal_year": "FY2024", "section": "balance_sheet", "text": "Northgate Financial (NGF) FY2024 balance sheet. Total debt: USD 7,200.0 million. Cash and equivalents: USD 2,900.0 million."}
+[tool_call #5] get_section({"ticker": "NGF", "fiscal_year": "FY2024", "section": "balance_sheet"})
+[tool_result #5] {"ticker": "NGF", "fiscal_year": "FY2024", "section": "balance_sheet", "text": "Northgate Financial (NGF) FY2024 balance sheet. Total debt: USD 7,200.0 million. Cash and equivalents: USD 2,900.0 million."}
+[tool_call #6] get_section({"ticker": "NGF", "fiscal_year": "FY2025", "section": "balance_sheet"})
+[tool_result #6] {"ticker": "NGF", "fiscal_year": "FY2025", "section": "balance_sheet", "text": "Northgate Financial (NGF) FY2025 balance sheet. Total debt: USD 7,450.0 million. Cash and equivalents: USD 3,100.0 million."}
+[tool_call #7] calculate({"expression": "(7450.0 - 7200.0) / 7200.0 * 100"})
+[tool_result #7] {"result": 3.472222}
+[final_answer] +3.5%
+
+==================== S36 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S36
+QUESTION: Which company reported higher net income in FY2024: Lumen Semiconductor or Atlas Shipping Benchmarks?
+
+[plan] Find both filings, read the same section for each, compare the values.
+[tool_call #1] search_filings({"query": "Lumen Semiconductor"})
+[tool_result #1] {"results": [{"company": "Lumen Semiconductor", "ticker": "LMS", "fiscal_year": "FY2024"}, {"company": "Lumen Semiconductor", "ticker": "LMS", "fiscal_year": "FY2025"}]}
+[tool_call #2] search_filings({"query": "Atlas Shipping Benchmarks"})
+[tool_result #2] {"results": [{"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2024"}, {"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2025"}]}
+[tool_call #3] get_section({"ticker": "LMS", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #3] {"ticker": "LMS", "fiscal_year": "FY2024", "section": "income_statement", "text": "Lumen Semiconductor (LMS) FY2024 income statement. Total revenue: USD 2,890.0 million. Net income: USD 455.0 million."}
+[tool_call #4] get_section({"ticker": "LMS", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #4] {"ticker": "LMS", "fiscal_year": "FY2024", "section": "income_statement", "text": "Lumen Semiconductor (LMS) FY2024 income statement. Total revenue: USD 2,890.0 million. Net income: USD 455.0 million."}
+[tool_call #5] get_section({"ticker": "LMS", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #5] {"ticker": "LMS", "fiscal_year": "FY2024", "section": "income_statement", "text": "Lumen Semiconductor (LMS) FY2024 income statement. Total revenue: USD 2,890.0 million. Net income: USD 455.0 million."}
+[tool_call #6] get_section({"ticker": "LMS", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #6] {"ticker": "LMS", "fiscal_year": "FY2024", "section": "income_statement", "text": "Lumen Semiconductor (LMS) FY2024 income statement. Total revenue: USD 2,890.0 million. Net income: USD 455.0 million."}
+[tool_call #7] get_section({"ticker": "ASB", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #7] {"ticker": "ASB", "fiscal_year": "FY2024", "section": "income_statement", "text": "Atlas Shipping Benchmarks (ASB) FY2024 income statement. Total revenue: USD 640.0 million. Net income: USD 88.0 million."}
+[final_answer] Lumen Semiconductor (455.0 vs 88.0 USD million)
+
+==================== S17 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S17
+QUESTION: By what percentage did Verdant Foods's revenue change from FY2024 to FY2025?
+
+[plan] Find the filing, read both fiscal years, compute the percentage change.
+[tool_call #1] search_filings({"query": "Verdant Foods"})
+[tool_result #1] {"results": [{"company": "Verdant Foods", "ticker": "VRF", "fiscal_year": "FY2024"}, {"company": "Verdant Foods", "ticker": "VRF", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "VRF", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #2] {"ticker": "VRF", "fiscal_year": "FY2024", "section": "income_statement", "text": "Verdant Foods (VRF) FY2024 income statement. Total revenue: USD 5,410.0 million. Net income: USD 402.0 million."}
+[tool_call #3] get_section({"ticker": "VRF", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #3] {"ticker": "VRF", "fiscal_year": "FY2024", "section": "income_statement", "text": "Verdant Foods (VRF) FY2024 income statement. Total revenue: USD 5,410.0 million. Net income: USD 402.0 million."}
+[tool_call #4] calculate({"expression": "(5410.0 - 5410.0) / 5410.0 * 100"})
+[tool_result #4] {"result": 0.0}
+[final_answer] +0.0%
+
+==================== S44 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S44
+QUESTION: What does Lumen Semiconductor list as its highest-priority risk factor in its FY2024 filing?
+
+[plan] Find the filing, read the risk factors section, report the first-listed item.
+[tool_call #1] search_filings({"query": "Lumen Semiconductor"})
+[tool_result #1] {"results": [{"company": "Lumen Semiconductor", "ticker": "LMS", "fiscal_year": "FY2024"}, {"company": "Lumen Semiconductor", "ticker": "LMS", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "LMS", "fiscal_year": "FY2024", "section": "risk_factors"})
+[tool_result #2] {"ticker": "LMS", "fiscal_year": "FY2024", "section": "risk_factors", "text": "Lumen Semiconductor (LMS) FY2024 risk factors, in order of stated priority: (1) Export control exposure (2) Single-foundry dependency (3) Demand cyclicality"}
+[final_answer] Export control exposure
+
+==================== S01 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S01
+QUESTION: What was Atlas Shipping Benchmarks's revenue in FY2024?
+
+[plan] Find the filing, read the relevant section, report the value with units.
+[tool_call #1] search_filings({"query": "Atlas Shipping Benchmarks"})
+[tool_result #1] {"results": [{"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2024"}, {"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "ASB", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #2] {"ticker": "ASB", "fiscal_year": "FY2024", "section": "income_statement", "text": "Atlas Shipping Benchmarks (ASB) FY2024 income statement. Total revenue: USD 640.0 million. Net income: USD 88.0 million."}
+[final_answer] 640.0 USD million
+
+==================== S45 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S45
+QUESTION: What was Halvard Energy's net profit margin in FY2024?
+
+[plan] Find the filing, read the income statement, compute net income over revenue.
+[tool_call #1] search_filings({"query": "Halvard Energy"})
+[tool_result #1] {"results": [{"company": "Halvard Energy", "ticker": "HVE", "fiscal_year": "FY2024"}, {"company": "Halvard Energy", "ticker": "HVE", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "HVE", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #2] {"ticker": "HVE", "fiscal_year": "FY2024", "section": "income_statement", "text": "Halvard Energy (HVE) FY2024 income statement. Total revenue: USD 4,120.0 million. Net income: USD 312.5 million."}
+[tool_call #3] calculate({"expression": "4120.0 / 312.5 * 100"})
+[tool_result #3] {"result": 1318.4}
+[final_answer] 1318.4%
+
+Score all 10 trajectories (S34, S33, S42, S13, S15, S36, S17, S44, S01, S45). Return the JSON array only.

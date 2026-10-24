@@ -1,0 +1,11 @@
+TRAJECTORY S23
+QUESTION: What was Atlas Shipping Benchmarks's ratio of total debt to cash and equivalents in FY2025?
+
+[plan] Find the filing, read the balance sheet, divide total debt by cash.
+[tool_call #1] search_filings({"query": "Atlas Shipping Benchmarks"})
+[tool_result #1] {"results": [{"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2024"}, {"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "ASB", "fiscal_year": "FY2025", "section": "balance_sheet"})
+[tool_result #2] {"ticker": "ASB", "fiscal_year": "FY2025", "section": "balance_sheet", "text": "Atlas Shipping Benchmarks (ASB) FY2025 balance sheet. Total debt: USD 140.0 million. Cash and equivalents: USD 80.0 million."}
+[tool_call #3] calculate({"expression": "80.0 / 140.0"})
+[tool_result #3] {"result": 0.571429}
+[final_answer] 0.57x

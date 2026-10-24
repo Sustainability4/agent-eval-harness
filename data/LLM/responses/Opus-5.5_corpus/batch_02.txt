@@ -1,0 +1,132 @@
+[
+  {
+    "tid": "S46",
+    "scores": {"C1": 1, "C2": 0, "C3": 2, "C4": 0, "C5": 0, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The corpus gives 655.0 / 3520.0 = 18.6%, so 20.1% has the right entity and metric but the wrong magnitude.",
+      "C2": "The agent never called get_section or calculate, both of which the task required.",
+      "C3": "The only call made, search_filings, used a correct query.",
+      "C4": "No income statement was retrieved, so the answer rests on no FY2025 source.",
+      "C5": "The 20.1% figure is not supported by any tool result or calculation.",
+      "C6": "No tool errors occurred.",
+      "C7": "There were no redundant or repeated steps; the problem is the missing steps, which other criteria cover."
+    }
+  },
+  {
+    "tid": "S27",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 2, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The answer 1040.0 / 185.0 = 5.62x matches the corpus for MRL FY2025.",
+      "C2": "Searching, retrieving the balance sheet and then calculating was the right tool sequence.",
+      "C3": "The ticker, year, section and expression were all correct.",
+      "C4": "The correct FY2025 balance sheet was retrieved and used.",
+      "C5": "The answer is a correct calculation over the retrieved values.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent used the minimal number of steps."
+    }
+  },
+  {
+    "tid": "S25",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 1, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The answer 1720.0 / 790.0 = 2.18x matches the corpus for HVE FY2025.",
+      "C2": "Searching, retrieving the balance sheet and then calculating was the right tool sequence.",
+      "C3": "The ticker, year, section and expression were all correct.",
+      "C4": "The correct FY2025 balance sheet was retrieved and used.",
+      "C5": "The added claim of USD 5,124 million revenue guidance appears in no tool result, though it does not affect the core ratio.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent used the minimal number of steps."
+    }
+  },
+  {
+    "tid": "S48",
+    "scores": {"C1": 0, "C2": 2, "C3": 0, "C4": 2, "C5": 2, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The margin is 702.0 / 3610.0 = 19.4%, but the agent reported an inverted 514.2%.",
+      "C2": "Retrieving the income statement and then calculating was the right tool sequence.",
+      "C3": "The calculate expression divides revenue by net income, which inverted the ratio.",
+      "C4": "The correct FY2025 income statement was retrieved and used.",
+      "C5": "The 514.2% figure is computed from the retrieved values, so no unsupported numbers appear.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent used the minimal number of steps."
+    }
+  },
+  {
+    "tid": "S14",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 1, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The answer (98.5 - 145.0) / 145.0 = -32.1% matches the corpus.",
+      "C2": "Retrieving both income statements and then calculating was the right tool sequence.",
+      "C3": "Both years, the section and the expression were all correct.",
+      "C4": "Both required fiscal-year income statements were retrieved and used.",
+      "C5": "The USD 109 million share repurchase claim appears in no tool result, though it does not affect the core answer.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent used the minimal number of steps."
+    }
+  },
+  {
+    "tid": "S22",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 2, "C6": 2, "C7": 0},
+    "rationale": {
+      "C1": "The answer of -32.1% matches the corpus.",
+      "C2": "Using get_section and calculate was appropriate for the task.",
+      "C3": "Every call used the correct ticker, year, section and expression.",
+      "C4": "Both required fiscal-year income statements were retrieved and used.",
+      "C5": "The answer is a correct calculation over the retrieved values.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent made the identical FY2024 get_section call four times, with three of them redundant."
+    }
+  },
+  {
+    "tid": "S10",
+    "scores": {"C1": 0, "C2": 2, "C3": 0, "C4": 0, "C5": 2, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The FY2024 employee count is 3,900, but the agent reported the FY2025 figure of 4,100.",
+      "C2": "The operations section is the right place to look up employee count.",
+      "C3": "The get_section call requested FY2025 instead of FY2024, and that wrong year fed into the answer.",
+      "C4": "The answer rests on the FY2025 filing when the question asked about FY2024.",
+      "C5": "The reported 4,100 figure does appear in the retrieved tool result.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent used the minimal two-step path."
+    }
+  },
+  {
+    "tid": "S02",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 1, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The answer of 341.0 USD million matches the corpus for CRM FY2025 net income.",
+      "C2": "Using search_filings followed by get_section on the income statement was the right tool sequence.",
+      "C3": "Every call used the correct ticker, year and section.",
+      "C4": "The answer rests on the correct FY2025 income statement.",
+      "C5": "The USD 2,139 million revenue guidance claim appears in no tool result, though it does not affect the core answer.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent used the minimal two-step path."
+    }
+  },
+  {
+    "tid": "S19",
+    "scores": {"C1": 1, "C2": 0, "C3": 0, "C4": 0, "C5": 0, "C6": 0, "C7": 2},
+    "rationale": {
+      "C1": "The corpus gives (420 - 450) / 450 = -6.7%, so -7.8% has the right direction but the wrong magnitude.",
+      "C2": "The agent never called search_filings or get_section to retrieve the debt figures.",
+      "C3": "The calculate call was given natural-language text instead of a numeric expression.",
+      "C4": "No balance sheet for either year was retrieved.",
+      "C5": "The -7.8% figure is not supported by any tool result.",
+      "C6": "The calc_error was ignored, and the agent gave an answer as if the call had succeeded.",
+      "C7": "There were no redundant or repeated steps; the problem is the missing steps, which other criteria cover."
+    }
+  },
+  {
+    "tid": "S06",
+    "scores": {"C1": 1, "C2": 0, "C3": 2, "C4": 0, "C5": 0, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "FY2025 revenue is 3,520.0 USD million, so 3,801.6 has the right entity and unit but the wrong magnitude.",
+      "C2": "The agent never called get_section to read the income statement.",
+      "C3": "The only call made, search_filings, used a correct query.",
+      "C4": "No income statement was retrieved, so the answer rests on no FY2025 source.",
+      "C5": "The 3,801.6 figure is not supported by any tool result.",
+      "C6": "No tool errors occurred.",
+      "C7": "There were no redundant or repeated steps; the problem is the missing steps, which other criteria cover."
+    }
+  }
+]

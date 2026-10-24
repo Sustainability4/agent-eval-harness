@@ -1,0 +1,132 @@
+[
+  {
+    "tid": "S46",
+    "scores": {"C1": 0, "C2": 0, "C3": 2, "C4": 0, "C5": 0, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The net profit margin for Northgate Financial in FY2025 is 18.6% (655/3520), but the agent provided 20.1%.",
+      "C2": "The agent failed to call the necessary get_section tool to retrieve income statement data.",
+      "C3": "The search_filings tool was called with the correct query.",
+      "C4": "The agent did not retrieve any data for the correct year and section.",
+      "C5": "The final answer is a material number that does not appear in any tool results.",
+      "C6": "No tool errors occurred.",
+      "C7": "The trajectory is minimal in length, despite being incorrect."
+    }
+  },
+  {
+    "tid": "S27",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 2, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The debt-to-cash ratio of 5.62x is correct based on the provided data.",
+      "C2": "All tools selected were appropriate for the steps taken.",
+      "C3": "The arguments for all tool calls were correct.",
+      "C4": "The agent used the correct fiscal year and balance sheet section.",
+      "C5": "The answer is fully supported by the retrieved figures and calculation.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent reached the answer in a minimal number of steps."
+    }
+  },
+  {
+    "tid": "S25",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 1, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The debt-to-cash ratio of 2.18x is correct.",
+      "C2": "All tool calls were appropriate for the task.",
+      "C3": "The tool arguments correctly specified the company, year, and math.",
+      "C4": "The agent used the correct filing and section for the requested year.",
+      "C5": "The final answer includes a claim about management guidance that is not supported by any tool results.",
+      "C6": "No errors were encountered.",
+      "C7": "The agent followed an efficient path to the answer."
+    }
+  },
+  {
+    "tid": "S48",
+    "scores": {"C1": 0, "C2": 2, "C3": 0, "C4": 2, "C5": 2, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The net profit margin is 19.4%, not 514.2% (it appears the agent divided revenue by net income instead of vice versa).",
+      "C2": "The agent correctly identified the tools needed for the task.",
+      "C3": "The agent used an incorrect formula (Revenue / Net Income) in the calculation tool.",
+      "C4": "The correct filing and section were retrieved and used.",
+      "C5": "The data used in the calculation was correctly retrieved, though the formula used is incorrect.",
+      "C6": "No tool errors occurred.",
+      "C7": "The trajectory was direct and efficient."
+    }
+  },
+  {
+    "tid": "S14",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 1, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The percentage change of -32.1% is correct and complete.",
+      "C2": "All tool selections were appropriate.",
+      "C3": "Arguments for all tool calls were correct.",
+      "C4": "The agent correctly retrieved income statements for both required years.",
+      "C5": "The claim about share repurchases is not supported by the tool results.",
+      "C6": "No tool errors were encountered.",
+      "C7": "The agent reached the answer efficiently."
+    }
+  },
+  {
+    "tid": "S22",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 2, "C6": 2, "C7": 0},
+    "rationale": {
+      "C1": "The percentage change of -32.1% is correct.",
+      "C2": "All tools selected were correct.",
+      "C3": "The arguments passed to the tools were correct.",
+      "C4": "The agent sourced data from the correct years and sections.",
+      "C5": "The final answer is entirely supported by the tool results.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent repeated the same get_section call four times, which was highly redundant."
+    }
+  },
+  {
+    "tid": "S10",
+    "scores": {"C1": 0, "C2": 2, "C3": 0, "C4": 0, "C5": 2, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The agent provided the employee count for FY2025 (4,100) instead of FY2024 (3,900).",
+      "C2": "The agent used appropriate tools to find the information.",
+      "C3": "The agent used the wrong fiscal year (FY2025) in the get_section call.",
+      "C4": "The answer is based on data from the wrong fiscal year.",
+      "C5": "The answer is grounded in the tool results retrieved.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent reached an answer in a minimal number of steps."
+    }
+  },
+  {
+    "tid": "S02",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 1, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The net income of 341.0 million is correct.",
+      "C2": "All tools used were appropriate for the task.",
+      "C3": "Tool arguments were correct.",
+      "C4": "The agent retrieved the correct filing section for the specified company and year.",
+      "C5": "The final answer includes hallucinated management guidance not present in tool results.",
+      "C6": "No tool errors occurred.",
+      "C7": "The trajectory is efficient."
+    }
+  },
+  {
+    "tid": "S19",
+    "scores": {"C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0, "C6": 0, "C7": 1},
+    "rationale": {
+      "C1": "The provided percentage change of -7.8% is incorrect; it should be -6.67%.",
+      "C2": "The agent failed to use search or retrieval tools to find the data.",
+      "C3": "The agent provided a natural language string to the calculation tool instead of a mathematical expression.",
+      "C4": "No actual filing data was retrieved or used.",
+      "C5": "The material number in the final answer is not supported by any tool results.",
+      "C6": "The agent ignored the error from the calculation tool and guessed an answer.",
+      "C7": "The agent took one unnecessary and incorrect step before providing a final answer."
+    }
+  },
+  {
+    "tid": "S06",
+    "scores": {"C1": 0, "C2": 0, "C3": 2, "C4": 0, "C5": 0, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The revenue for Northgate Financial in FY2025 is 3,520.0 million, not 3,801.6 million.",
+      "C2": "The agent failed to use the get_section tool to retrieve data.",
+      "C3": "The search_filings tool was used with the correct company query.",
+      "C4": "The agent did not retrieve the required section to find the revenue figure.",
+      "C5": "The revenue figure provided appears with no support from any tool results.",
+      "C6": "No tool errors occurred.",
+      "C7": "The trajectory was minimal but failed to include necessary data retrieval steps."
+    }
+  }
+]

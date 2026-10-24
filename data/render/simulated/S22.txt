@@ -1,0 +1,19 @@
+TRAJECTORY S22
+QUESTION: By what percentage did Meridian Logistics's net income change from FY2024 to FY2025?
+
+[plan] Find the filing, read both fiscal years, compute the percentage change.
+[tool_call #1] search_filings({"query": "Meridian Logistics"})
+[tool_result #1] {"results": [{"company": "Meridian Logistics", "ticker": "MRL", "fiscal_year": "FY2024"}, {"company": "Meridian Logistics", "ticker": "MRL", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "MRL", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #2] {"ticker": "MRL", "fiscal_year": "FY2024", "section": "income_statement", "text": "Meridian Logistics (MRL) FY2024 income statement. Total revenue: USD 2,210.0 million. Net income: USD 145.0 million."}
+[tool_call #3] get_section({"ticker": "MRL", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #3] {"ticker": "MRL", "fiscal_year": "FY2024", "section": "income_statement", "text": "Meridian Logistics (MRL) FY2024 income statement. Total revenue: USD 2,210.0 million. Net income: USD 145.0 million."}
+[tool_call #4] get_section({"ticker": "MRL", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #4] {"ticker": "MRL", "fiscal_year": "FY2024", "section": "income_statement", "text": "Meridian Logistics (MRL) FY2024 income statement. Total revenue: USD 2,210.0 million. Net income: USD 145.0 million."}
+[tool_call #5] get_section({"ticker": "MRL", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #5] {"ticker": "MRL", "fiscal_year": "FY2024", "section": "income_statement", "text": "Meridian Logistics (MRL) FY2024 income statement. Total revenue: USD 2,210.0 million. Net income: USD 145.0 million."}
+[tool_call #6] get_section({"ticker": "MRL", "fiscal_year": "FY2025", "section": "income_statement"})
+[tool_result #6] {"ticker": "MRL", "fiscal_year": "FY2025", "section": "income_statement", "text": "Meridian Logistics (MRL) FY2025 income statement. Total revenue: USD 2,065.0 million. Net income: USD 98.5 million."}
+[tool_call #7] calculate({"expression": "(98.5 - 145.0) / 145.0 * 100"})
+[tool_result #7] {"result": -32.068966}
+[final_answer] -32.1%

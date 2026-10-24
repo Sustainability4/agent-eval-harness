@@ -1,0 +1,16 @@
+run,model,mode,interface,date,settings,batches_rerun,notes
+Haiku-5.5_corpus,Claude Haiku 5.5,corpus,claude.ai chat,2026-10-23,defaults (temperature not settable in chat),none,folder first misnamed Haiku-4.5
+Sonnet-5.5_corpus,Claude Sonnet 5.5,corpus,claude.ai chat,2026-10-23,defaults (temperature not settable in chat),none,
+Opus-5.5_corpus,Claude Opus 5.5,corpus,claude.ai chat,2026-10-23,defaults (temperature not settable in chat),none,
+Fable-5.1_corpus,Claude Fable 5.1,corpus,claude.ai chat,2026-10-23,defaults (temperature not settable in chat),none,chat run only; not run through the API because of cost
+Gemini-3-Flash_corpus,gemini-3-flash-preview,corpus,Gemini API (batch-judge; same batch prompts + corpus.json),2026-10-23,defaults (no temperature set; no system prompt),none,free tier; 5 requests; 38.6k input and 44.9k output tokens incl. thinking
+Gemini-3-Flash_corpus_r2,gemini-3-flash-preview,corpus,Gemini API (batch-judge; same batch prompts + corpus.json),2026-10-23,defaults (no temperature set; no system prompt),none,free tier; 5 requests; 38.6k input and 44.3k output tokens incl. thinking
+Gemini-3-Flash_corpus_r3,gemini-3-flash-preview,corpus,Gemini API (batch-judge; same batch prompts + corpus.json),2026-10-23,defaults (no temperature set; no system prompt),none,free tier; 5 requests; 38.6k input and 46.4k output tokens incl. thinking
+Haiku-5.5_corpus_r2,Claude Haiku 5.5,corpus,claude.ai chat,2026-10-24,defaults (temperature not settable in chat),none,repeat r2; fresh chats
+Haiku-5.5_corpus_r3,Claude Haiku 5.5,corpus,claude.ai chat,2026-10-24,defaults (temperature not settable in chat),none,repeat r3; fresh chats
+Sonnet-5.5_corpus_r2,Claude Sonnet 5.5,corpus,claude.ai chat,2026-10-24,defaults (temperature not settable in chat),none,repeat r2; fresh chats
+Sonnet-5.5_corpus_r3,Claude Sonnet 5.5,corpus,claude.ai chat,2026-10-24,defaults (temperature not settable in chat),none,repeat r3; fresh chats
+Opus-5.5_corpus_r2,Claude Opus 5.5,corpus,claude.ai chat,2026-10-24,defaults (temperature not settable in chat),none,repeat r2; fresh chats
+Opus-5.5_corpus_r3,Claude Opus 5.5,corpus,claude.ai chat,2026-10-24,defaults (temperature not settable in chat),none,repeat r3; fresh chats
+Fable-5.1_corpus_r2,Claude Fable 5.1,corpus,claude.ai chat,2026-10-24,defaults (temperature not settable in chat),none,repeat r2; fresh chats; chat only (not run through the API because of cost)
+Fable-5.1_corpus_r3,Claude Fable 5.1,corpus,claude.ai chat,2026-10-24,defaults (temperature not settable in chat),none,repeat r3; fresh chats; chat only (not run through the API because of cost)

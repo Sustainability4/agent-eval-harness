@@ -1,0 +1,1352 @@
+[
+  {
+    "tid": "S01",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The answer is correct with the proper value, unit, and entity.",
+      "C2": "The agent selected the correct tools for the task.",
+      "C3": "The arguments used in the tool calls were correct.",
+      "C4": "The answer is based on the correct filing and section.",
+      "C5": "The revenue figure is directly traceable to the tool results.",
+      "C6": "No errors occurred.",
+      "C7": "The agent performed the task in the minimal number of steps."
+    },
+    "raw": "{\"tid\": \"S01\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The answer is correct with the proper value, unit, and entity.\", \"C2\": \"The agent selected the correct tools for the task.\", \"C3\": \"The arguments used in the tool calls were correct.\", \"C4\": \"The answer is based on the correct filing and section.\", \"C5\": \"The revenue figure is directly traceable to the tool results.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent performed the task in the minimal number of steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S02",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The net income of 341.0 USD million is correct for FY2025.",
+      "C2": "The agent chose the correct tools to retrieve the data.",
+      "C3": "The tool arguments correctly specified the ticker, year, and section.",
+      "C4": "The answer correctly uses the FY2025 data requested.",
+      "C5": "The information about management's revenue guidance is not found in the tool results.",
+      "C6": "No tool errors were reported.",
+      "C7": "The agent reached the answer without any redundant steps."
+    },
+    "raw": "{\"tid\": \"S02\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The net income of 341.0 USD million is correct for FY2025.\", \"C2\": \"The agent chose the correct tools to retrieve the data.\", \"C3\": \"The tool arguments correctly specified the ticker, year, and section.\", \"C4\": \"The answer correctly uses the FY2025 data requested.\", \"C5\": \"The information about management's revenue guidance is not found in the tool results.\", \"C6\": \"No tool errors were reported.\", \"C7\": \"The agent reached the answer without any redundant steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S03",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final answer provides the correct debt amount, unit, and entity.",
+      "C2": "The agent correctly used the search and section retrieval tools.",
+      "C3": "All tool arguments were appropriate and accurate.",
+      "C4": "The answer is based on the correct fiscal year and filing section.",
+      "C5": "The mention of analyst consensus is not supported by any tool results.",
+      "C6": "The trajectory proceeded without any tool errors.",
+      "C7": "The task was completed with no unnecessary steps."
+    },
+    "raw": "{\"tid\": \"S03\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The final answer provides the correct debt amount, unit, and entity.\", \"C2\": \"The agent correctly used the search and section retrieval tools.\", \"C3\": \"All tool arguments were appropriate and accurate.\", \"C4\": \"The answer is based on the correct fiscal year and filing section.\", \"C5\": \"The mention of analyst consensus is not supported by any tool results.\", \"C6\": \"The trajectory proceeded without any tool errors.\", \"C7\": \"The task was completed with no unnecessary steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S04",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "The final answer is correct and includes units.",
+      "C2": "The tools selected were appropriate.",
+      "C3": "The arguments were correct.",
+      "C4": "The correct filing and section were used.",
+      "C5": "The answer is grounded in the tool results.",
+      "C6": "No errors occurred.",
+      "C7": "The agent performed the same get_section call four times, which is highly redundant."
+    },
+    "raw": "{\"tid\": \"S04\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"The final answer is correct and includes units.\", \"C2\": \"The tools selected were appropriate.\", \"C3\": \"The arguments were correct.\", \"C4\": \"The correct filing and section were used.\", \"C5\": \"The answer is grounded in the tool results.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent performed the same get_section call four times, which is highly redundant.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S05",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The count 16,497 is incorrect; Meridian Logistics had 14,100 employees in FY2025.",
+      "C2": "The calculator tool is inappropriate for retrieving specific data points like employee counts.",
+      "C3": "The calculator expression was a natural language string, which is invalid syntax.",
+      "C4": "The agent did not retrieve any filing data to answer the question.",
+      "C5": "The final answer is a hallucinated figure not found in any tool result.",
+      "C6": "The agent ignored the calculation error and provided a hallucinated answer.",
+      "C7": "The trajectory was short but failed to perform any useful work."
+    },
+    "raw": "{\"tid\": \"S05\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The count 16,497 is incorrect; Meridian Logistics had 14,100 employees in FY2025.\", \"C2\": \"The calculator tool is inappropriate for retrieving specific data points like employee counts.\", \"C3\": \"The calculator expression was a natural language string, which is invalid syntax.\", \"C4\": \"The agent did not retrieve any filing data to answer the question.\", \"C5\": \"The final answer is a hallucinated figure not found in any tool result.\", \"C6\": \"The agent ignored the calculation error and provided a hallucinated answer.\", \"C7\": \"The trajectory was short but failed to perform any useful work.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S06",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The revenue for Northgate Financial in FY2025 was 3,520 USD million, not 3,801.6 USD million.",
+      "C2": "The agent failed to call get_section to retrieve the actual revenue data from the filing.",
+      "C3": "The search query for the company was correct.",
+      "C4": "The answer was not based on the required filing data.",
+      "C5": "The final answer value is not supported by any tool results.",
+      "C6": "No errors occurred during the tool calls.",
+      "C7": "The agent reached a conclusion without performing the necessary retrieval steps."
+    },
+    "raw": "{\"tid\": \"S06\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The revenue for Northgate Financial in FY2025 was 3,520 USD million, not 3,801.6 USD million.\", \"C2\": \"The agent failed to call get_section to retrieve the actual revenue data from the filing.\", \"C3\": \"The search query for the company was correct.\", \"C4\": \"The answer was not based on the required filing data.\", \"C5\": \"The final answer value is not supported by any tool results.\", \"C6\": \"No errors occurred during the tool calls.\", \"C7\": \"The agent reached a conclusion without performing the necessary retrieval steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S07",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final answer is correct and includes units.",
+      "C2": "The tools selected were appropriate.",
+      "C3": "The tool arguments were correct.",
+      "C4": "The correct data was retrieved and used.",
+      "C5": "The answer is grounded in the tool results.",
+      "C6": "No errors occurred.",
+      "C7": "The agent was efficient and followed the plan."
+    },
+    "raw": "{\"tid\": \"S07\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The final answer is correct and includes units.\", \"C2\": \"The tools selected were appropriate.\", \"C3\": \"The tool arguments were correct.\", \"C4\": \"The correct data was retrieved and used.\", \"C5\": \"The answer is grounded in the tool results.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent was efficient and followed the plan.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S08",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final answer provides the correct total debt for the specified year.",
+      "C2": "The agent used the search and section tools appropriately.",
+      "C3": "All tool arguments were correct.",
+      "C4": "The answer is derived from the correct filing and section.",
+      "C5": "The statement regarding management's revenue guidance is not supported by the tool results.",
+      "C6": "No errors occurred during the trajectory.",
+      "C7": "The task was performed efficiently with no redundant steps."
+    },
+    "raw": "{\"tid\": \"S08\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The final answer provides the correct total debt for the specified year.\", \"C2\": \"The agent used the search and section tools appropriately.\", \"C3\": \"All tool arguments were correct.\", \"C4\": \"The answer is derived from the correct filing and section.\", \"C5\": \"The statement regarding management's revenue guidance is not supported by the tool results.\", \"C6\": \"No errors occurred during the trajectory.\", \"C7\": \"The task was performed efficiently with no redundant steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S09",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The answer is for FY2024 (95.0), whereas the question asked for FY2025 (80.0).",
+      "C2": "Appropriate tools were chosen.",
+      "C3": "The agent requested the wrong fiscal year (FY2024) in the get_section call.",
+      "C4": "The answer is based on stale data from the wrong fiscal year.",
+      "C5": "The value 95.0 is grounded in the (incorrectly retrieved) FY2024 data.",
+      "C6": "No errors occurred.",
+      "C7": "The path was efficient, despite the data error."
+    },
+    "raw": "{\"tid\": \"S09\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The answer is for FY2024 (95.0), whereas the question asked for FY2025 (80.0).\", \"C2\": \"Appropriate tools were chosen.\", \"C3\": \"The agent requested the wrong fiscal year (FY2024) in the get_section call.\", \"C4\": \"The answer is based on stale data from the wrong fiscal year.\", \"C5\": \"The value 95.0 is grounded in the (incorrectly retrieved) FY2024 data.\", \"C6\": \"No errors occurred.\", \"C7\": \"The path was efficient, despite the data error.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S10",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The answer provides the FY2025 employee count (4,100) instead of the requested FY2024 count (3,900).",
+      "C2": "The tools selected were correct, but used for the wrong year.",
+      "C3": "The agent incorrectly requested the FY2025 section instead of FY2024.",
+      "C4": "The answer is based on the wrong fiscal year.",
+      "C5": "The answer is grounded in the tool result provided for FY2025.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent took the minimum number of steps, even though it used the wrong year."
+    },
+    "raw": "{\"tid\": \"S10\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The answer provides the FY2025 employee count (4,100) instead of the requested FY2024 count (3,900).\", \"C2\": \"The tools selected were correct, but used for the wrong year.\", \"C3\": \"The agent incorrectly requested the FY2025 section instead of FY2024.\", \"C4\": \"The answer is based on the wrong fiscal year.\", \"C5\": \"The answer is grounded in the tool result provided for FY2025.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"The agent took the minimum number of steps, even though it used the wrong year.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S11",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "The final answer is correct.",
+      "C2": "The tools used were correct.",
+      "C3": "All tool arguments were correct.",
+      "C4": "The correct data was used.",
+      "C5": "The answer is grounded in the tool results.",
+      "C6": "No errors occurred.",
+      "C7": "The agent called the same get_section tool four times unnecessarily."
+    },
+    "raw": "{\"tid\": \"S11\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"The final answer is correct.\", \"C2\": \"The tools used were correct.\", \"C3\": \"All tool arguments were correct.\", \"C4\": \"The correct data was used.\", \"C5\": \"The answer is grounded in the tool results.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent called the same get_section tool four times unnecessarily.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S12",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The agent provided the net income for FY2024 instead of the requested FY2025.",
+      "C2": "The agent chose the correct tools.",
+      "C3": "The agent incorrectly requested the FY2024 section instead of FY2025.",
+      "C4": "The answer is based on the wrong fiscal year's data.",
+      "C5": "The answer is grounded in the (incorrectly retrieved) tool result.",
+      "C6": "No errors occurred during the tool calls.",
+      "C7": "The agent reached the answer efficiently."
+    },
+    "raw": "{\"tid\": \"S12\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The agent provided the net income for FY2024 instead of the requested FY2025.\", \"C2\": \"The agent chose the correct tools.\", \"C3\": \"The agent incorrectly requested the FY2024 section instead of FY2025.\", \"C4\": \"The answer is based on the wrong fiscal year's data.\", \"C5\": \"The answer is grounded in the (incorrectly retrieved) tool result.\", \"C6\": \"No errors occurred during the tool calls.\", \"C7\": \"The agent reached the answer efficiently.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S13",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final answer is incorrect due to the use of a hallucinated revenue figure.",
+      "C2": "The agent selected the correct tools but failed to use them successfully.",
+      "C3": "The calculation used a hallucinated number (2687.7) not found in the tool results or corpus.",
+      "C4": "The agent failed to successfully retrieve the FY2024 data and used incorrect context instead.",
+      "C5": "The calculation and final result are based on a value that was never retrieved.",
+      "C6": "The agent ignored a transient error and proceeded with hallucinated data instead of retrying.",
+      "C7": "The step count is minimal, but the lack of error recovery led to a failure."
+    },
+    "raw": "{\"tid\": \"S13\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The final answer is incorrect due to the use of a hallucinated revenue figure.\", \"C2\": \"The agent selected the correct tools but failed to use them successfully.\", \"C3\": \"The calculation used a hallucinated number (2687.7) not found in the tool results or corpus.\", \"C4\": \"The agent failed to successfully retrieve the FY2024 data and used incorrect context instead.\", \"C5\": \"The calculation and final result are based on a value that was never retrieved.\", \"C6\": \"The agent ignored a transient error and proceeded with hallucinated data instead of retrying.\", \"C7\": \"The step count is minimal, but the lack of error recovery led to a failure.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S14",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The answer -32.1% correctly reflects the change in net income from 145 to 98.5.",
+      "C2": "The agent used the necessary tools to find the filings and perform the calculation.",
+      "C3": "The arguments used for the data retrieval and the percentage change calculation were correct.",
+      "C4": "The agent used the correct years (FY2024 and FY2025) and sections as required.",
+      "C5": "The claim regarding share repurchases is not supported by any tool results in the trajectory.",
+      "C6": "No errors occurred during the process.",
+      "C7": "The agent reached the answer efficiently."
+    },
+    "raw": "{\"tid\": \"S14\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The answer -32.1% correctly reflects the change in net income from 145 to 98.5.\", \"C2\": \"The agent used the necessary tools to find the filings and perform the calculation.\", \"C3\": \"The arguments used for the data retrieval and the percentage change calculation were correct.\", \"C4\": \"The agent used the correct years (FY2024 and FY2025) and sections as required.\", \"C5\": \"The claim regarding share repurchases is not supported by any tool results in the trajectory.\", \"C6\": \"No errors occurred during the process.\", \"C7\": \"The agent reached the answer efficiently.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S15",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "The final answer is correct and accurately calculated.",
+      "C2": "The agent used the correct tools for searching, retrieval, and calculation.",
+      "C3": "All tool arguments were correct.",
+      "C4": "The agent retrieved and used the correct data from the FY2024 and FY2025 balance sheets.",
+      "C5": "The numbers used in the calculation are grounded in the tool results.",
+      "C6": "No errors occurred during the trajectory.",
+      "C7": "The agent repeated the retrieval for the FY2024 balance sheet four times."
+    },
+    "raw": "{\"tid\": \"S15\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"The final answer is correct and accurately calculated.\", \"C2\": \"The agent used the correct tools for searching, retrieval, and calculation.\", \"C3\": \"All tool arguments were correct.\", \"C4\": \"The agent retrieved and used the correct data from the FY2024 and FY2025 balance sheets.\", \"C5\": \"The numbers used in the calculation are grounded in the tool results.\", \"C6\": \"No errors occurred during the trajectory.\", \"C7\": \"The agent repeated the retrieval for the FY2024 balance sheet four times.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S16",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The percentage change of +16.7% is correct and precisely calculated.",
+      "C2": "All tool choices were appropriate.",
+      "C3": "All arguments for company, years, sections, and calculation were correct.",
+      "C4": "Data from both required years was correctly retrieved and used.",
+      "C5": "The answer is fully grounded in the retrieved cash figures.",
+      "C6": "No errors occurred.",
+      "C7": "The agent used an optimal number of steps."
+    },
+    "raw": "{\"tid\": \"S16\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The percentage change of +16.7% is correct and precisely calculated.\", \"C2\": \"All tool choices were appropriate.\", \"C3\": \"All arguments for company, years, sections, and calculation were correct.\", \"C4\": \"Data from both required years was correctly retrieved and used.\", \"C5\": \"The answer is fully grounded in the retrieved cash figures.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent used an optimal number of steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S17",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 1
+    },
+    "rationale": {
+      "C1": "The final answer is incorrect because it reports zero change.",
+      "C2": "The agent failed to call the tool for the FY2025 revenue data.",
+      "C3": "The calculation expression incorrectly used the FY2024 revenue value for both years.",
+      "C4": "The answer lacks the required FY2025 context.",
+      "C5": "The answer is a correct calculation based on the (incorrectly selected) tool results.",
+      "C6": "No errors occurred in the calls made.",
+      "C7": "The agent made a redundant call for FY2024 and missed the necessary call for FY2025."
+    },
+    "raw": "{\"tid\": \"S17\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 1}, \"rationale\": {\"C1\": \"The final answer is incorrect because it reports zero change.\", \"C2\": \"The agent failed to call the tool for the FY2025 revenue data.\", \"C3\": \"The calculation expression incorrectly used the FY2024 revenue value for both years.\", \"C4\": \"The answer lacks the required FY2025 context.\", \"C5\": \"The answer is a correct calculation based on the (incorrectly selected) tool results.\", \"C6\": \"No errors occurred in the calls made.\", \"C7\": \"The agent made a redundant call for FY2024 and missed the necessary call for FY2025.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S18",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final answer of -23.6% is incorrect; the correct change is -30.68%.",
+      "C2": "The agent chose the correct tools.",
+      "C3": "The calculation used hallucinated values (81.8 and 88.0) that were not retrieved by tools.",
+      "C4": "The answer relies on hallucinated data for FY2024 because the tool call failed.",
+      "C5": "The values used for FY2024 net income are not supported by any tool results.",
+      "C6": "The agent ignored the transient error for the FY2024 data and proceeded with hallucination.",
+      "C7": "The agent followed a direct path."
+    },
+    "raw": "{\"tid\": \"S18\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The final answer of -23.6% is incorrect; the correct change is -30.68%.\", \"C2\": \"The agent chose the correct tools.\", \"C3\": \"The calculation used hallucinated values (81.8 and 88.0) that were not retrieved by tools.\", \"C4\": \"The answer relies on hallucinated data for FY2024 because the tool call failed.\", \"C5\": \"The values used for FY2024 net income are not supported by any tool results.\", \"C6\": \"The agent ignored the transient error for the FY2024 data and proceeded with hallucination.\", \"C7\": \"The agent followed a direct path.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S19",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The answer -7.8% is incorrect; the debt change was -6.7%.",
+      "C2": "The agent failed to call the search or retrieval tools necessary to obtain the financial data.",
+      "C3": "The agent provided a natural language string to the calculation tool, which was invalid.",
+      "C4": "The agent did not retrieve or use any context from the filings.",
+      "C5": "The final answer is a hallucination not supported by any tool output.",
+      "C6": "The agent ignored the syntax error returned by the calculate tool and proceeded to guess an answer.",
+      "C7": "The agent did not loop, but the trajectory was entirely ineffective."
+    },
+    "raw": "{\"tid\": \"S19\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The answer -7.8% is incorrect; the debt change was -6.7%.\", \"C2\": \"The agent failed to call the search or retrieval tools necessary to obtain the financial data.\", \"C3\": \"The agent provided a natural language string to the calculation tool, which was invalid.\", \"C4\": \"The agent did not retrieve or use any context from the filings.\", \"C5\": \"The final answer is a hallucination not supported by any tool output.\", \"C6\": \"The agent ignored the syntax error returned by the calculate tool and proceeded to guess an answer.\", \"C7\": \"The agent did not loop, but the trajectory was entirely ineffective.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S20",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The agent used the wrong formula for percentage change (dividing by the new value instead of the old).",
+      "C2": "The tools were selected appropriately.",
+      "C3": "The calculation expression used the wrong denominator for a growth calculation.",
+      "C4": "The correct source data was retrieved.",
+      "C5": "The values used are grounded in retrieval.",
+      "C6": "No errors occurred.",
+      "C7": "The agent was efficient."
+    },
+    "raw": "{\"tid\": \"S20\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The agent used the wrong formula for percentage change (dividing by the new value instead of the old).\", \"C2\": \"The tools were selected appropriately.\", \"C3\": \"The calculation expression used the wrong denominator for a growth calculation.\", \"C4\": \"The correct source data was retrieved.\", \"C5\": \"The values used are grounded in retrieval.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent was efficient.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S21",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The percentage change value provided is incorrect.",
+      "C2": "The agent failed to call any retrieval tools to find the revenue data.",
+      "C3": "The calculator tool was called with an invalid natural language argument.",
+      "C4": "No filing data was sourced or used to derive the answer.",
+      "C5": "The final percentage is not supported by any tool results.",
+      "C6": "The agent failed to notice or recover from a calculator syntax error.",
+      "C7": "The trajectory was direct but did not attempt to find the required data."
+    },
+    "raw": "{\"tid\": \"S21\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The percentage change value provided is incorrect.\", \"C2\": \"The agent failed to call any retrieval tools to find the revenue data.\", \"C3\": \"The calculator tool was called with an invalid natural language argument.\", \"C4\": \"No filing data was sourced or used to derive the answer.\", \"C5\": \"The final percentage is not supported by any tool results.\", \"C6\": \"The agent failed to notice or recover from a calculator syntax error.\", \"C7\": \"The trajectory was direct but did not attempt to find the required data.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S22",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "The final answer of -32.1% is correct.",
+      "C2": "All selected tools were appropriate for the task.",
+      "C3": "The arguments for the tool calls were correct.",
+      "C4": "The agent used the correct data from both required fiscal years.",
+      "C5": "The final answer is fully supported by the retrieved data and calculation.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent called the same get_section tool for the FY2024 income statement four times unnecessarily."
+    },
+    "raw": "{\"tid\": \"S22\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"The final answer of -32.1% is correct.\", \"C2\": \"All selected tools were appropriate for the task.\", \"C3\": \"The arguments for the tool calls were correct.\", \"C4\": \"The agent used the correct data from both required fiscal years.\", \"C5\": \"The final answer is fully supported by the retrieved data and calculation.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"The agent called the same get_section tool for the FY2024 income statement four times unnecessarily.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S23",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The agent calculated the ratio of cash to debt instead of debt to cash.",
+      "C2": "The agent chose the correct tools.",
+      "C3": "The agent inverted the numerator and denominator in the calculation.",
+      "C4": "The correct data was retrieved and used.",
+      "C5": "All numbers used are grounded in the tool results.",
+      "C6": "No errors occurred.",
+      "C7": "The agent was efficient."
+    },
+    "raw": "{\"tid\": \"S23\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The agent calculated the ratio of cash to debt instead of debt to cash.\", \"C2\": \"The agent chose the correct tools.\", \"C3\": \"The agent inverted the numerator and denominator in the calculation.\", \"C4\": \"The correct data was retrieved and used.\", \"C5\": \"All numbers used are grounded in the tool results.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent was efficient.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S24",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The ratio 1.18x is correct based on the filing data.",
+      "C2": "Correct tools were used throughout.",
+      "C3": "All arguments to search, get_section, and calculate were correct.",
+      "C4": "The correct filing, year, and balance sheet section were used.",
+      "C5": "The result is fully supported by the retrieved data.",
+      "C6": "No errors occurred.",
+      "C7": "The agent followed the most efficient path."
+    },
+    "raw": "{\"tid\": \"S24\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The ratio 1.18x is correct based on the filing data.\", \"C2\": \"Correct tools were used throughout.\", \"C3\": \"All arguments to search, get_section, and calculate were correct.\", \"C4\": \"The correct filing, year, and balance sheet section were used.\", \"C5\": \"The result is fully supported by the retrieved data.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent followed the most efficient path.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S25",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The primary answer of 2.18x is correct based on the FY2025 data.",
+      "C2": "The tools selected were appropriate for the task.",
+      "C3": "Arguments for the search, retrieval, and calculation tools were all correct.",
+      "C4": "The agent correctly sourced data from the FY2025 balance sheet.",
+      "C5": "The extra information regarding management guidance is not supported by any tool result in the trajectory.",
+      "C6": "No tool errors occurred.",
+      "C7": "The trajectory is efficient with no redundant steps."
+    },
+    "raw": "{\"tid\": \"S25\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The primary answer of 2.18x is correct based on the FY2025 data.\", \"C2\": \"The tools selected were appropriate for the task.\", \"C3\": \"Arguments for the search, retrieval, and calculation tools were all correct.\", \"C4\": \"The agent correctly sourced data from the FY2025 balance sheet.\", \"C5\": \"The extra information regarding management guidance is not supported by any tool result in the trajectory.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"The trajectory is efficient with no redundant steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S26",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final answer of 0.21x is incorrect; the correct ratio for FY2024 is 0.24x.",
+      "C2": "The agent selected appropriate tools for the task.",
+      "C3": "The values used in the calculate tool (279.0 and 1300.0) were hallucinated and did not match the corpus.",
+      "C4": "The agent did not successfully retrieve the balance sheet data and relied on hallucinated values.",
+      "C5": "The values used in the calculation were not supported by any tool results.",
+      "C6": "The agent ignored a transient error from the filing service and proceeded with hallucinated data.",
+      "C7": "The agent followed a direct path to the answer."
+    },
+    "raw": "{\"tid\": \"S26\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The final answer of 0.21x is incorrect; the correct ratio for FY2024 is 0.24x.\", \"C2\": \"The agent selected appropriate tools for the task.\", \"C3\": \"The values used in the calculate tool (279.0 and 1300.0) were hallucinated and did not match the corpus.\", \"C4\": \"The agent did not successfully retrieve the balance sheet data and relied on hallucinated values.\", \"C5\": \"The values used in the calculation were not supported by any tool results.\", \"C6\": \"The agent ignored a transient error from the filing service and proceeded with hallucinated data.\", \"C7\": \"The agent followed a direct path to the answer.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S27",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The answer correctly identifies the ratio as 5.62x based on the provided debt and cash figures.",
+      "C2": "All tool choices were appropriate for the task.",
+      "C3": "The tool arguments correctly specified the company, year, section, and calculation.",
+      "C4": "The agent used the specific filing and section required by the question.",
+      "C5": "Every claim in the final answer is supported by the tool results.",
+      "C6": "No errors were encountered during the trajectory.",
+      "C7": "The agent followed a direct and efficient path to the answer."
+    },
+    "raw": "{\"tid\": \"S27\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The answer correctly identifies the ratio as 5.62x based on the provided debt and cash figures.\", \"C2\": \"All tool choices were appropriate for the task.\", \"C3\": \"The tool arguments correctly specified the company, year, section, and calculation.\", \"C4\": \"The agent used the specific filing and section required by the question.\", \"C5\": \"Every claim in the final answer is supported by the tool results.\", \"C6\": \"No errors were encountered during the trajectory.\", \"C7\": \"The agent followed a direct and efficient path to the answer.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S28",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final value for the debt-to-cash ratio is incorrect.",
+      "C2": "The agent failed to call the necessary tools to retrieve balance sheet data.",
+      "C3": "The search tool argument was correct.",
+      "C4": "The agent did not retrieve the required financial information from the filing.",
+      "C5": "The final answer is not grounded in any tool results.",
+      "C6": "No errors were encountered during the single tool call.",
+      "C7": "The trajectory reached a conclusion without performing the necessary steps."
+    },
+    "raw": "{\"tid\": \"S28\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The final value for the debt-to-cash ratio is incorrect.\", \"C2\": \"The agent failed to call the necessary tools to retrieve balance sheet data.\", \"C3\": \"The search tool argument was correct.\", \"C4\": \"The agent did not retrieve the required financial information from the filing.\", \"C5\": \"The final answer is not grounded in any tool results.\", \"C6\": \"No errors were encountered during the single tool call.\", \"C7\": \"The trajectory reached a conclusion without performing the necessary steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S29",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final value provided for the debt-to-cash ratio is incorrect.",
+      "C2": "The agent failed to call the necessary filing search and retrieval tools.",
+      "C3": "The input to the calculator was a natural language sentence rather than a mathematical expression.",
+      "C4": "No source data from the filings was retrieved or used.",
+      "C5": "The final answer is entirely unsupported by any tool result.",
+      "C6": "The agent proceeded to a final answer despite a syntax error from the calculator tool.",
+      "C7": "The trajectory was minimal, though it failed the task."
+    },
+    "raw": "{\"tid\": \"S29\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The final value provided for the debt-to-cash ratio is incorrect.\", \"C2\": \"The agent failed to call the necessary filing search and retrieval tools.\", \"C3\": \"The input to the calculator was a natural language sentence rather than a mathematical expression.\", \"C4\": \"No source data from the filings was retrieved or used.\", \"C5\": \"The final answer is entirely unsupported by any tool result.\", \"C6\": \"The agent proceeded to a final answer despite a syntax error from the calculator tool.\", \"C7\": \"The trajectory was minimal, though it failed the task.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S30",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final answer provides an incorrect ratio.",
+      "C2": "The agent selected appropriate tools for the task.",
+      "C3": "The numbers provided to the calculator were incorrect and not sourced from any tool result.",
+      "C4": "The answer does not use the required data from the FY2024 filing.",
+      "C5": "The factual claims and numbers in the answer are not supported by any tool results.",
+      "C6": "The agent failed to handle a transient error and hallucinated data instead.",
+      "C7": "The trajectory followed a logically direct but factually flawed path."
+    },
+    "raw": "{\"tid\": \"S30\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The final answer provides an incorrect ratio.\", \"C2\": \"The agent selected appropriate tools for the task.\", \"C3\": \"The numbers provided to the calculator were incorrect and not sourced from any tool result.\", \"C4\": \"The answer does not use the required data from the FY2024 filing.\", \"C5\": \"The factual claims and numbers in the answer are not supported by any tool results.\", \"C6\": \"The agent failed to handle a transient error and hallucinated data instead.\", \"C7\": \"The trajectory followed a logically direct but factually flawed path.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S31",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The answer is correct and provides supporting data.",
+      "C2": "Appropriate tool selections for search and retrieval.",
+      "C3": "All arguments were correct.",
+      "C4": "The correct filings and years were used.",
+      "C5": "The answer includes a specific guidance figure of 3,942 million that was not grounded in any tool result.",
+      "C6": "No errors occurred.",
+      "C7": "The agent reached the answer efficiently."
+    },
+    "raw": "{\"tid\": \"S31\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The answer is correct and provides supporting data.\", \"C2\": \"Appropriate tool selections for search and retrieval.\", \"C3\": \"All arguments were correct.\", \"C4\": \"The correct filings and years were used.\", \"C5\": \"The answer includes a specific guidance figure of 3,942 million that was not grounded in any tool result.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent reached the answer efficiently.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S32",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The answer identifies the wrong company and uses hallucinated net income figures.",
+      "C2": "The tool choices for search and retrieval were appropriate.",
+      "C3": "The arguments provided to the tools were correct.",
+      "C4": "The answer rests on hallucinated data for one of the companies rather than the required filing.",
+      "C5": "The net income values and the resulting comparison are not supported by any tool results.",
+      "C6": "The agent ignored a transient error from the filing service and failed to retry.",
+      "C7": "The agent did not take any redundant steps."
+    },
+    "raw": "{\"tid\": \"S32\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The answer identifies the wrong company and uses hallucinated net income figures.\", \"C2\": \"The tool choices for search and retrieval were appropriate.\", \"C3\": \"The arguments provided to the tools were correct.\", \"C4\": \"The answer rests on hallucinated data for one of the companies rather than the required filing.\", \"C5\": \"The net income values and the resulting comparison are not supported by any tool results.\", \"C6\": \"The agent ignored a transient error from the filing service and failed to retry.\", \"C7\": \"The agent did not take any redundant steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S33",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The answer is incorrect and identifies the wrong company with hallucinated revenue figures.",
+      "C2": "The agent failed to call the necessary get_section tool to retrieve revenue data.",
+      "C3": "The search tool arguments were correct, but no financial data tools were called.",
+      "C4": "The agent did not retrieve the required filing data for FY2025.",
+      "C5": "The revenue values provided in the final answer do not appear in any tool results.",
+      "C6": "No errors occurred in the few calls made.",
+      "C7": "While the trajectory is short, it failed to perform the necessary data retrieval steps."
+    },
+    "raw": "{\"tid\": \"S33\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The answer is incorrect and identifies the wrong company with hallucinated revenue figures.\", \"C2\": \"The agent failed to call the necessary get_section tool to retrieve revenue data.\", \"C3\": \"The search tool arguments were correct, but no financial data tools were called.\", \"C4\": \"The agent did not retrieve the required filing data for FY2025.\", \"C5\": \"The revenue values provided in the final answer do not appear in any tool results.\", \"C6\": \"No errors occurred in the few calls made.\", \"C7\": \"While the trajectory is short, it failed to perform the necessary data retrieval steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S34",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The answer correctly identifies Halvard Energy and provides the correct values from the filings.",
+      "C2": "All appropriate tools were used to search and retrieve the specific sections.",
+      "C3": "The arguments used in all tool calls were accurate.",
+      "C4": "The agent used the correct fiscal year and companies as specified in the question.",
+      "C5": "All figures and the comparison are fully supported by the retrieved tool results.",
+      "C6": "No errors occurred during the trajectory.",
+      "C7": "The agent followed a direct path to the answer without unnecessary steps."
+    },
+    "raw": "{\"tid\": \"S34\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The answer correctly identifies Halvard Energy and provides the correct values from the filings.\", \"C2\": \"All appropriate tools were used to search and retrieve the specific sections.\", \"C3\": \"The arguments used in all tool calls were accurate.\", \"C4\": \"The agent used the correct fiscal year and companies as specified in the question.\", \"C5\": \"All figures and the comparison are fully supported by the retrieved tool results.\", \"C6\": \"No errors occurred during the trajectory.\", \"C7\": \"The agent followed a direct path to the answer without unnecessary steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S35",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The entity is correct, but the revenue numbers provided are for FY2024, not the requested FY2025.",
+      "C2": "Correct tools used for the task.",
+      "C3": "The agent provided the wrong fiscal year (FY2024) in both get_section calls.",
+      "C4": "The answer rests on the wrong fiscal year data.",
+      "C5": "The numbers in the final answer are grounded in the tool results.",
+      "C6": "No errors occurred.",
+      "C7": "The agent followed an efficient path."
+    },
+    "raw": "{\"tid\": \"S35\", \"scores\": {\"C1\": 1, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The entity is correct, but the revenue numbers provided are for FY2024, not the requested FY2025.\", \"C2\": \"Correct tools used for the task.\", \"C3\": \"The agent provided the wrong fiscal year (FY2024) in both get_section calls.\", \"C4\": \"The answer rests on the wrong fiscal year data.\", \"C5\": \"The numbers in the final answer are grounded in the tool results.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent followed an efficient path.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S36",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "The comparison and values in the final answer are correct.",
+      "C2": "All necessary tools for search and data retrieval were selected.",
+      "C3": "Arguments for all tool calls were correct.",
+      "C4": "The answer correctly uses data from the FY2024 income statements of both companies.",
+      "C5": "All claims are supported by the tool results.",
+      "C6": "No errors occurred during the trajectory.",
+      "C7": "The agent called the income statement for LMS four times and searched twice for ASB."
+    },
+    "raw": "{\"tid\": \"S36\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"The comparison and values in the final answer are correct.\", \"C2\": \"All necessary tools for search and data retrieval were selected.\", \"C3\": \"Arguments for all tool calls were correct.\", \"C4\": \"The answer correctly uses data from the FY2024 income statements of both companies.\", \"C5\": \"All claims are supported by the tool results.\", \"C6\": \"No errors occurred during the trajectory.\", \"C7\": \"The agent called the income statement for LMS four times and searched twice for ASB.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S37",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final answer is correct and provides the accurate revenue comparison and values.",
+      "C2": "The agent correctly selected and used search and retrieval tools.",
+      "C3": "All arguments to the tools were correct.",
+      "C4": "The answer is based on the correct filings, years, and sections.",
+      "C5": "Every claim in the final answer is supported by the tool results.",
+      "C6": "No errors occurred during the process.",
+      "C7": "The trajectory is efficient and direct."
+    },
+    "raw": "{\"tid\": \"S37\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The final answer is correct and provides the accurate revenue comparison and values.\", \"C2\": \"The agent correctly selected and used search and retrieval tools.\", \"C3\": \"All arguments to the tools were correct.\", \"C4\": \"The answer is based on the correct filings, years, and sections.\", \"C5\": \"Every claim in the final answer is supported by the tool results.\", \"C6\": \"No errors occurred during the process.\", \"C7\": \"The trajectory is efficient and direct.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S38",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The wrong entity was selected, and both net income figures are incorrect.",
+      "C2": "A calculator is not an appropriate tool for comparing company data without first retrieving it.",
+      "C3": "The calculator expression was invalid syntax.",
+      "C4": "No filing information was retrieved.",
+      "C5": "The figures and entities in the final answer were hallucinated.",
+      "C6": "The tool error was ignored by the agent.",
+      "C7": "Minimal steps were used."
+    },
+    "raw": "{\"tid\": \"S38\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The wrong entity was selected, and both net income figures are incorrect.\", \"C2\": \"A calculator is not an appropriate tool for comparing company data without first retrieving it.\", \"C3\": \"The calculator expression was invalid syntax.\", \"C4\": \"No filing information was retrieved.\", \"C5\": \"The figures and entities in the final answer were hallucinated.\", \"C6\": \"The tool error was ignored by the agent.\", \"C7\": \"Minimal steps were used.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S39",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The first risk factor is 'Battery demand concentration', not 'Permitting delays'.",
+      "C2": "The agent failed to call get_section to retrieve the actual content of the filing.",
+      "C3": "The search query argument was correct.",
+      "C4": "The answer was not sourced from the required filing section.",
+      "C5": "The provided risk factor is not grounded in any tool output.",
+      "C6": "No errors occurred in the search call.",
+      "C7": "The agent reached an answer in very few steps, but skipped necessary data retrieval."
+    },
+    "raw": "{\"tid\": \"S39\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The first risk factor is 'Battery demand concentration', not 'Permitting delays'.\", \"C2\": \"The agent failed to call get_section to retrieve the actual content of the filing.\", \"C3\": \"The search query argument was correct.\", \"C4\": \"The answer was not sourced from the required filing section.\", \"C5\": \"The provided risk factor is not grounded in any tool output.\", \"C6\": \"No errors occurred in the search call.\", \"C7\": \"The agent reached an answer in very few steps, but skipped necessary data retrieval.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S40",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final answer is incorrect because it uses risk data from the wrong fiscal year.",
+      "C2": "The agent selected the appropriate tools for searching and retrieving data.",
+      "C3": "The agent erroneously requested the FY2025 section instead of FY2024.",
+      "C4": "The answer relies on data from the wrong fiscal year.",
+      "C5": "The final answer is correctly derived from the retrieved tool result.",
+      "C6": "No errors were encountered during the trajectory.",
+      "C7": "The agent followed a direct path to the answer."
+    },
+    "raw": "{\"tid\": \"S40\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The final answer is incorrect because it uses risk data from the wrong fiscal year.\", \"C2\": \"The agent selected the appropriate tools for searching and retrieving data.\", \"C3\": \"The agent erroneously requested the FY2025 section instead of FY2024.\", \"C4\": \"The answer relies on data from the wrong fiscal year.\", \"C5\": \"The final answer is correctly derived from the retrieved tool result.\", \"C6\": \"No errors were encountered during the trajectory.\", \"C7\": \"The agent followed a direct path to the answer.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S41",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The highest-priority risk factor is 'Model risk in credit scoring', not 'Deposit outflow'.",
+      "C2": "Using a calculator to find a text-based risk factor is an incorrect tool choice.",
+      "C3": "The expression provided to the calculator was invalid.",
+      "C4": "No filing sections were retrieved.",
+      "C5": "The answer is a hallucination not supported by any tool results.",
+      "C6": "The agent ignored the tool error and proceeded to answer.",
+      "C7": "The trajectory was minimal but entirely incorrect."
+    },
+    "raw": "{\"tid\": \"S41\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The highest-priority risk factor is 'Model risk in credit scoring', not 'Deposit outflow'.\", \"C2\": \"Using a calculator to find a text-based risk factor is an incorrect tool choice.\", \"C3\": \"The expression provided to the calculator was invalid.\", \"C4\": \"No filing sections were retrieved.\", \"C5\": \"The answer is a hallucination not supported by any tool results.\", \"C6\": \"The agent ignored the tool error and proceeded to answer.\", \"C7\": \"The trajectory was minimal but entirely incorrect.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S42",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "The final answer correctly identifies the highest-priority risk factor.",
+      "C2": "Appropriate tools were used to find the filing and risk factors section.",
+      "C3": "All arguments to the tool calls were correct.",
+      "C4": "The answer is based on the correct FY2024 filing and risk factors section.",
+      "C5": "The factual claim is directly supported by the retrieved text.",
+      "C6": "No errors occurred during the trajectory.",
+      "C7": "The agent repeated the same get_section call four times unnecessarily."
+    },
+    "raw": "{\"tid\": \"S42\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"The final answer correctly identifies the highest-priority risk factor.\", \"C2\": \"Appropriate tools were used to find the filing and risk factors section.\", \"C3\": \"All arguments to the tool calls were correct.\", \"C4\": \"The answer is based on the correct FY2024 filing and risk factors section.\", \"C5\": \"The factual claim is directly supported by the retrieved text.\", \"C6\": \"No errors occurred during the trajectory.\", \"C7\": \"The agent repeated the same get_section call four times unnecessarily.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S43",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The answer identifies the wrong risk factor as the highest priority.",
+      "C2": "The agent failed to call the get_section tool to retrieve the list of risk factors.",
+      "C3": "The argument for the search tool call was correct.",
+      "C4": "The required risk factors section was never retrieved.",
+      "C5": "The final answer is not supported by any of the retrieved tool results.",
+      "C6": "No errors were encountered during the search.",
+      "C7": "The trajectory was brief but skipped essential data retrieval steps."
+    },
+    "raw": "{\"tid\": \"S43\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The answer identifies the wrong risk factor as the highest priority.\", \"C2\": \"The agent failed to call the get_section tool to retrieve the list of risk factors.\", \"C3\": \"The argument for the search tool call was correct.\", \"C4\": \"The required risk factors section was never retrieved.\", \"C5\": \"The final answer is not supported by any of the retrieved tool results.\", \"C6\": \"No errors were encountered during the search.\", \"C7\": \"The trajectory was brief but skipped essential data retrieval steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S44",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final answer correctly identifies the highest-priority risk factor for the specified company and year.",
+      "C2": "The agent chose the correct tools for search and retrieval.",
+      "C3": "All arguments were correct.",
+      "C4": "The answer is based on the specific filing and section requested.",
+      "C5": "The answer is directly supported by the retrieved text.",
+      "C6": "No errors occurred.",
+      "C7": "The agent reached the answer efficiently."
+    },
+    "raw": "{\"tid\": \"S44\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The final answer correctly identifies the highest-priority risk factor for the specified company and year.\", \"C2\": \"The agent chose the correct tools for search and retrieval.\", \"C3\": \"All arguments were correct.\", \"C4\": \"The answer is based on the specific filing and section requested.\", \"C5\": \"The answer is directly supported by the retrieved text.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent reached the answer efficiently.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S45",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final answer is incorrect because the profit margin was calculated incorrectly.",
+      "C2": "All necessary tools were selected.",
+      "C3": "The calculation expression was wrong as it inverted the numerator and denominator.",
+      "C4": "The correct filing data was retrieved and used.",
+      "C5": "The calculation is grounded in the retrieved figures, though the formula used was wrong.",
+      "C6": "No errors occurred.",
+      "C7": "The agent was efficient in its tool usage."
+    },
+    "raw": "{\"tid\": \"S45\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The final answer is incorrect because the profit margin was calculated incorrectly.\", \"C2\": \"All necessary tools were selected.\", \"C3\": \"The calculation expression was wrong as it inverted the numerator and denominator.\", \"C4\": \"The correct filing data was retrieved and used.\", \"C5\": \"The calculation is grounded in the retrieved figures, though the formula used was wrong.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent was efficient in its tool usage.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S46",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The net profit margin for Northgate Financial in FY2025 is 18.6% (655 / 3520), not 20.1%.",
+      "C2": "The agent never called a tool to retrieve the financial data needed to answer the question.",
+      "C3": "The search query for the company was correct.",
+      "C4": "The agent did not retrieve or use the required financial data from the FY2025 filing.",
+      "C5": "The final answer of 20.1% is not supported by any tool result.",
+      "C6": "No tool errors occurred during the trajectory.",
+      "C7": "The agent proceeded directly to a final answer without the necessary retrieval steps."
+    },
+    "raw": "{\"tid\": \"S46\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The net profit margin for Northgate Financial in FY2025 is 18.6% (655 / 3520), not 20.1%.\", \"C2\": \"The agent never called a tool to retrieve the financial data needed to answer the question.\", \"C3\": \"The search query for the company was correct.\", \"C4\": \"The agent did not retrieve or use the required financial data from the FY2025 filing.\", \"C5\": \"The final answer of 20.1% is not supported by any tool result.\", \"C6\": \"No tool errors occurred during the trajectory.\", \"C7\": \"The agent proceeded directly to a final answer without the necessary retrieval steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S47",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The agent calculated revenue/net income instead of net income/revenue.",
+      "C2": "The tools selected were correct.",
+      "C3": "The calculation expression was inverted.",
+      "C4": "The correct data was retrieved.",
+      "C5": "The answer is grounded in the tool results.",
+      "C6": "No errors occurred.",
+      "C7": "The agent was efficient."
+    },
+    "raw": "{\"tid\": \"S47\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The agent calculated revenue/net income instead of net income/revenue.\", \"C2\": \"The tools selected were correct.\", \"C3\": \"The calculation expression was inverted.\", \"C4\": \"The correct data was retrieved.\", \"C5\": \"The answer is grounded in the tool results.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent was efficient.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S48",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The answer 514.2% is mathematically incorrect for a profit margin, which should be net income over revenue (19.4%).",
+      "C2": "The agent selected the correct tools for retrieval and calculation.",
+      "C3": "The calculation argument used revenue divided by net income instead of net income divided by revenue.",
+      "C4": "The agent correctly retrieved the FY2025 income statement data.",
+      "C5": "The answer is grounded in the (incorrect) calculation result provided by the tool.",
+      "C6": "No tool errors occurred.",
+      "C7": "The agent followed a minimal path to the answer."
+    },
+    "raw": "{\"tid\": \"S48\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The answer 514.2% is mathematically incorrect for a profit margin, which should be net income over revenue (19.4%).\", \"C2\": \"The agent selected the correct tools for retrieval and calculation.\", \"C3\": \"The calculation argument used revenue divided by net income instead of net income divided by revenue.\", \"C4\": \"The agent correctly retrieved the FY2025 income statement data.\", \"C5\": \"The answer is grounded in the (incorrect) calculation result provided by the tool.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"The agent followed a minimal path to the answer.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S49",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The margin is 8.1% (160/1975), not 1234.4%.",
+      "C2": "Correct tools were used to search, retrieve, and calculate.",
+      "C3": "The agent inverted the ratio in the calculator expression (revenue/income instead of income/revenue).",
+      "C4": "The correct company, year, and section were used.",
+      "C5": "The answer is grounded in a calculation performed over correctly retrieved values.",
+      "C6": "No errors occurred.",
+      "C7": "The agent followed a direct and efficient path."
+    },
+    "raw": "{\"tid\": \"S49\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"The margin is 8.1% (160/1975), not 1234.4%.\", \"C2\": \"Correct tools were used to search, retrieve, and calculate.\", \"C3\": \"The agent inverted the ratio in the calculator expression (revenue/income instead of income/revenue).\", \"C4\": \"The correct company, year, and section were used.\", \"C5\": \"The answer is grounded in a calculation performed over correctly retrieved values.\", \"C6\": \"No errors occurred.\", \"C7\": \"The agent followed a direct and efficient path.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S50",
+    "judge": "chat:Gemini-3-Flash",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "The final answer of 16.0% is incorrect; the correct net profit margin for FY2025 is 17.85%.",
+      "C2": "The agent selected appropriate tools for the task.",
+      "C3": "The values used in the calculate tool (317.1 and 1986.4) were hallucinated.",
+      "C4": "The agent failed to retrieve the income statement and used hallucinated data instead.",
+      "C5": "The numerical values in the final answer and calculation are not grounded in any tool results.",
+      "C6": "The agent ignored the filing service error and hallucinated a result.",
+      "C7": "The agent followed a direct path to the answer."
+    },
+    "raw": "{\"tid\": \"S50\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"The final answer of 16.0% is incorrect; the correct net profit margin for FY2025 is 17.85%.\", \"C2\": \"The agent selected appropriate tools for the task.\", \"C3\": \"The values used in the calculate tool (317.1 and 1986.4) were hallucinated.\", \"C4\": \"The agent failed to retrieve the income statement and used hallucinated data instead.\", \"C5\": \"The numerical values in the final answer and calculation are not grounded in any tool results.\", \"C6\": \"The agent ignored the filing service error and hallucinated a result.\", \"C7\": \"The agent followed a direct path to the answer.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "tid": "S03",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 1, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The final answer provides the correct debt amount, unit, and entity.",
+      "C2": "The agent correctly used the search and section retrieval tools.",
+      "C3": "All tool arguments were appropriate and accurate.",
+      "C4": "The answer is based on the correct fiscal year and filing section.",
+      "C5": "The mention of analyst consensus is not supported by any tool results.",
+      "C6": "The trajectory proceeded without any tool errors.",
+      "C7": "The task was completed with no unnecessary steps."
+    }
+  },
+  {
+    "tid": "S40",
+    "scores": {"C1": 0, "C2": 2, "C3": 0, "C4": 0, "C5": 2, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The final answer is incorrect because it uses risk data from the wrong fiscal year.",
+      "C2": "The agent selected the appropriate tools for searching and retrieving data.",
+      "C3": "The agent erroneously requested the FY2025 section instead of FY2024.",
+      "C4": "The answer relies on data from the wrong fiscal year.",
+      "C5": "The final answer is correctly derived from the retrieved tool result.",
+      "C6": "No errors were encountered during the trajectory.",
+      "C7": "The agent followed a direct path to the answer."
+    }
+  },
+  {
+    "tid": "S32",
+    "scores": {"C1": 0, "C2": 2, "C3": 2, "C4": 0, "C5": 0, "C6": 0, "C7": 2},
+    "rationale": {
+      "C1": "The answer identifies the wrong company and uses hallucinated net income figures.",
+      "C2": "The tool choices for search and retrieval were appropriate.",
+      "C3": "The arguments provided to the tools were correct.",
+      "C4": "The answer rests on hallucinated data for one of the companies rather than the required filing.",
+      "C5": "The net income values and the resulting comparison are not supported by any tool results.",
+      "C6": "The agent ignored a transient error from the filing service and failed to retry.",
+      "C7": "The agent did not take any redundant steps."
+    }
+  },
+  {
+    "tid": "S37",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 2, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The final answer is correct and provides the accurate revenue comparison and values.",
+      "C2": "The agent correctly selected and used search and retrieval tools.",
+      "C3": "All arguments to the tools were correct.",
+      "C4": "The answer is based on the correct filings, years, and sections.",
+      "C5": "Every claim in the final answer is supported by the tool results.",
+      "C6": "No errors occurred during the process.",
+      "C7": "The trajectory is efficient and direct."
+    }
+  },
+  {
+    "tid": "S29",
+    "scores": {"C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0, "C6": 0, "C7": 2},
+    "rationale": {
+      "C1": "The final value provided for the debt-to-cash ratio is incorrect.",
+      "C2": "The agent failed to call the necessary filing search and retrieval tools.",
+      "C3": "The input to the calculator was a natural language sentence rather than a mathematical expression.",
+      "C4": "No source data from the filings was retrieved or used.",
+      "C5": "The final answer is entirely unsupported by any tool result.",
+      "C6": "The agent proceeded to a final answer despite a syntax error from the calculator tool.",
+      "C7": "The trajectory was minimal, though it failed the task."
+    }
+  },
+  {
+    "tid": "S30",
+    "scores": {"C1": 0, "C2": 2, "C3": 0, "C4": 0, "C5": 0, "C6": 0, "C7": 2},
+    "rationale": {
+      "C1": "The final answer provides an incorrect ratio.",
+      "C2": "The agent selected appropriate tools for the task.",
+      "C3": "The numbers provided to the calculator were incorrect and not sourced from any tool result.",
+      "C4": "The answer does not use the required data from the FY2024 filing.",
+      "C5": "The factual claims and numbers in the answer are not supported by any tool results.",
+      "C6": "The agent failed to handle a transient error and hallucinated data instead.",
+      "C7": "The trajectory followed a logically direct but factually flawed path."
+    }
+  },
+  {
+    "tid": "S08",
+    "scores": {"C1": 2, "C2": 2, "C3": 2, "C4": 2, "C5": 1, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The final answer provides the correct total debt for the specified year.",
+      "C2": "The agent used the search and section tools appropriately.",
+      "C3": "All tool arguments were correct.",
+      "C4": "The answer is derived from the correct filing and section.",
+      "C5": "The statement regarding management's revenue guidance is not supported by the tool results.",
+      "C6": "No errors occurred during the trajectory.",
+      "C7": "The task was performed efficiently with no redundant steps."
+    }
+  },
+  {
+    "tid": "S43",
+    "scores": {"C1": 0, "C2": 0, "C3": 2, "C4": 0, "C5": 0, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The answer identifies the wrong risk factor as the highest priority.",
+      "C2": "The agent failed to call the get_section tool to retrieve the list of risk factors.",
+      "C3": "The argument for the search tool call was correct.",
+      "C4": "The required risk factors section was never retrieved.",
+      "C5": "The final answer is not supported by any of the retrieved tool results.",
+      "C6": "No errors were encountered during the search.",
+      "C7": "The trajectory was brief but skipped essential data retrieval steps."
+    }
+  },
+  {
+    "tid": "S28",
+    "scores": {"C1": 0, "C2": 0, "C3": 2, "C4": 0, "C5": 0, "C6": 2, "C7": 2},
+    "rationale": {
+      "C1": "The final value for the debt-to-cash ratio is incorrect.",
+      "C2": "The agent failed to call the necessary tools to retrieve balance sheet data.",
+      "C3": "The search tool argument was correct.",
+      "C4": "The agent did not retrieve the required financial information from the filing.",
+      "C5": "The final answer is not grounded in any tool results.",
+      "C6": "No errors were encountered during the single tool call.",
+      "C7": "The trajectory reached a conclusion without performing the necessary steps."
+    }
+  },
+  {
+    "tid": "S21",
+    "scores": {"C1": 0, "C2": 0, "C3": 0, "C4": 0, "C5": 0, "C6": 0, "C7": 2},
+    "rationale": {
+      "C1": "The percentage change value provided is incorrect.",
+      "C2": "The agent failed to call any retrieval tools to find the revenue data.",
+      "C3": "The calculator tool was called with an invalid natural language argument.",
+      "C4": "No filing data was sourced or used to derive the answer.",
+      "C5": "The final percentage is not supported by any tool results.",
+      "C6": "The agent failed to notice or recover from a calculator syntax error.",
+      "C7": "The trajectory was direct but did not attempt to find the required data."
+    }
+  }
+]

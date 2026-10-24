@@ -1,0 +1,11 @@
+TRAJECTORY S47
+QUESTION: What was Atlas Shipping Benchmarks's net profit margin in FY2024?
+
+[plan] Find the filing, read the income statement, compute net income over revenue.
+[tool_call #1] search_filings({"query": "Atlas Shipping Benchmarks"})
+[tool_result #1] {"results": [{"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2024"}, {"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "ASB", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #2] {"ticker": "ASB", "fiscal_year": "FY2024", "section": "income_statement", "text": "Atlas Shipping Benchmarks (ASB) FY2024 income statement. Total revenue: USD 640.0 million. Net income: USD 88.0 million."}
+[tool_call #3] calculate({"expression": "640.0 / 88.0 * 100"})
+[tool_result #3] {"result": 727.272727}
+[final_answer] 727.3%

@@ -1,0 +1,338 @@
+[
+  {
+    "company": "Halvard Energy",
+    "ticker": "HVE",
+    "fiscal_year": "FY2024",
+    "sector": "Energy",
+    "revenue_musd": 4120.0,
+    "net_income_musd": 312.5,
+    "total_debt_musd": 1850.0,
+    "cash_musd": 640.0,
+    "employees": 6200,
+    "segments": {
+      "Upstream": 58,
+      "Refining": 30,
+      "Trading": 12
+    },
+    "risk_factors": [
+      "Crude price volatility",
+      "Refinery outage risk",
+      "Carbon pricing regulation"
+    ]
+  },
+  {
+    "company": "Halvard Energy",
+    "ticker": "HVE",
+    "fiscal_year": "FY2025",
+    "sector": "Energy",
+    "revenue_musd": 4575.0,
+    "net_income_musd": 388.0,
+    "total_debt_musd": 1720.0,
+    "cash_musd": 790.0,
+    "employees": 6350,
+    "segments": {
+      "Upstream": 58,
+      "Refining": 30,
+      "Trading": 12
+    },
+    "risk_factors": [
+      "Carbon pricing regulation",
+      "Crude price volatility",
+      "Refinery outage risk"
+    ]
+  },
+  {
+    "company": "Meridian Logistics",
+    "ticker": "MRL",
+    "fiscal_year": "FY2024",
+    "sector": "Industrials",
+    "revenue_musd": 2210.0,
+    "net_income_musd": 145.0,
+    "total_debt_musd": 980.0,
+    "cash_musd": 210.0,
+    "employees": 14800,
+    "segments": {
+      "Freight": 70,
+      "Warehousing": 22,
+      "Customs": 8
+    },
+    "risk_factors": [
+      "Fuel cost pass-through lag",
+      "Port congestion",
+      "Labour disputes"
+    ]
+  },
+  {
+    "company": "Meridian Logistics",
+    "ticker": "MRL",
+    "fiscal_year": "FY2025",
+    "sector": "Industrials",
+    "revenue_musd": 2065.0,
+    "net_income_musd": 98.5,
+    "total_debt_musd": 1040.0,
+    "cash_musd": 185.0,
+    "employees": 14100,
+    "segments": {
+      "Freight": 70,
+      "Warehousing": 22,
+      "Customs": 8
+    },
+    "risk_factors": [
+      "Labour disputes",
+      "Fuel cost pass-through lag",
+      "Port congestion"
+    ]
+  },
+  {
+    "company": "Cobalt Ridge Mining",
+    "ticker": "CRM",
+    "fiscal_year": "FY2024",
+    "sector": "Materials",
+    "revenue_musd": 1580.0,
+    "net_income_musd": 220.0,
+    "total_debt_musd": 450.0,
+    "cash_musd": 380.0,
+    "employees": 3900,
+    "segments": {
+      "Cobalt": 64,
+      "Nickel": 28,
+      "Copper": 8
+    },
+    "risk_factors": [
+      "Battery demand concentration",
+      "Permitting delays",
+      "Water availability"
+    ]
+  },
+  {
+    "company": "Cobalt Ridge Mining",
+    "ticker": "CRM",
+    "fiscal_year": "FY2025",
+    "sector": "Materials",
+    "revenue_musd": 1910.0,
+    "net_income_musd": 341.0,
+    "total_debt_musd": 420.0,
+    "cash_musd": 560.0,
+    "employees": 4100,
+    "segments": {
+      "Cobalt": 64,
+      "Nickel": 28,
+      "Copper": 8
+    },
+    "risk_factors": [
+      "Battery demand concentration",
+      "Water availability",
+      "Permitting delays"
+    ]
+  },
+  {
+    "company": "Northgate Financial",
+    "ticker": "NGF",
+    "fiscal_year": "FY2024",
+    "sector": "Financials",
+    "revenue_musd": 3340.0,
+    "net_income_musd": 610.0,
+    "total_debt_musd": 7200.0,
+    "cash_musd": 2900.0,
+    "employees": 9100,
+    "segments": {
+      "Retail banking": 45,
+      "Wealth": 35,
+      "Markets": 20
+    },
+    "risk_factors": [
+      "Credit cycle deterioration",
+      "Deposit outflow",
+      "Model risk in credit scoring"
+    ]
+  },
+  {
+    "company": "Northgate Financial",
+    "ticker": "NGF",
+    "fiscal_year": "FY2025",
+    "sector": "Financials",
+    "revenue_musd": 3520.0,
+    "net_income_musd": 655.0,
+    "total_debt_musd": 7450.0,
+    "cash_musd": 3100.0,
+    "employees": 9300,
+    "segments": {
+      "Retail banking": 45,
+      "Wealth": 35,
+      "Markets": 20
+    },
+    "risk_factors": [
+      "Model risk in credit scoring",
+      "Credit cycle deterioration",
+      "Deposit outflow"
+    ]
+  },
+  {
+    "company": "Verdant Foods",
+    "ticker": "VRF",
+    "fiscal_year": "FY2024",
+    "sector": "Consumer Staples",
+    "revenue_musd": 5410.0,
+    "net_income_musd": 402.0,
+    "total_debt_musd": 2300.0,
+    "cash_musd": 510.0,
+    "employees": 22000,
+    "segments": {
+      "Packaged": 52,
+      "Fresh": 33,
+      "Beverages": 15
+    },
+    "risk_factors": [
+      "Input cost inflation",
+      "Retailer concentration",
+      "Product recall"
+    ]
+  },
+  {
+    "company": "Verdant Foods",
+    "ticker": "VRF",
+    "fiscal_year": "FY2025",
+    "sector": "Consumer Staples",
+    "revenue_musd": 5690.0,
+    "net_income_musd": 371.0,
+    "total_debt_musd": 2450.0,
+    "cash_musd": 470.0,
+    "employees": 22600,
+    "segments": {
+      "Packaged": 52,
+      "Fresh": 33,
+      "Beverages": 15
+    },
+    "risk_factors": [
+      "Retailer concentration",
+      "Input cost inflation",
+      "Product recall"
+    ]
+  },
+  {
+    "company": "Lumen Semiconductor",
+    "ticker": "LMS",
+    "fiscal_year": "FY2024",
+    "sector": "Technology",
+    "revenue_musd": 2890.0,
+    "net_income_musd": 455.0,
+    "total_debt_musd": 300.0,
+    "cash_musd": 1250.0,
+    "employees": 5100,
+    "segments": {
+      "Data centre": 61,
+      "Automotive": 24,
+      "Consumer": 15
+    },
+    "risk_factors": [
+      "Export control exposure",
+      "Single-foundry dependency",
+      "Demand cyclicality"
+    ]
+  },
+  {
+    "company": "Lumen Semiconductor",
+    "ticker": "LMS",
+    "fiscal_year": "FY2025",
+    "sector": "Technology",
+    "revenue_musd": 3610.0,
+    "net_income_musd": 702.0,
+    "total_debt_musd": 280.0,
+    "cash_musd": 1680.0,
+    "employees": 5600,
+    "segments": {
+      "Data centre": 61,
+      "Automotive": 24,
+      "Consumer": 15
+    },
+    "risk_factors": [
+      "Single-foundry dependency",
+      "Export control exposure",
+      "Demand cyclicality"
+    ]
+  },
+  {
+    "company": "Atlas Shipping Benchmarks",
+    "ticker": "ASB",
+    "fiscal_year": "FY2024",
+    "sector": "Energy Services",
+    "revenue_musd": 640.0,
+    "net_income_musd": 88.0,
+    "total_debt_musd": 120.0,
+    "cash_musd": 95.0,
+    "employees": 820,
+    "segments": {
+      "Tanker indices": 55,
+      "Dry bulk indices": 30,
+      "Data licensing": 15
+    },
+    "risk_factors": [
+      "Index methodology challenge",
+      "Data vendor dependency",
+      "Regulatory benchmark rules"
+    ]
+  },
+  {
+    "company": "Atlas Shipping Benchmarks",
+    "ticker": "ASB",
+    "fiscal_year": "FY2025",
+    "sector": "Energy Services",
+    "revenue_musd": 705.0,
+    "net_income_musd": 61.0,
+    "total_debt_musd": 140.0,
+    "cash_musd": 80.0,
+    "employees": 860,
+    "segments": {
+      "Tanker indices": 55,
+      "Dry bulk indices": 30,
+      "Data licensing": 15
+    },
+    "risk_factors": [
+      "Regulatory benchmark rules",
+      "Index methodology challenge",
+      "Data vendor dependency"
+    ]
+  },
+  {
+    "company": "Pinecrest Healthcare",
+    "ticker": "PCH",
+    "fiscal_year": "FY2024",
+    "sector": "Healthcare",
+    "revenue_musd": 1975.0,
+    "net_income_musd": 160.0,
+    "total_debt_musd": 820.0,
+    "cash_musd": 300.0,
+    "employees": 11200,
+    "segments": {
+      "Hospitals": 66,
+      "Diagnostics": 24,
+      "Pharmacy": 10
+    },
+    "risk_factors": [
+      "Reimbursement rate changes",
+      "Clinician shortage",
+      "Cyber incident"
+    ]
+  },
+  {
+    "company": "Pinecrest Healthcare",
+    "ticker": "PCH",
+    "fiscal_year": "FY2025",
+    "sector": "Healthcare",
+    "revenue_musd": 2140.0,
+    "net_income_musd": 201.0,
+    "total_debt_musd": 790.0,
+    "cash_musd": 350.0,
+    "employees": 11500,
+    "segments": {
+      "Hospitals": 66,
+      "Diagnostics": 24,
+      "Pharmacy": 10
+    },
+    "risk_factors": [
+      "Cyber incident",
+      "Reimbursement rate changes",
+      "Clinician shortage"
+    ]
+  }
+]

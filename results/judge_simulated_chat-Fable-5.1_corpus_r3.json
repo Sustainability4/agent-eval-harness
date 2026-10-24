@@ -1,0 +1,1352 @@
+[
+  {
+    "tid": "S01",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms FY2024 revenue of 640.0 USD million.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Correct FY2024 income statement retrieved and used.",
+      "C5": "Value appears verbatim in retrieved text.",
+      "C6": "No errors occurred.",
+      "C7": "Two steps, minimal."
+    },
+    "raw": "{\"tid\": \"S01\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms FY2024 revenue of 640.0 USD million.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Correct FY2024 income statement retrieved and used.\", \"C5\": \"Value appears verbatim in retrieved text.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S02",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms FY2025 net income of 341.0 USD million.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Correct FY2025 income statement retrieved and used.",
+      "C5": "The USD 2,139 million guidance claim is unsupported, though the core answer is grounded.",
+      "C6": "No errors occurred.",
+      "C7": "Two steps, minimal."
+    },
+    "raw": "{\"tid\": \"S02\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms FY2025 net income of 341.0 USD million.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Correct FY2025 income statement retrieved and used.\", \"C5\": \"The USD 2,139 million guidance claim is unsupported, though the core answer is grounded.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S03",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms FY2025 total debt of 1,720.0 USD million.",
+      "C2": "Right tools for each step.",
+      "C3": "Ticker, year and section all correct.",
+      "C4": "Correct FY2025 balance sheet retrieved and used.",
+      "C5": "The analyst-consensus claim is unsupported by any tool result, though the core answer is grounded.",
+      "C6": "No errors occurred.",
+      "C7": "Two steps, minimal."
+    },
+    "raw": "{\"tid\": \"S03\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms FY2025 total debt of 1,720.0 USD million.\", \"C2\": \"Right tools for each step.\", \"C3\": \"Ticker, year and section all correct.\", \"C4\": \"Correct FY2025 balance sheet retrieved and used.\", \"C5\": \"The analyst-consensus claim is unsupported by any tool result, though the core answer is grounded.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S04",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "Corpus confirms FY2024 cash of 1,250.0 USD million.",
+      "C2": "search_filings and get_section balance_sheet were the right tools.",
+      "C3": "Ticker, year and section all correct.",
+      "C4": "Correct company, year and section used.",
+      "C5": "Value appears verbatim in the retrieved text.",
+      "C6": "No errors occurred.",
+      "C7": "The identical get_section call was repeated four times."
+    },
+    "raw": "{\"tid\": \"S04\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"Corpus confirms FY2024 cash of 1,250.0 USD million.\", \"C2\": \"search_filings and get_section balance_sheet were the right tools.\", \"C3\": \"Ticker, year and section all correct.\", \"C4\": \"Correct company, year and section used.\", \"C5\": \"Value appears verbatim in the retrieved text.\", \"C6\": \"No errors occurred.\", \"C7\": \"The identical get_section call was repeated four times.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S05",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus gives 14,100 employees for FY2025; 16,497 is the right entity but wrong magnitude.",
+      "C2": "Retrieval tools were never called and calculate was misused for a lookup.",
+      "C3": "The calculate expression was a natural-language string, not a valid expression.",
+      "C4": "No filing was retrieved at all.",
+      "C5": "The 16,497 figure is supported by no tool result.",
+      "C6": "The calc_error was ignored and an answer produced anyway.",
+      "C7": "No redundant or repeated steps."
+    },
+    "raw": "{\"tid\": \"S05\", \"scores\": {\"C1\": 1, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus gives 14,100 employees for FY2025; 16,497 is the right entity but wrong magnitude.\", \"C2\": \"Retrieval tools were never called and calculate was misused for a lookup.\", \"C3\": \"The calculate expression was a natural-language string, not a valid expression.\", \"C4\": \"No filing was retrieved at all.\", \"C5\": \"The 16,497 figure is supported by no tool result.\", \"C6\": \"The calc_error was ignored and an answer produced anyway.\", \"C7\": \"No redundant or repeated steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S06",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus gives FY2025 revenue of 3,520.0 USD million; 3,801.6 is the right entity, year and unit but wrong magnitude.",
+      "C2": "get_section, necessary to read revenue, was never called.",
+      "C3": "The single search_filings argument was correct.",
+      "C4": "No income statement was retrieved, so the answer rests on no filing source.",
+      "C5": "The 3,801.6 figure appears in no tool result.",
+      "C6": "No tool errors occurred.",
+      "C7": "No redundant steps, though a necessary one was skipped."
+    },
+    "raw": "{\"tid\": \"S06\", \"scores\": {\"C1\": 1, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus gives FY2025 revenue of 3,520.0 USD million; 3,801.6 is the right entity, year and unit but wrong magnitude.\", \"C2\": \"get_section, necessary to read revenue, was never called.\", \"C3\": \"The single search_filings argument was correct.\", \"C4\": \"No income statement was retrieved, so the answer rests on no filing source.\", \"C5\": \"The 3,801.6 figure appears in no tool result.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"No redundant steps, though a necessary one was skipped.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S07",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms FY2024 net income of 160.0 USD million.",
+      "C2": "Right tools for each step.",
+      "C3": "Ticker, year and section all correct.",
+      "C4": "Correct company, year and section used.",
+      "C5": "Value appears verbatim in retrieved text.",
+      "C6": "No errors occurred.",
+      "C7": "Two steps, minimal."
+    },
+    "raw": "{\"tid\": \"S07\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms FY2024 net income of 160.0 USD million.\", \"C2\": \"Right tools for each step.\", \"C3\": \"Ticker, year and section all correct.\", \"C4\": \"Correct company, year and section used.\", \"C5\": \"Value appears verbatim in retrieved text.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S08",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms FY2025 total debt of 2,450.0 USD million.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Correct FY2025 balance sheet retrieved and used.",
+      "C5": "The USD 6,373 million guidance claim is unsupported, though the core answer is grounded.",
+      "C6": "No errors occurred.",
+      "C7": "Two steps, minimal."
+    },
+    "raw": "{\"tid\": \"S08\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms FY2025 total debt of 2,450.0 USD million.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Correct FY2025 balance sheet retrieved and used.\", \"C5\": \"The USD 6,373 million guidance claim is unsupported, though the core answer is grounded.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S09",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Question asked FY2025 cash (80.0 USD million); the answer gives FY2024's 95.0.",
+      "C2": "search_filings then get_section balance_sheet were the right tools.",
+      "C3": "fiscal_year was FY2024 instead of FY2025, feeding the wrong value.",
+      "C4": "Answer rests entirely on the wrong fiscal year.",
+      "C5": "The 95.0 figure is exactly what the retrieved text states.",
+      "C6": "No errors occurred.",
+      "C7": "Two steps, minimal."
+    },
+    "raw": "{\"tid\": \"S09\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Question asked FY2025 cash (80.0 USD million); the answer gives FY2024's 95.0.\", \"C2\": \"search_filings then get_section balance_sheet were the right tools.\", \"C3\": \"fiscal_year was FY2024 instead of FY2025, feeding the wrong value.\", \"C4\": \"Answer rests entirely on the wrong fiscal year.\", \"C5\": \"The 95.0 figure is exactly what the retrieved text states.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S10",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Question asked FY2024 employees (3,900); the answer gives FY2025's 4,100.",
+      "C2": "search_filings then get_section operations were the right tools.",
+      "C3": "fiscal_year was FY2025 instead of FY2024, feeding the wrong value.",
+      "C4": "Answer rests entirely on the wrong fiscal year.",
+      "C5": "The 4,100 figure is exactly what the retrieved text states.",
+      "C6": "No errors occurred.",
+      "C7": "Two steps, minimal."
+    },
+    "raw": "{\"tid\": \"S10\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Question asked FY2024 employees (3,900); the answer gives FY2025's 4,100.\", \"C2\": \"search_filings then get_section operations were the right tools.\", \"C3\": \"fiscal_year was FY2025 instead of FY2024, feeding the wrong value.\", \"C4\": \"Answer rests entirely on the wrong fiscal year.\", \"C5\": \"The 4,100 figure is exactly what the retrieved text states.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S11",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "Corpus confirms FY2025 revenue of 4,575.0 USD million.",
+      "C2": "Right tools for each step.",
+      "C3": "Ticker, year and section all correct.",
+      "C4": "Correct company, year and section used.",
+      "C5": "Value appears verbatim in retrieved text.",
+      "C6": "No errors occurred.",
+      "C7": "The identical get_section call was repeated four times."
+    },
+    "raw": "{\"tid\": \"S11\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"Corpus confirms FY2025 revenue of 4,575.0 USD million.\", \"C2\": \"Right tools for each step.\", \"C3\": \"Ticker, year and section all correct.\", \"C4\": \"Correct company, year and section used.\", \"C5\": \"Value appears verbatim in retrieved text.\", \"C6\": \"No errors occurred.\", \"C7\": \"The identical get_section call was repeated four times.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S12",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Question asked FY2025 net income (702.0 USD million); the answer gives FY2024's 455.0, answering a different question.",
+      "C2": "search_filings then get_section were the right tools.",
+      "C3": "fiscal_year was set to FY2024 instead of FY2025, feeding the wrong value into the answer.",
+      "C4": "Answer rests entirely on the wrong fiscal year.",
+      "C5": "The 455.0 figure is exactly what the retrieved text states.",
+      "C6": "No errors occurred.",
+      "C7": "Two steps, minimal."
+    },
+    "raw": "{\"tid\": \"S12\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Question asked FY2025 net income (702.0 USD million); the answer gives FY2024's 455.0, answering a different question.\", \"C2\": \"search_filings then get_section were the right tools.\", \"C3\": \"fiscal_year was set to FY2024 instead of FY2025, feeding the wrong value into the answer.\", \"C4\": \"Answer rests entirely on the wrong fiscal year.\", \"C5\": \"The 455.0 figure is exactly what the retrieved text states.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S13",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus gives (3610-2890)/2890 = +24.9%; +31.9% has the right direction but wrong magnitude.",
+      "C2": "Appropriate tools, but the failed FY2024 get_section was never retried.",
+      "C3": "The expression uses 2687.7, which no tool result provided, and is internally inconsistent with its own denominator.",
+      "C4": "The FY2024 income statement was never retrieved, so half the inputs rest on no source.",
+      "C5": "The FY2024 revenue figures used are unsupported by any tool result.",
+      "C6": "The transient_error on the FY2024 call was ignored.",
+      "C7": "Four steps, no repetition."
+    },
+    "raw": "{\"tid\": \"S13\", \"scores\": {\"C1\": 1, \"C2\": 1, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus gives (3610-2890)/2890 = +24.9%; +31.9% has the right direction but wrong magnitude.\", \"C2\": \"Appropriate tools, but the failed FY2024 get_section was never retried.\", \"C3\": \"The expression uses 2687.7, which no tool result provided, and is internally inconsistent with its own denominator.\", \"C4\": \"The FY2024 income statement was never retrieved, so half the inputs rest on no source.\", \"C5\": \"The FY2024 revenue figures used are unsupported by any tool result.\", \"C6\": \"The transient_error on the FY2024 call was ignored.\", \"C7\": \"Four steps, no repetition.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S14",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms (98.5-145)/145 = -32.1%.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Both required income statements retrieved and used.",
+      "C5": "The USD 109 million buyback claim is unsupported by any tool result, though the core answer is grounded.",
+      "C6": "No errors occurred.",
+      "C7": "Four steps, minimal for a two-year comparison."
+    },
+    "raw": "{\"tid\": \"S14\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms (98.5-145)/145 = -32.1%.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Both required income statements retrieved and used.\", \"C5\": \"The USD 109 million buyback claim is unsupported by any tool result, though the core answer is grounded.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four steps, minimal for a two-year comparison.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S15",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "Corpus confirms (7450-7200)/7200 = +3.5%.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Both required balance sheets retrieved and used.",
+      "C5": "Result is a correct computation over retrieved values.",
+      "C6": "No errors occurred.",
+      "C7": "The identical FY2024 get_section call was repeated four times."
+    },
+    "raw": "{\"tid\": \"S15\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"Corpus confirms (7450-7200)/7200 = +3.5%.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Both required balance sheets retrieved and used.\", \"C5\": \"Result is a correct computation over retrieved values.\", \"C6\": \"No errors occurred.\", \"C7\": \"The identical FY2024 get_section call was repeated four times.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S16",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms (350-300)/300 = +16.7%.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Both required balance sheets retrieved and used.",
+      "C5": "Result is a correct computation over retrieved values.",
+      "C6": "No errors occurred.",
+      "C7": "Four steps, minimal for a two-year comparison."
+    },
+    "raw": "{\"tid\": \"S16\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms (350-300)/300 = +16.7%.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Both required balance sheets retrieved and used.\", \"C5\": \"Result is a correct computation over retrieved values.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four steps, minimal for a two-year comparison.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S17",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 1
+    },
+    "rationale": {
+      "C1": "Corpus gives (5690-5410)/5410 = +5.2%; +0.0% is wrong.",
+      "C2": "The second get_section duplicated the first instead of fetching FY2025, so the FY2025 retrieval never happened.",
+      "C3": "The second call's fiscal_year should have been FY2025; the FY2024 value was used in both slots of the expression.",
+      "C4": "Answer rests on FY2024 data for both years, never touching the FY2025 filing.",
+      "C5": "The 0.0% is an arithmetically correct computation over retrieved values.",
+      "C6": "No tool errors occurred.",
+      "C7": "One redundant repeated call."
+    },
+    "raw": "{\"tid\": \"S17\", \"scores\": {\"C1\": 0, \"C2\": 1, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 1}, \"rationale\": {\"C1\": \"Corpus gives (5690-5410)/5410 = +5.2%; +0.0% is wrong.\", \"C2\": \"The second get_section duplicated the first instead of fetching FY2025, so the FY2025 retrieval never happened.\", \"C3\": \"The second call's fiscal_year should have been FY2025; the FY2024 value was used in both slots of the expression.\", \"C4\": \"Answer rests on FY2024 data for both years, never touching the FY2025 filing.\", \"C5\": \"The 0.0% is an arithmetically correct computation over retrieved values.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"One redundant repeated call.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S18",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus gives (61-88)/88 = -30.7%; -23.6% has the right direction but wrong magnitude.",
+      "C2": "Appropriate tools, but the failed FY2024 get_section was never retried, a necessary step.",
+      "C3": "The expression uses 81.8 and 88.0, neither from a tool result, and is internally inconsistent.",
+      "C4": "FY2025 was retrieved but the FY2024 input rests on no retrieved source.",
+      "C5": "The FY2024 net income figures used are unsupported by any tool result.",
+      "C6": "The transient_error on the FY2024 call was ignored.",
+      "C7": "Four steps, no repetition."
+    },
+    "raw": "{\"tid\": \"S18\", \"scores\": {\"C1\": 1, \"C2\": 1, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus gives (61-88)/88 = -30.7%; -23.6% has the right direction but wrong magnitude.\", \"C2\": \"Appropriate tools, but the failed FY2024 get_section was never retried, a necessary step.\", \"C3\": \"The expression uses 81.8 and 88.0, neither from a tool result, and is internally inconsistent.\", \"C4\": \"FY2025 was retrieved but the FY2024 input rests on no retrieved source.\", \"C5\": \"The FY2024 net income figures used are unsupported by any tool result.\", \"C6\": \"The transient_error on the FY2024 call was ignored.\", \"C7\": \"Four steps, no repetition.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S19",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus gives (420-450)/450 = -6.7%; -7.8% has the right direction but wrong magnitude.",
+      "C2": "search_filings and get_section were never called, and calculate was used in place of retrieval.",
+      "C3": "The calculate expression was a natural-language string, not a valid expression.",
+      "C4": "No filing was retrieved at all.",
+      "C5": "The -7.8% figure is supported by no tool result.",
+      "C6": "The calc_error was ignored and an answer produced anyway.",
+      "C7": "No redundant or repeated steps."
+    },
+    "raw": "{\"tid\": \"S19\", \"scores\": {\"C1\": 1, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus gives (420-450)/450 = -6.7%; -7.8% has the right direction but wrong magnitude.\", \"C2\": \"search_filings and get_section were never called, and calculate was used in place of retrieval.\", \"C3\": \"The calculate expression was a natural-language string, not a valid expression.\", \"C4\": \"No filing was retrieved at all.\", \"C5\": \"The -7.8% figure is supported by no tool result.\", \"C6\": \"The calc_error was ignored and an answer produced anyway.\", \"C7\": \"No redundant or repeated steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S20",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Correct change is (790-640)/640 = +23.4%; +19.0% has the right direction but wrong magnitude.",
+      "C2": "Right tools for each step.",
+      "C3": "The expression divided by the FY2025 value instead of the FY2024 base.",
+      "C4": "Both required balance sheets were retrieved and used.",
+      "C5": "All inputs trace to retrieved text; the error is in the formula.",
+      "C6": "No errors occurred.",
+      "C7": "Four steps, minimal for a two-year comparison."
+    },
+    "raw": "{\"tid\": \"S20\", \"scores\": {\"C1\": 1, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Correct change is (790-640)/640 = +23.4%; +19.0% has the right direction but wrong magnitude.\", \"C2\": \"Right tools for each step.\", \"C3\": \"The expression divided by the FY2025 value instead of the FY2024 base.\", \"C4\": \"Both required balance sheets were retrieved and used.\", \"C5\": \"All inputs trace to retrieved text; the error is in the formula.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four steps, minimal for a two-year comparison.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S21",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus gives (3610-2890)/2890 = +24.9%; +29.1% has the right direction but wrong magnitude.",
+      "C2": "Retrieval tools were never called and calculate was misused in their place.",
+      "C3": "The calculate expression was a natural-language string, not a valid expression.",
+      "C4": "No filing was retrieved at all.",
+      "C5": "The +29.1% figure is supported by no tool result.",
+      "C6": "The calc_error was ignored and an answer produced anyway.",
+      "C7": "No redundant or repeated steps."
+    },
+    "raw": "{\"tid\": \"S21\", \"scores\": {\"C1\": 1, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus gives (3610-2890)/2890 = +24.9%; +29.1% has the right direction but wrong magnitude.\", \"C2\": \"Retrieval tools were never called and calculate was misused in their place.\", \"C3\": \"The calculate expression was a natural-language string, not a valid expression.\", \"C4\": \"No filing was retrieved at all.\", \"C5\": \"The +29.1% figure is supported by no tool result.\", \"C6\": \"The calc_error was ignored and an answer produced anyway.\", \"C7\": \"No redundant or repeated steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S22",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "Corpus confirms -32.1%.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Both required income statements retrieved and used.",
+      "C5": "Result is a correct computation over retrieved values.",
+      "C6": "No errors occurred.",
+      "C7": "The identical FY2024 get_section call was repeated four times."
+    },
+    "raw": "{\"tid\": \"S22\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"Corpus confirms -32.1%.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Both required income statements retrieved and used.\", \"C5\": \"Result is a correct computation over retrieved values.\", \"C6\": \"No errors occurred.\", \"C7\": \"The identical FY2024 get_section call was repeated four times.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S23",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Debt/cash is 140/80 = 1.75x; the agent reported the inverse 0.57x.",
+      "C2": "Right tools for each step.",
+      "C3": "The calculate expression was inverted (80/140), producing the wrong ratio.",
+      "C4": "Correct FY2025 balance sheet retrieved and used.",
+      "C5": "The 0.57 figure is a correct computation over retrieved values, though of the wrong ratio.",
+      "C6": "No errors occurred.",
+      "C7": "Three steps, minimal."
+    },
+    "raw": "{\"tid\": \"S23\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Debt/cash is 140/80 = 1.75x; the agent reported the inverse 0.57x.\", \"C2\": \"Right tools for each step.\", \"C3\": \"The calculate expression was inverted (80/140), producing the wrong ratio.\", \"C4\": \"Correct FY2025 balance sheet retrieved and used.\", \"C5\": \"The 0.57 figure is a correct computation over retrieved values, though of the wrong ratio.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S24",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms 450/380 = 1.18x.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Correct FY2024 balance sheet retrieved and used.",
+      "C5": "Result is a correct computation over retrieved values.",
+      "C6": "No errors occurred.",
+      "C7": "Three steps, minimal."
+    },
+    "raw": "{\"tid\": \"S24\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms 450/380 = 1.18x.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Correct FY2024 balance sheet retrieved and used.\", \"C5\": \"Result is a correct computation over retrieved values.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S25",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms 1720/790 = 2.18x.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Correct FY2025 balance sheet retrieved and used.",
+      "C5": "The revenue guidance claim (USD 5,124 million) appears in no tool result, though the core ratio is grounded.",
+      "C6": "No errors occurred.",
+      "C7": "Three steps, minimal."
+    },
+    "raw": "{\"tid\": \"S25\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms 1720/790 = 2.18x.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Correct FY2025 balance sheet retrieved and used.\", \"C5\": \"The revenue guidance claim (USD 5,124 million) appears in no tool result, though the core ratio is grounded.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S26",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus gives 300/1250 = 0.24x; the reported 0.21x has the right entity but wrong magnitude.",
+      "C2": "Tool types were appropriate, but the agent skipped a necessary retry of get_section and jumped to calculate.",
+      "C3": "The calculate expression used 279.0 and 1300.0, which no tool result provided and which fed the wrong answer.",
+      "C4": "The balance sheet was never successfully retrieved, so the answer rests on no filing source.",
+      "C5": "Both inputs to the ratio are unsupported by any tool result.",
+      "C6": "The transient_error was ignored and the agent proceeded as if it had the balance sheet.",
+      "C7": "Three steps with no repetition; efficiency itself was fine."
+    },
+    "raw": "{\"tid\": \"S26\", \"scores\": {\"C1\": 1, \"C2\": 1, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus gives 300/1250 = 0.24x; the reported 0.21x has the right entity but wrong magnitude.\", \"C2\": \"Tool types were appropriate, but the agent skipped a necessary retry of get_section and jumped to calculate.\", \"C3\": \"The calculate expression used 279.0 and 1300.0, which no tool result provided and which fed the wrong answer.\", \"C4\": \"The balance sheet was never successfully retrieved, so the answer rests on no filing source.\", \"C5\": \"Both inputs to the ratio are unsupported by any tool result.\", \"C6\": \"The transient_error was ignored and the agent proceeded as if it had the balance sheet.\", \"C7\": \"Three steps with no repetition; efficiency itself was fine.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S27",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms 1040/185 = 5.62x.",
+      "C2": "Right tools for each step.",
+      "C3": "Ticker, year, section and expression all correct.",
+      "C4": "Correct FY2025 balance sheet retrieved and used.",
+      "C5": "Result is a correct computation over retrieved values.",
+      "C6": "No errors occurred.",
+      "C7": "Three steps, minimal."
+    },
+    "raw": "{\"tid\": \"S27\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms 1040/185 = 5.62x.\", \"C2\": \"Right tools for each step.\", \"C3\": \"Ticker, year, section and expression all correct.\", \"C4\": \"Correct FY2025 balance sheet retrieved and used.\", \"C5\": \"Result is a correct computation over retrieved values.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S28",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus gives 7200/2900 = 2.48x; 2.70x is the right entity but wrong magnitude.",
+      "C2": "get_section and calculate were never called, both necessary for the ratio.",
+      "C3": "The single search_filings argument was correct.",
+      "C4": "No balance sheet was retrieved.",
+      "C5": "The 2.70x figure is supported by no tool result.",
+      "C6": "No tool errors occurred.",
+      "C7": "No redundant steps, though necessary ones were skipped."
+    },
+    "raw": "{\"tid\": \"S28\", \"scores\": {\"C1\": 1, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus gives 7200/2900 = 2.48x; 2.70x is the right entity but wrong magnitude.\", \"C2\": \"get_section and calculate were never called, both necessary for the ratio.\", \"C3\": \"The single search_filings argument was correct.\", \"C4\": \"No balance sheet was retrieved.\", \"C5\": \"The 2.70x figure is supported by no tool result.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"No redundant steps, though necessary ones were skipped.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S29",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus gives 790/350 = 2.26x; 2.60x is the right entity but wrong magnitude.",
+      "C2": "search_filings and get_section were never called; calculate was misused in their place.",
+      "C3": "The calculate expression was a natural-language string, not a valid expression.",
+      "C4": "No filing was retrieved at all.",
+      "C5": "The 2.60x figure is supported by no tool result.",
+      "C6": "The calc_error was ignored and an answer produced anyway.",
+      "C7": "No redundant or repeated steps."
+    },
+    "raw": "{\"tid\": \"S29\", \"scores\": {\"C1\": 1, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus gives 790/350 = 2.26x; 2.60x is the right entity but wrong magnitude.\", \"C2\": \"search_filings and get_section were never called; calculate was misused in their place.\", \"C3\": \"The calculate expression was a natural-language string, not a valid expression.\", \"C4\": \"No filing was retrieved at all.\", \"C5\": \"The 2.60x figure is supported by no tool result.\", \"C6\": \"The calc_error was ignored and an answer produced anyway.\", \"C7\": \"No redundant or repeated steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S30",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus gives 2300/510 = 4.51x; 4.03x is the right entity but wrong magnitude.",
+      "C2": "Right tool types, but no retry after the failed get_section before computing.",
+      "C3": "The expression 2139.0/530.4 uses invented figures that produced the wrong result.",
+      "C4": "The FY2024 balance sheet was never retrieved.",
+      "C5": "Both inputs to the ratio appear in no tool result.",
+      "C6": "The transient_error was ignored and the agent proceeded.",
+      "C7": "Three steps, no repetition."
+    },
+    "raw": "{\"tid\": \"S30\", \"scores\": {\"C1\": 1, \"C2\": 1, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus gives 2300/510 = 4.51x; 4.03x is the right entity but wrong magnitude.\", \"C2\": \"Right tool types, but no retry after the failed get_section before computing.\", \"C3\": \"The expression 2139.0/530.4 uses invented figures that produced the wrong result.\", \"C4\": \"The FY2024 balance sheet was never retrieved.\", \"C5\": \"Both inputs to the ratio appear in no tool result.\", \"C6\": \"The transient_error was ignored and the agent proceeded.\", \"C7\": \"Three steps, no repetition.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S31",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms Northgate 3,520.0 vs Cobalt Ridge 1,910.0 in FY2025.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Both required FY2025 income statements retrieved and used.",
+      "C5": "The USD 3,942 million guidance claim is unsupported, though the core comparison is grounded.",
+      "C6": "No errors occurred.",
+      "C7": "Four steps, minimal for a two-company comparison."
+    },
+    "raw": "{\"tid\": \"S31\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 1, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms Northgate 3,520.0 vs Cobalt Ridge 1,910.0 in FY2025.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Both required FY2025 income statements retrieved and used.\", \"C5\": \"The USD 3,942 million guidance claim is unsupported, though the core comparison is grounded.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four steps, minimal for a two-company comparison.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S32",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus shows Northgate (610.0) exceeded Pinecrest (160.0); the answer names the wrong company with wrong figures.",
+      "C2": "Appropriate tools, but the failed Pinecrest get_section was never retried.",
+      "C3": "All call arguments were correct for the entities and year.",
+      "C4": "Pinecrest's statement was never retrieved and even Northgate's retrieved 610.0 was discarded for an unsupported figure.",
+      "C5": "Both 640.5 and 152.0 appear in no tool result.",
+      "C6": "The transient_error on the Pinecrest call was ignored.",
+      "C7": "Four steps with no repetition."
+    },
+    "raw": "{\"tid\": \"S32\", \"scores\": {\"C1\": 0, \"C2\": 1, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus shows Northgate (610.0) exceeded Pinecrest (160.0); the answer names the wrong company with wrong figures.\", \"C2\": \"Appropriate tools, but the failed Pinecrest get_section was never retried.\", \"C3\": \"All call arguments were correct for the entities and year.\", \"C4\": \"Pinecrest's statement was never retrieved and even Northgate's retrieved 610.0 was discarded for an unsupported figure.\", \"C5\": \"Both 640.5 and 152.0 appear in no tool result.\", \"C6\": \"The transient_error on the Pinecrest call was ignored.\", \"C7\": \"Four steps with no repetition.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S33",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus shows Verdant Foods (5,690.0) far exceeded Atlas (705.0); the answer names the wrong company with wrong figures.",
+      "C2": "get_section was never called for either company, a necessary step.",
+      "C3": "Both search_filings arguments were correct.",
+      "C4": "No income statement was retrieved for either company.",
+      "C5": "Both 5,974.5 and 669.8 appear in no tool result.",
+      "C6": "No tool errors occurred.",
+      "C7": "No redundant steps, though necessary ones were skipped."
+    },
+    "raw": "{\"tid\": \"S33\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus shows Verdant Foods (5,690.0) far exceeded Atlas (705.0); the answer names the wrong company with wrong figures.\", \"C2\": \"get_section was never called for either company, a necessary step.\", \"C3\": \"Both search_filings arguments were correct.\", \"C4\": \"No income statement was retrieved for either company.\", \"C5\": \"Both 5,974.5 and 669.8 appear in no tool result.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"No redundant steps, though necessary ones were skipped.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S34",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms Halvard 312.5 vs Cobalt Ridge 220.0 in FY2024.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Both required FY2024 income statements retrieved and used.",
+      "C5": "Both figures appear verbatim in retrieved text.",
+      "C6": "No errors occurred.",
+      "C7": "Four steps, minimal for a two-company comparison."
+    },
+    "raw": "{\"tid\": \"S34\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms Halvard 312.5 vs Cobalt Ridge 220.0 in FY2024.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Both required FY2024 income statements retrieved and used.\", \"C5\": \"Both figures appear verbatim in retrieved text.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four steps, minimal for a two-company comparison.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S35",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Meridian is correctly named as higher, but the figures cited (2,210.0 vs 640.0) are FY2024's rather than FY2025's 2,065.0 vs 705.0.",
+      "C2": "Right tools for each step.",
+      "C3": "Both get_section calls used FY2024 instead of FY2025.",
+      "C4": "Answer rests entirely on the wrong fiscal year for both companies.",
+      "C5": "Both figures appear verbatim in retrieved text.",
+      "C6": "No errors occurred.",
+      "C7": "Four steps, minimal for a two-company comparison."
+    },
+    "raw": "{\"tid\": \"S35\", \"scores\": {\"C1\": 1, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Meridian is correctly named as higher, but the figures cited (2,210.0 vs 640.0) are FY2024's rather than FY2025's 2,065.0 vs 705.0.\", \"C2\": \"Right tools for each step.\", \"C3\": \"Both get_section calls used FY2024 instead of FY2025.\", \"C4\": \"Answer rests entirely on the wrong fiscal year for both companies.\", \"C5\": \"Both figures appear verbatim in retrieved text.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four steps, minimal for a two-company comparison.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S36",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "Corpus confirms Lumen 455.0 vs Atlas 88.0 in FY2024.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Both required FY2024 income statements retrieved and used.",
+      "C5": "Both figures appear verbatim in retrieved text.",
+      "C6": "No errors occurred.",
+      "C7": "The identical Lumen get_section call was repeated four times."
+    },
+    "raw": "{\"tid\": \"S36\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"Corpus confirms Lumen 455.0 vs Atlas 88.0 in FY2024.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Both required FY2024 income statements retrieved and used.\", \"C5\": \"Both figures appear verbatim in retrieved text.\", \"C6\": \"No errors occurred.\", \"C7\": \"The identical Lumen get_section call was repeated four times.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S37",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms Lumen 3,610.0 vs Cobalt Ridge 1,910.0 in FY2025.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Both required FY2025 income statements retrieved and used.",
+      "C5": "Both figures appear verbatim in retrieved text.",
+      "C6": "No errors occurred.",
+      "C7": "Four steps, minimal for a two-company comparison."
+    },
+    "raw": "{\"tid\": \"S37\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms Lumen 3,610.0 vs Cobalt Ridge 1,910.0 in FY2025.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Both required FY2025 income statements retrieved and used.\", \"C5\": \"Both figures appear verbatim in retrieved text.\", \"C6\": \"No errors occurred.\", \"C7\": \"Four steps, minimal for a two-company comparison.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S38",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus shows Pinecrest (160.0) exceeded Atlas (88.0); the answer names the wrong company with wrong figures.",
+      "C2": "Retrieval tools were never called and calculate was misused for a comparison.",
+      "C3": "The calculate expression was the question text, not a valid expression.",
+      "C4": "No filing was retrieved for either company.",
+      "C5": "Both 168.0 and 83.6 appear in no tool result.",
+      "C6": "The calc_error was ignored and an answer produced anyway.",
+      "C7": "No redundant or repeated steps."
+    },
+    "raw": "{\"tid\": \"S38\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus shows Pinecrest (160.0) exceeded Atlas (88.0); the answer names the wrong company with wrong figures.\", \"C2\": \"Retrieval tools were never called and calculate was misused for a comparison.\", \"C3\": \"The calculate expression was the question text, not a valid expression.\", \"C4\": \"No filing was retrieved for either company.\", \"C5\": \"Both 168.0 and 83.6 appear in no tool result.\", \"C6\": \"The calc_error was ignored and an answer produced anyway.\", \"C7\": \"No redundant or repeated steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S39",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "FY2025's first-listed risk is Battery demand concentration; Permitting delays is wrong.",
+      "C2": "get_section risk_factors, necessary to read the list, was never called.",
+      "C3": "The single search_filings argument was correct.",
+      "C4": "No risk factors section was retrieved.",
+      "C5": "The named risk factor appears in no tool result.",
+      "C6": "No tool errors occurred.",
+      "C7": "No redundant steps, though a necessary one was skipped."
+    },
+    "raw": "{\"tid\": \"S39\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"FY2025's first-listed risk is Battery demand concentration; Permitting delays is wrong.\", \"C2\": \"get_section risk_factors, necessary to read the list, was never called.\", \"C3\": \"The single search_filings argument was correct.\", \"C4\": \"No risk factors section was retrieved.\", \"C5\": \"The named risk factor appears in no tool result.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"No redundant steps, though a necessary one was skipped.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S40",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "FY2024's first-listed risk is Export control exposure; the answer gives FY2025's top item.",
+      "C2": "search_filings then get_section risk_factors were the right tools.",
+      "C3": "fiscal_year was FY2025 instead of FY2024, feeding the wrong list.",
+      "C4": "Answer rests entirely on the wrong fiscal year.",
+      "C5": "The answer matches the retrieved FY2025 text exactly.",
+      "C6": "No errors occurred.",
+      "C7": "Two steps, minimal."
+    },
+    "raw": "{\"tid\": \"S40\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 0, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"FY2024's first-listed risk is Export control exposure; the answer gives FY2025's top item.\", \"C2\": \"search_filings then get_section risk_factors were the right tools.\", \"C3\": \"fiscal_year was FY2025 instead of FY2024, feeding the wrong list.\", \"C4\": \"Answer rests entirely on the wrong fiscal year.\", \"C5\": \"The answer matches the retrieved FY2025 text exactly.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S41",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "FY2025's first-listed risk is Model risk in credit scoring; Deposit outflow is wrong.",
+      "C2": "Retrieval tools were never called and calculate was misused for a text lookup.",
+      "C3": "The calculate expression was the question text, not a valid expression.",
+      "C4": "No risk factors section was retrieved.",
+      "C5": "The named risk factor appears in no tool result.",
+      "C6": "The calc_error was ignored and an answer produced anyway.",
+      "C7": "No redundant or repeated steps."
+    },
+    "raw": "{\"tid\": \"S41\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"FY2025's first-listed risk is Model risk in credit scoring; Deposit outflow is wrong.\", \"C2\": \"Retrieval tools were never called and calculate was misused for a text lookup.\", \"C3\": \"The calculate expression was the question text, not a valid expression.\", \"C4\": \"No risk factors section was retrieved.\", \"C5\": \"The named risk factor appears in no tool result.\", \"C6\": \"The calc_error was ignored and an answer produced anyway.\", \"C7\": \"No redundant or repeated steps.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S42",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    },
+    "rationale": {
+      "C1": "Corpus confirms Input cost inflation is first-listed for FY2024.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Correct FY2024 risk factors section retrieved and used.",
+      "C5": "The answer matches the retrieved text exactly.",
+      "C6": "No errors occurred.",
+      "C7": "The identical get_section call was repeated four times."
+    },
+    "raw": "{\"tid\": \"S42\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 0}, \"rationale\": {\"C1\": \"Corpus confirms Input cost inflation is first-listed for FY2024.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Correct FY2024 risk factors section retrieved and used.\", \"C5\": \"The answer matches the retrieved text exactly.\", \"C6\": \"No errors occurred.\", \"C7\": \"The identical get_section call was repeated four times.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S43",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "FY2025's first-listed risk is Battery demand concentration; Permitting delays is wrong.",
+      "C2": "get_section risk_factors, necessary to read the list, was never called.",
+      "C3": "The single search_filings argument was correct.",
+      "C4": "No risk factors section was retrieved.",
+      "C5": "The named risk factor appears in no tool result.",
+      "C6": "No tool errors occurred.",
+      "C7": "No redundant steps, though a necessary one was skipped."
+    },
+    "raw": "{\"tid\": \"S43\", \"scores\": {\"C1\": 0, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"FY2025's first-listed risk is Battery demand concentration; Permitting delays is wrong.\", \"C2\": \"get_section risk_factors, necessary to read the list, was never called.\", \"C3\": \"The single search_filings argument was correct.\", \"C4\": \"No risk factors section was retrieved.\", \"C5\": \"The named risk factor appears in no tool result.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"No redundant steps, though a necessary one was skipped.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S44",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus confirms Export control exposure is first-listed for FY2024.",
+      "C2": "Right tools for each step.",
+      "C3": "All arguments correct.",
+      "C4": "Correct FY2024 risk factors section retrieved and used.",
+      "C5": "The answer matches the retrieved text exactly.",
+      "C6": "No errors occurred.",
+      "C7": "Two steps, minimal."
+    },
+    "raw": "{\"tid\": \"S44\", \"scores\": {\"C1\": 2, \"C2\": 2, \"C3\": 2, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus confirms Export control exposure is first-listed for FY2024.\", \"C2\": \"Right tools for each step.\", \"C3\": \"All arguments correct.\", \"C4\": \"Correct FY2024 risk factors section retrieved and used.\", \"C5\": \"The answer matches the retrieved text exactly.\", \"C6\": \"No errors occurred.\", \"C7\": \"Two steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S45",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Net margin is 312.5/4120 = 7.6%; 1318.4% is the inverted ratio.",
+      "C2": "Right tools for each step.",
+      "C3": "The expression divided revenue by net income instead of the reverse.",
+      "C4": "Correct FY2024 income statement retrieved and used.",
+      "C5": "The number is a correct computation over retrieved values, though of the wrong ratio.",
+      "C6": "No errors occurred.",
+      "C7": "Three steps, minimal."
+    },
+    "raw": "{\"tid\": \"S45\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Net margin is 312.5/4120 = 7.6%; 1318.4% is the inverted ratio.\", \"C2\": \"Right tools for each step.\", \"C3\": \"The expression divided revenue by net income instead of the reverse.\", \"C4\": \"Correct FY2024 income statement retrieved and used.\", \"C5\": \"The number is a correct computation over retrieved values, though of the wrong ratio.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S46",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus gives 655/3520 = 18.6%; 20.1% is the right entity and year but wrong magnitude.",
+      "C2": "get_section and calculate were never called, both necessary for a margin.",
+      "C3": "The single search_filings argument was correct.",
+      "C4": "No income statement was retrieved, so the answer rests on no filing source.",
+      "C5": "The 20.1% figure is unsupported by any tool result.",
+      "C6": "No tool errors occurred.",
+      "C7": "No redundant steps, though necessary ones were skipped."
+    },
+    "raw": "{\"tid\": \"S46\", \"scores\": {\"C1\": 1, \"C2\": 0, \"C3\": 2, \"C4\": 0, \"C5\": 0, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus gives 655/3520 = 18.6%; 20.1% is the right entity and year but wrong magnitude.\", \"C2\": \"get_section and calculate were never called, both necessary for a margin.\", \"C3\": \"The single search_filings argument was correct.\", \"C4\": \"No income statement was retrieved, so the answer rests on no filing source.\", \"C5\": \"The 20.1% figure is unsupported by any tool result.\", \"C6\": \"No tool errors occurred.\", \"C7\": \"No redundant steps, though necessary ones were skipped.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S47",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Net margin is 88/640 = 13.75%; 727.3% is the inverted ratio and nonsensical as a margin.",
+      "C2": "Right tools for each step.",
+      "C3": "The expression divided revenue by net income instead of the reverse.",
+      "C4": "Correct FY2024 income statement retrieved and used.",
+      "C5": "The number is a correct computation over retrieved values, though of the wrong ratio.",
+      "C6": "No errors occurred.",
+      "C7": "Three steps, minimal."
+    },
+    "raw": "{\"tid\": \"S47\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Net margin is 88/640 = 13.75%; 727.3% is the inverted ratio and nonsensical as a margin.\", \"C2\": \"Right tools for each step.\", \"C3\": \"The expression divided revenue by net income instead of the reverse.\", \"C4\": \"Correct FY2024 income statement retrieved and used.\", \"C5\": \"The number is a correct computation over retrieved values, though of the wrong ratio.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S48",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Net margin is 702/3610 = 19.4%; 514.2% is the inverted ratio.",
+      "C2": "Right tools for each step.",
+      "C3": "The expression divided revenue by net income instead of the reverse.",
+      "C4": "Correct FY2025 income statement retrieved and used.",
+      "C5": "The number is a correct computation over retrieved values, though of the wrong ratio.",
+      "C6": "No errors occurred.",
+      "C7": "Three steps, minimal."
+    },
+    "raw": "{\"tid\": \"S48\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Net margin is 702/3610 = 19.4%; 514.2% is the inverted ratio.\", \"C2\": \"Right tools for each step.\", \"C3\": \"The expression divided revenue by net income instead of the reverse.\", \"C4\": \"Correct FY2025 income statement retrieved and used.\", \"C5\": \"The number is a correct computation over retrieved values, though of the wrong ratio.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S49",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Net margin is 160/1975 = 8.1%; 1234.4% is the inverted ratio.",
+      "C2": "Right tools for each step.",
+      "C3": "The expression divided revenue by net income instead of the reverse.",
+      "C4": "Correct FY2024 income statement retrieved and used.",
+      "C5": "The number is a correct computation over retrieved values, though of the wrong ratio.",
+      "C6": "No errors occurred.",
+      "C7": "Three steps, minimal."
+    },
+    "raw": "{\"tid\": \"S49\", \"scores\": {\"C1\": 0, \"C2\": 2, \"C3\": 0, \"C4\": 2, \"C5\": 2, \"C6\": 2, \"C7\": 2}, \"rationale\": {\"C1\": \"Net margin is 160/1975 = 8.1%; 1234.4% is the inverted ratio.\", \"C2\": \"Right tools for each step.\", \"C3\": \"The expression divided revenue by net income instead of the reverse.\", \"C4\": \"Correct FY2024 income statement retrieved and used.\", \"C5\": \"The number is a correct computation over retrieved values, though of the wrong ratio.\", \"C6\": \"No errors occurred.\", \"C7\": \"Three steps, minimal.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  },
+  {
+    "tid": "S50",
+    "judge": "chat:Fable-5.1",
+    "reference_aided": false,
+    "scores": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    },
+    "rationale": {
+      "C1": "Corpus gives 341/1910 = 17.9%; the reported 16.0% is the right entity and year but wrong magnitude.",
+      "C2": "Right tool types, but no retry after the failed get_section before computing.",
+      "C3": "The expression 317.1/1986.4 uses invented figures that produced the wrong result.",
+      "C4": "The FY2025 income statement was never retrieved, so no required source was used.",
+      "C5": "Net income and revenue values in the calculation appear in no tool result.",
+      "C6": "Error returned by get_section was ignored and the agent proceeded.",
+      "C7": "Minimal step count, no redundancy."
+    },
+    "raw": "{\"tid\": \"S50\", \"scores\": {\"C1\": 1, \"C2\": 1, \"C3\": 0, \"C4\": 0, \"C5\": 0, \"C6\": 0, \"C7\": 2}, \"rationale\": {\"C1\": \"Corpus gives 341/1910 = 17.9%; the reported 16.0% is the right entity and year but wrong magnitude.\", \"C2\": \"Right tool types, but no retry after the failed get_section before computing.\", \"C3\": \"The expression 317.1/1986.4 uses invented figures that produced the wrong result.\", \"C4\": \"The FY2025 income statement was never retrieved, so no required source was used.\", \"C5\": \"Net income and revenue values in the calculation appear in no tool result.\", \"C6\": \"Error returned by get_section was ignored and the agent proceeded.\", \"C7\": \"Minimal step count, no redundancy.\"}}",
+    "parse_ok": true,
+    "mode": "",
+    "meta": {}
+  }
+]

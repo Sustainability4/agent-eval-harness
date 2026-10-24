@@ -1,0 +1,37 @@
+{
+  "batch_01": {
+    "judge": "gemini:gemini-3-flash-preview",
+    "model": "gemini-3-flash-preview",
+    "finish_reason": "FinishReason.STOP",
+    "input_tokens": 8096,
+    "output_tokens": 6495
+  },
+  "batch_02": {
+    "judge": "gemini:gemini-3-flash-preview",
+    "model": "gemini-3-flash-preview",
+    "finish_reason": "FinishReason.STOP",
+    "input_tokens": 7512,
+    "output_tokens": 9648
+  },
+  "batch_03": {
+    "judge": "gemini:gemini-3-flash-preview",
+    "model": "gemini-3-flash-preview",
+    "finish_reason": "FinishReason.STOP",
+    "input_tokens": 6837,
+    "output_tokens": 8545
+  },
+  "batch_04": {
+    "judge": "gemini:gemini-3-flash-preview",
+    "model": "gemini-3-flash-preview",
+    "finish_reason": "FinishReason.STOP",
+    "input_tokens": 9037,
+    "output_tokens": 10870
+  },
+  "batch_05": {
+    "judge": "gemini:gemini-3-flash-preview",
+    "model": "gemini-3-flash-preview",
+    "finish_reason": "FinishReason.STOP",
+    "input_tokens": 7155,
+    "output_tokens": 10856
+  }
+}

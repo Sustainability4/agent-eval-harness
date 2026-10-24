@@ -1,0 +1,192 @@
+You are an expert evaluator of AI agent trajectories for a model-risk validation team.
+You will score 10 trajectories against a seven-criterion rubric, each one independently. Scores are integers 0, 1 or 2.
+Judge only what is in each trajectory. A claim in the final answer is supported only if a tool result
+in that trajectory contains it or it is a correct calculation over such results.
+Reply with exactly one JSON array and nothing else, one object per trajectory, in the order given:
+[{"tid": "<trajectory id>", "scores": {"C1": int, ..., "C7": int}, "rationale": {"C1": "<one sentence>", ..., "C7": "<one sentence>"}}, ...]
+
+RUBRIC
+C1 Final answer correctness — Is the final answer correct and complete for the question asked?
+  2: Correct value, unit and entity; within tolerance for numeric answers.
+  1: Partially correct: right direction or entity but wrong magnitude, missing unit, or incomplete comparison.
+  0: Wrong, missing, or answers a different question.
+
+C2 Tool selection — Did the agent choose the right tools for each step?
+  2: Every tool call is the appropriate tool for what the step needed.
+  1: One unnecessary or mis-chosen tool call that did not derail the task.
+  0: Wrong tool for a necessary step, or a necessary tool never called.
+
+C3 Tool arguments — Were the arguments to each tool call correct (right entity, year, section, expression)?
+  2: All arguments correct.
+  1: One argument error that was later corrected, or a harmless one.
+  0: An argument error that fed a wrong input into the answer.
+
+C4 Context freshness and sourcing — Did the answer rest on the specific filing, year and section the question required?
+  2: All required sources retrieved and used; no stale or wrong-year context.
+  1: Required source retrieved but a stale or extra source also influenced the answer.
+  0: Answer rests on the wrong year, wrong company or wrong section.
+
+C5 Groundedness — Is every factual claim in the final answer supported by a tool result in the trajectory?
+  2: All claims traceable to retrieved text or a calculation over it.
+  1: A minor embellishment not supported by retrieval but not affecting the core answer.
+  0: A material number or fact appears that no tool result supports.
+
+C6 Error handling — When a tool returned an error or empty result, did the agent notice and recover?
+  2: No errors occurred, or every error was detected and handled (retry, alternative, or honest abstention).
+  1: Error noticed but recovery was partial or clumsy.
+  0: Error ignored and the agent proceeded as if the call had succeeded.
+
+C7 Efficiency — Did the agent reach the answer without redundant, repeated or wandering steps?
+  2: At or near the minimal step count for the task.
+  1: One or two unnecessary steps.
+  0: Repeated identical calls, loops, or more than double the necessary steps.
+
+==================== S05 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S05
+QUESTION: What was Meridian Logistics's year-end employee count in FY2025?
+
+[plan] Compute the figure directly with the calculator.
+[tool_call #1] calculate({"expression": "What was Meridian Logistics figure"})
+[tool_result #1] {"error": "calc_error: invalid syntax (<unknown>, line 1)"}
+[final_answer] 16,497 employees
+
+==================== S49 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S49
+QUESTION: What was Pinecrest Healthcare's net profit margin in FY2024?
+
+[plan] Find the filing, read the income statement, compute net income over revenue.
+[tool_call #1] search_filings({"query": "Pinecrest Healthcare"})
+[tool_result #1] {"results": [{"company": "Pinecrest Healthcare", "ticker": "PCH", "fiscal_year": "FY2024"}, {"company": "Pinecrest Healthcare", "ticker": "PCH", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "PCH", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #2] {"ticker": "PCH", "fiscal_year": "FY2024", "section": "income_statement", "text": "Pinecrest Healthcare (PCH) FY2024 income statement. Total revenue: USD 1,975.0 million. Net income: USD 160.0 million."}
+[tool_call #3] calculate({"expression": "1975.0 / 160.0 * 100"})
+[tool_result #3] {"result": 1234.375}
+[final_answer] 1234.4%
+
+==================== S41 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S41
+QUESTION: What does Northgate Financial list as its highest-priority risk factor in its FY2025 filing?
+
+[plan] Compute the figure directly with the calculator.
+[tool_call #1] calculate({"expression": "What does Northgate Financial list as its highest-priority risk factor in its FY2025 filing? figure"})
+[tool_result #1] {"error": "calc_error: invalid syntax (<unknown>, line 1)"}
+[final_answer] Deposit outflow
+
+==================== S31 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S31
+QUESTION: Which company reported higher revenue in FY2025: Northgate Financial or Cobalt Ridge Mining?
+
+[plan] Find both filings, read the same section for each, compare the values.
+[tool_call #1] search_filings({"query": "Northgate Financial"})
+[tool_result #1] {"results": [{"company": "Northgate Financial", "ticker": "NGF", "fiscal_year": "FY2024"}, {"company": "Northgate Financial", "ticker": "NGF", "fiscal_year": "FY2025"}]}
+[tool_call #2] search_filings({"query": "Cobalt Ridge Mining"})
+[tool_result #2] {"results": [{"company": "Cobalt Ridge Mining", "ticker": "CRM", "fiscal_year": "FY2024"}, {"company": "Cobalt Ridge Mining", "ticker": "CRM", "fiscal_year": "FY2025"}]}
+[tool_call #3] get_section({"ticker": "NGF", "fiscal_year": "FY2025", "section": "income_statement"})
+[tool_result #3] {"ticker": "NGF", "fiscal_year": "FY2025", "section": "income_statement", "text": "Northgate Financial (NGF) FY2025 income statement. Total revenue: USD 3,520.0 million. Net income: USD 655.0 million."}
+[tool_call #4] get_section({"ticker": "CRM", "fiscal_year": "FY2025", "section": "income_statement"})
+[tool_result #4] {"ticker": "CRM", "fiscal_year": "FY2025", "section": "income_statement", "text": "Cobalt Ridge Mining (CRM) FY2025 income statement. Total revenue: USD 1,910.0 million. Net income: USD 341.0 million."}
+[final_answer] Northgate Financial (3,520.0 vs 1,910.0 USD million). Management guided to USD 3,942 million of revenue next year.
+
+==================== S39 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S39
+QUESTION: What does Cobalt Ridge Mining list as its highest-priority risk factor in its FY2025 filing?
+
+[plan] Find the filing, read the risk factors section, report the first-listed item.
+[tool_call #1] search_filings({"query": "Cobalt Ridge Mining"})
+[tool_result #1] {"results": [{"company": "Cobalt Ridge Mining", "ticker": "CRM", "fiscal_year": "FY2024"}, {"company": "Cobalt Ridge Mining", "ticker": "CRM", "fiscal_year": "FY2025"}]}
+[final_answer] Permitting delays
+
+==================== S24 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S24
+QUESTION: What was Cobalt Ridge Mining's ratio of total debt to cash and equivalents in FY2024?
+
+[plan] Find the filing, read the balance sheet, divide total debt by cash.
+[tool_call #1] search_filings({"query": "Cobalt Ridge Mining"})
+[tool_result #1] {"results": [{"company": "Cobalt Ridge Mining", "ticker": "CRM", "fiscal_year": "FY2024"}, {"company": "Cobalt Ridge Mining", "ticker": "CRM", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "CRM", "fiscal_year": "FY2024", "section": "balance_sheet"})
+[tool_result #2] {"ticker": "CRM", "fiscal_year": "FY2024", "section": "balance_sheet", "text": "Cobalt Ridge Mining (CRM) FY2024 balance sheet. Total debt: USD 450.0 million. Cash and equivalents: USD 380.0 million."}
+[tool_call #3] calculate({"expression": "450.0 / 380.0"})
+[tool_result #3] {"result": 1.184211}
+[final_answer] 1.18x
+
+==================== S09 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S09
+QUESTION: What was Atlas Shipping Benchmarks's cash and equivalents in FY2025?
+
+[plan] Find the filing, read the relevant section, report the value with units.
+[tool_call #1] search_filings({"query": "Atlas Shipping Benchmarks"})
+[tool_result #1] {"results": [{"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2024"}, {"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "ASB", "fiscal_year": "FY2024", "section": "balance_sheet"})
+[tool_result #2] {"ticker": "ASB", "fiscal_year": "FY2024", "section": "balance_sheet", "text": "Atlas Shipping Benchmarks (ASB) FY2024 balance sheet. Total debt: USD 120.0 million. Cash and equivalents: USD 95.0 million."}
+[final_answer] 95.0 USD million
+
+==================== S35 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S35
+QUESTION: Which company reported higher revenue in FY2025: Atlas Shipping Benchmarks or Meridian Logistics?
+
+[plan] Find both filings, read the same section for each, compare the values.
+[tool_call #1] search_filings({"query": "Atlas Shipping Benchmarks"})
+[tool_result #1] {"results": [{"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2024"}, {"company": "Atlas Shipping Benchmarks", "ticker": "ASB", "fiscal_year": "FY2025"}]}
+[tool_call #2] search_filings({"query": "Meridian Logistics"})
+[tool_result #2] {"results": [{"company": "Meridian Logistics", "ticker": "MRL", "fiscal_year": "FY2024"}, {"company": "Meridian Logistics", "ticker": "MRL", "fiscal_year": "FY2025"}]}
+[tool_call #3] get_section({"ticker": "ASB", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #3] {"ticker": "ASB", "fiscal_year": "FY2024", "section": "income_statement", "text": "Atlas Shipping Benchmarks (ASB) FY2024 income statement. Total revenue: USD 640.0 million. Net income: USD 88.0 million."}
+[tool_call #4] get_section({"ticker": "MRL", "fiscal_year": "FY2024", "section": "income_statement"})
+[tool_result #4] {"ticker": "MRL", "fiscal_year": "FY2024", "section": "income_statement", "text": "Meridian Logistics (MRL) FY2024 income statement. Total revenue: USD 2,210.0 million. Net income: USD 145.0 million."}
+[final_answer] Meridian Logistics (2,210.0 vs 640.0 USD million)
+
+==================== S38 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S38
+QUESTION: Which company reported higher net income in FY2024: Pinecrest Healthcare or Atlas Shipping Benchmarks?
+
+[plan] Compute the figure directly with the calculator.
+[tool_call #1] calculate({"expression": "Which company reported higher net income in FY2024: Pinecrest Healthcare or Atlas Shipping Benchmarks? figure"})
+[tool_result #1] {"error": "calc_error: invalid syntax (<unknown>, line 1)"}
+[final_answer] Atlas Shipping Benchmarks (168.0 vs 83.6 USD million)
+
+==================== S16 ====================
+REFERENCE: no gold answer provided. The attached file corpus.json contains the filing data for every
+company and fiscal year. Use it to check whether the final answer is correct.
+TRAJECTORY
+TRAJECTORY S16
+QUESTION: By what percentage did Pinecrest Healthcare's cash and equivalents change from FY2024 to FY2025?
+
+[plan] Find the filing, read both fiscal years, compute the percentage change.
+[tool_call #1] search_filings({"query": "Pinecrest Healthcare"})
+[tool_result #1] {"results": [{"company": "Pinecrest Healthcare", "ticker": "PCH", "fiscal_year": "FY2024"}, {"company": "Pinecrest Healthcare", "ticker": "PCH", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "PCH", "fiscal_year": "FY2024", "section": "balance_sheet"})
+[tool_result #2] {"ticker": "PCH", "fiscal_year": "FY2024", "section": "balance_sheet", "text": "Pinecrest Healthcare (PCH) FY2024 balance sheet. Total debt: USD 820.0 million. Cash and equivalents: USD 300.0 million."}
+[tool_call #3] get_section({"ticker": "PCH", "fiscal_year": "FY2025", "section": "balance_sheet"})
+[tool_result #3] {"ticker": "PCH", "fiscal_year": "FY2025", "section": "balance_sheet", "text": "Pinecrest Healthcare (PCH) FY2025 balance sheet. Total debt: USD 790.0 million. Cash and equivalents: USD 350.0 million."}
+[tool_call #4] calculate({"expression": "(350.0 - 300.0) / 300.0 * 100"})
+[tool_result #4] {"result": 16.666667}
+[final_answer] +16.7%
+
+Score all 10 trajectories (S05, S49, S41, S31, S39, S24, S09, S35, S38, S16). Return the JSON array only.

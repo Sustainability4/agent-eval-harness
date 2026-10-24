@@ -1,0 +1,4435 @@
+[
+  {
+    "tid": "S01",
+    "qid": "Q01",
+    "question": "What was Atlas Shipping Benchmarks's revenue in FY2024?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the relevant section, report the value with units."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Atlas Shipping Benchmarks"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "ASB",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Atlas Shipping Benchmarks (ASB) FY2024 income statement. Total revenue: USD 640.0 million. Net income: USD 88.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "640.0 USD million"
+      }
+    ],
+    "final_answer": "640.0 USD million",
+    "injected_failure": "clean",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S02",
+    "qid": "Q02",
+    "question": "What was Cobalt Ridge Mining's net income in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the relevant section, report the value with units."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Cobalt Ridge Mining"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "CRM",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Cobalt Ridge Mining (CRM) FY2025 income statement. Total revenue: USD 1,910.0 million. Net income: USD 341.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "341.0 USD million. Management guided to USD 2,139 million of revenue next year."
+      }
+    ],
+    "final_answer": "341.0 USD million. Management guided to USD 2,139 million of revenue next year.",
+    "injected_failure": "unsupported_claim",
+    "gold_scores": {
+      "C1": 1,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S03",
+    "qid": "Q03",
+    "question": "What was Halvard Energy's total debt in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the relevant section, report the value with units."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Halvard Energy"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Halvard Energy",
+              "ticker": "HVE",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Halvard Energy",
+              "ticker": "HVE",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "HVE",
+            "fiscal_year": "FY2025",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet",
+          "text": "Halvard Energy (HVE) FY2025 balance sheet. Total debt: USD 1,720.0 million. Cash and equivalents: USD 790.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "1,720.0 USD million. Analyst consensus had expected a figure roughly 6% lower."
+      }
+    ],
+    "final_answer": "1,720.0 USD million. Analyst consensus had expected a figure roughly 6% lower.",
+    "injected_failure": "unsupported_claim",
+    "gold_scores": {
+      "C1": 1,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S04",
+    "qid": "Q04",
+    "question": "What was Lumen Semiconductor's cash and equivalents in FY2024?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the relevant section, report the value with units."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Lumen Semiconductor"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet",
+          "text": "Lumen Semiconductor (LMS) FY2024 balance sheet. Total debt: USD 300.0 million. Cash and equivalents: USD 1,250.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet",
+          "text": "Lumen Semiconductor (LMS) FY2024 balance sheet. Total debt: USD 300.0 million. Cash and equivalents: USD 1,250.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet",
+          "text": "Lumen Semiconductor (LMS) FY2024 balance sheet. Total debt: USD 300.0 million. Cash and equivalents: USD 1,250.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet",
+          "text": "Lumen Semiconductor (LMS) FY2024 balance sheet. Total debt: USD 300.0 million. Cash and equivalents: USD 1,250.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "1,250.0 USD million"
+      }
+    ],
+    "final_answer": "1,250.0 USD million",
+    "injected_failure": "loop",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    }
+  },
+  {
+    "tid": "S05",
+    "qid": "Q05",
+    "question": "What was Meridian Logistics's year-end employee count in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Compute the figure directly with the calculator."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "What was Meridian Logistics figure"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "error": "calc_error: invalid syntax (<unknown>, line 1)"
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "16,497 employees"
+      }
+    ],
+    "final_answer": "16,497 employees",
+    "injected_failure": "wrong_tool",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 1,
+      "C4": 0,
+      "C5": 0,
+      "C6": 1,
+      "C7": 1
+    }
+  },
+  {
+    "tid": "S06",
+    "qid": "Q06",
+    "question": "What was Northgate Financial's revenue in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the relevant section, report the value with units."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Northgate Financial"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Northgate Financial",
+              "ticker": "NGF",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Northgate Financial",
+              "ticker": "NGF",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "3,801.6 USD million"
+      }
+    ],
+    "final_answer": "3,801.6 USD million",
+    "injected_failure": "premature_termination",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S07",
+    "qid": "Q07",
+    "question": "What was Pinecrest Healthcare's net income in FY2024?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the relevant section, report the value with units."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Pinecrest Healthcare"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Pinecrest Healthcare",
+              "ticker": "PCH",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Pinecrest Healthcare",
+              "ticker": "PCH",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "PCH",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "PCH",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Pinecrest Healthcare (PCH) FY2024 income statement. Total revenue: USD 1,975.0 million. Net income: USD 160.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "160.0 USD million"
+      }
+    ],
+    "final_answer": "160.0 USD million",
+    "injected_failure": "clean",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S08",
+    "qid": "Q08",
+    "question": "What was Verdant Foods's total debt in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the relevant section, report the value with units."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Verdant Foods"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Verdant Foods",
+              "ticker": "VRF",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Verdant Foods",
+              "ticker": "VRF",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "VRF",
+            "fiscal_year": "FY2025",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet",
+          "text": "Verdant Foods (VRF) FY2025 balance sheet. Total debt: USD 2,450.0 million. Cash and equivalents: USD 470.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "2,450.0 USD million. Management guided to USD 6,373 million of revenue next year."
+      }
+    ],
+    "final_answer": "2,450.0 USD million. Management guided to USD 6,373 million of revenue next year.",
+    "injected_failure": "unsupported_claim",
+    "gold_scores": {
+      "C1": 1,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S09",
+    "qid": "Q09",
+    "question": "What was Atlas Shipping Benchmarks's cash and equivalents in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the relevant section, report the value with units."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Atlas Shipping Benchmarks"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "ASB",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet",
+          "text": "Atlas Shipping Benchmarks (ASB) FY2024 balance sheet. Total debt: USD 120.0 million. Cash and equivalents: USD 95.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "95.0 USD million"
+      }
+    ],
+    "final_answer": "95.0 USD million",
+    "injected_failure": "stale_context",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S10",
+    "qid": "Q10",
+    "question": "What was Cobalt Ridge Mining's year-end employee count in FY2024?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the relevant section, report the value with units."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Cobalt Ridge Mining"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "CRM",
+            "fiscal_year": "FY2025",
+            "section": "operations"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2025",
+          "section": "operations",
+          "text": "Cobalt Ridge Mining (CRM) FY2025 operations. Employees at year end: 4,100. Segment mix: Cobalt: 64% of revenue; Nickel: 28% of revenue; Copper: 8% of revenue."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "4,100 employees"
+      }
+    ],
+    "final_answer": "4,100 employees",
+    "injected_failure": "stale_context",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S11",
+    "qid": "Q11",
+    "question": "What was Halvard Energy's revenue in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the relevant section, report the value with units."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Halvard Energy"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Halvard Energy",
+              "ticker": "HVE",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Halvard Energy",
+              "ticker": "HVE",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "HVE",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Halvard Energy (HVE) FY2025 income statement. Total revenue: USD 4,575.0 million. Net income: USD 388.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "HVE",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Halvard Energy (HVE) FY2025 income statement. Total revenue: USD 4,575.0 million. Net income: USD 388.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "HVE",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Halvard Energy (HVE) FY2025 income statement. Total revenue: USD 4,575.0 million. Net income: USD 388.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "HVE",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Halvard Energy (HVE) FY2025 income statement. Total revenue: USD 4,575.0 million. Net income: USD 388.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "4,575.0 USD million"
+      }
+    ],
+    "final_answer": "4,575.0 USD million",
+    "injected_failure": "loop",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    }
+  },
+  {
+    "tid": "S12",
+    "qid": "Q12",
+    "question": "What was Lumen Semiconductor's net income in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the relevant section, report the value with units."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Lumen Semiconductor"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Lumen Semiconductor (LMS) FY2024 income statement. Total revenue: USD 2,890.0 million. Net income: USD 455.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "455.0 USD million"
+      }
+    ],
+    "final_answer": "455.0 USD million",
+    "injected_failure": "stale_context",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S13",
+    "qid": "Q13",
+    "question": "By what percentage did Lumen Semiconductor's revenue change from FY2024 to FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read both fiscal years, compute the percentage change."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Lumen Semiconductor"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "error": "transient_error: filing service unavailable, retry"
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Lumen Semiconductor (LMS) FY2025 income statement. Total revenue: USD 3,610.0 million. Net income: USD 702.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "(3610.0 - 2687.7) / 2890.0 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 31.913495
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "+31.9%"
+      }
+    ],
+    "final_answer": "+31.9%",
+    "injected_failure": "tool_error_ignored",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S14",
+    "qid": "Q14",
+    "question": "By what percentage did Meridian Logistics's net income change from FY2024 to FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read both fiscal years, compute the percentage change."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Meridian Logistics"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Meridian Logistics",
+              "ticker": "MRL",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Meridian Logistics",
+              "ticker": "MRL",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "MRL",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Meridian Logistics (MRL) FY2024 income statement. Total revenue: USD 2,210.0 million. Net income: USD 145.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "MRL",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Meridian Logistics (MRL) FY2025 income statement. Total revenue: USD 2,065.0 million. Net income: USD 98.5 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "(98.5 - 145.0) / 145.0 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": -32.068966
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "-32.1%. The company also repurchased USD 109 million of shares during the year."
+      }
+    ],
+    "final_answer": "-32.1%. The company also repurchased USD 109 million of shares during the year.",
+    "injected_failure": "unsupported_claim",
+    "gold_scores": {
+      "C1": 1,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S15",
+    "qid": "Q15",
+    "question": "By what percentage did Northgate Financial's total debt change from FY2024 to FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read both fiscal years, compute the percentage change."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Northgate Financial"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Northgate Financial",
+              "ticker": "NGF",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Northgate Financial",
+              "ticker": "NGF",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "NGF",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet",
+          "text": "Northgate Financial (NGF) FY2024 balance sheet. Total debt: USD 7,200.0 million. Cash and equivalents: USD 2,900.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "NGF",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet",
+          "text": "Northgate Financial (NGF) FY2024 balance sheet. Total debt: USD 7,200.0 million. Cash and equivalents: USD 2,900.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "NGF",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet",
+          "text": "Northgate Financial (NGF) FY2024 balance sheet. Total debt: USD 7,200.0 million. Cash and equivalents: USD 2,900.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "NGF",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet",
+          "text": "Northgate Financial (NGF) FY2024 balance sheet. Total debt: USD 7,200.0 million. Cash and equivalents: USD 2,900.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "NGF",
+            "fiscal_year": "FY2025",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet",
+          "text": "Northgate Financial (NGF) FY2025 balance sheet. Total debt: USD 7,450.0 million. Cash and equivalents: USD 3,100.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "(7450.0 - 7200.0) / 7200.0 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 3.472222
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "+3.5%"
+      }
+    ],
+    "final_answer": "+3.5%",
+    "injected_failure": "loop",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    }
+  },
+  {
+    "tid": "S16",
+    "qid": "Q16",
+    "question": "By what percentage did Pinecrest Healthcare's cash and equivalents change from FY2024 to FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read both fiscal years, compute the percentage change."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Pinecrest Healthcare"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Pinecrest Healthcare",
+              "ticker": "PCH",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Pinecrest Healthcare",
+              "ticker": "PCH",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "PCH",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "PCH",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet",
+          "text": "Pinecrest Healthcare (PCH) FY2024 balance sheet. Total debt: USD 820.0 million. Cash and equivalents: USD 300.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "PCH",
+            "fiscal_year": "FY2025",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "PCH",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet",
+          "text": "Pinecrest Healthcare (PCH) FY2025 balance sheet. Total debt: USD 790.0 million. Cash and equivalents: USD 350.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "(350.0 - 300.0) / 300.0 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 16.666667
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "+16.7%"
+      }
+    ],
+    "final_answer": "+16.7%",
+    "injected_failure": "clean",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S17",
+    "qid": "Q17",
+    "question": "By what percentage did Verdant Foods's revenue change from FY2024 to FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read both fiscal years, compute the percentage change."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Verdant Foods"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Verdant Foods",
+              "ticker": "VRF",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Verdant Foods",
+              "ticker": "VRF",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "VRF",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Verdant Foods (VRF) FY2024 income statement. Total revenue: USD 5,410.0 million. Net income: USD 402.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "VRF",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Verdant Foods (VRF) FY2024 income statement. Total revenue: USD 5,410.0 million. Net income: USD 402.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "(5410.0 - 5410.0) / 5410.0 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 0.0
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "+0.0%"
+      }
+    ],
+    "final_answer": "+0.0%",
+    "injected_failure": "stale_context",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S18",
+    "qid": "Q18",
+    "question": "By what percentage did Atlas Shipping Benchmarks's net income change from FY2024 to FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read both fiscal years, compute the percentage change."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Atlas Shipping Benchmarks"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "ASB",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "error": "transient_error: filing service unavailable, retry"
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "ASB",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Atlas Shipping Benchmarks (ASB) FY2025 income statement. Total revenue: USD 705.0 million. Net income: USD 61.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "(61.0 - 81.8) / 88.0 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": -23.636364
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "-23.6%"
+      }
+    ],
+    "final_answer": "-23.6%",
+    "injected_failure": "tool_error_ignored",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S19",
+    "qid": "Q19",
+    "question": "By what percentage did Cobalt Ridge Mining's total debt change from FY2024 to FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Compute the figure directly with the calculator."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "By what percentage did Cobalt Ridge Mining figure"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "error": "calc_error: invalid syntax (<unknown>, line 1)"
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "-7.8%"
+      }
+    ],
+    "final_answer": "-7.8%",
+    "injected_failure": "wrong_tool",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 1,
+      "C4": 0,
+      "C5": 0,
+      "C6": 1,
+      "C7": 1
+    }
+  },
+  {
+    "tid": "S20",
+    "qid": "Q20",
+    "question": "By what percentage did Halvard Energy's cash and equivalents change from FY2024 to FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read both fiscal years, compute the percentage change."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Halvard Energy"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Halvard Energy",
+              "ticker": "HVE",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Halvard Energy",
+              "ticker": "HVE",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "HVE",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet",
+          "text": "Halvard Energy (HVE) FY2024 balance sheet. Total debt: USD 1,850.0 million. Cash and equivalents: USD 640.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "HVE",
+            "fiscal_year": "FY2025",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet",
+          "text": "Halvard Energy (HVE) FY2025 balance sheet. Total debt: USD 1,720.0 million. Cash and equivalents: USD 790.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "(790.0 - 640.0) / 790.0 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 18.987342
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "+19.0%"
+      }
+    ],
+    "final_answer": "+19.0%",
+    "injected_failure": "arithmetic_error",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S21",
+    "qid": "Q21",
+    "question": "By what percentage did Lumen Semiconductor's revenue change from FY2024 to FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Compute the figure directly with the calculator."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "By what percentage did Lumen Semiconductor figure"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "error": "calc_error: invalid syntax (<unknown>, line 1)"
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "+29.1%"
+      }
+    ],
+    "final_answer": "+29.1%",
+    "injected_failure": "wrong_tool",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 1,
+      "C4": 0,
+      "C5": 0,
+      "C6": 1,
+      "C7": 1
+    }
+  },
+  {
+    "tid": "S22",
+    "qid": "Q22",
+    "question": "By what percentage did Meridian Logistics's net income change from FY2024 to FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read both fiscal years, compute the percentage change."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Meridian Logistics"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Meridian Logistics",
+              "ticker": "MRL",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Meridian Logistics",
+              "ticker": "MRL",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "MRL",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Meridian Logistics (MRL) FY2024 income statement. Total revenue: USD 2,210.0 million. Net income: USD 145.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "MRL",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Meridian Logistics (MRL) FY2024 income statement. Total revenue: USD 2,210.0 million. Net income: USD 145.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "MRL",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Meridian Logistics (MRL) FY2024 income statement. Total revenue: USD 2,210.0 million. Net income: USD 145.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "MRL",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Meridian Logistics (MRL) FY2024 income statement. Total revenue: USD 2,210.0 million. Net income: USD 145.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "MRL",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Meridian Logistics (MRL) FY2025 income statement. Total revenue: USD 2,065.0 million. Net income: USD 98.5 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "(98.5 - 145.0) / 145.0 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": -32.068966
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "-32.1%"
+      }
+    ],
+    "final_answer": "-32.1%",
+    "injected_failure": "loop",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    }
+  },
+  {
+    "tid": "S23",
+    "qid": "Q23",
+    "question": "What was Atlas Shipping Benchmarks's ratio of total debt to cash and equivalents in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the balance sheet, divide total debt by cash."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Atlas Shipping Benchmarks"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "ASB",
+            "fiscal_year": "FY2025",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet",
+          "text": "Atlas Shipping Benchmarks (ASB) FY2025 balance sheet. Total debt: USD 140.0 million. Cash and equivalents: USD 80.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "80.0 / 140.0"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 0.571429
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "0.57x"
+      }
+    ],
+    "final_answer": "0.57x",
+    "injected_failure": "arithmetic_error",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S24",
+    "qid": "Q24",
+    "question": "What was Cobalt Ridge Mining's ratio of total debt to cash and equivalents in FY2024?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the balance sheet, divide total debt by cash."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Cobalt Ridge Mining"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "CRM",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet",
+          "text": "Cobalt Ridge Mining (CRM) FY2024 balance sheet. Total debt: USD 450.0 million. Cash and equivalents: USD 380.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "450.0 / 380.0"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 1.184211
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "1.18x"
+      }
+    ],
+    "final_answer": "1.18x",
+    "injected_failure": "clean",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S25",
+    "qid": "Q25",
+    "question": "What was Halvard Energy's ratio of total debt to cash and equivalents in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the balance sheet, divide total debt by cash."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Halvard Energy"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Halvard Energy",
+              "ticker": "HVE",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Halvard Energy",
+              "ticker": "HVE",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "HVE",
+            "fiscal_year": "FY2025",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet",
+          "text": "Halvard Energy (HVE) FY2025 balance sheet. Total debt: USD 1,720.0 million. Cash and equivalents: USD 790.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "1720.0 / 790.0"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 2.177215
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "2.18x. Management guided to USD 5,124 million of revenue next year."
+      }
+    ],
+    "final_answer": "2.18x. Management guided to USD 5,124 million of revenue next year.",
+    "injected_failure": "unsupported_claim",
+    "gold_scores": {
+      "C1": 1,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S26",
+    "qid": "Q26",
+    "question": "What was Lumen Semiconductor's ratio of total debt to cash and equivalents in FY2024?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the balance sheet, divide total debt by cash."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Lumen Semiconductor"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "error": "transient_error: filing service unavailable, retry"
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "279.0 / 1300.0"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 0.214615
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "0.21x"
+      }
+    ],
+    "final_answer": "0.21x",
+    "injected_failure": "tool_error_ignored",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S27",
+    "qid": "Q27",
+    "question": "What was Meridian Logistics's ratio of total debt to cash and equivalents in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the balance sheet, divide total debt by cash."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Meridian Logistics"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Meridian Logistics",
+              "ticker": "MRL",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Meridian Logistics",
+              "ticker": "MRL",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "MRL",
+            "fiscal_year": "FY2025",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet",
+          "text": "Meridian Logistics (MRL) FY2025 balance sheet. Total debt: USD 1,040.0 million. Cash and equivalents: USD 185.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "1040.0 / 185.0"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 5.621622
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "5.62x"
+      }
+    ],
+    "final_answer": "5.62x",
+    "injected_failure": "clean",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S28",
+    "qid": "Q28",
+    "question": "What was Northgate Financial's ratio of total debt to cash and equivalents in FY2024?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the balance sheet, divide total debt by cash."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Northgate Financial"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Northgate Financial",
+              "ticker": "NGF",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Northgate Financial",
+              "ticker": "NGF",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "2.70x"
+      }
+    ],
+    "final_answer": "2.70x",
+    "injected_failure": "premature_termination",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S29",
+    "qid": "Q29",
+    "question": "What was Pinecrest Healthcare's ratio of total debt to cash and equivalents in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Compute the figure directly with the calculator."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "What was Pinecrest Healthcare figure"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "error": "calc_error: invalid syntax (<unknown>, line 1)"
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "2.60x"
+      }
+    ],
+    "final_answer": "2.60x",
+    "injected_failure": "wrong_tool",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 1,
+      "C4": 0,
+      "C5": 0,
+      "C6": 1,
+      "C7": 1
+    }
+  },
+  {
+    "tid": "S30",
+    "qid": "Q30",
+    "question": "What was Verdant Foods's ratio of total debt to cash and equivalents in FY2024?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the balance sheet, divide total debt by cash."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Verdant Foods"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Verdant Foods",
+              "ticker": "VRF",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Verdant Foods",
+              "ticker": "VRF",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "VRF",
+            "fiscal_year": "FY2024",
+            "section": "balance_sheet"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "error": "transient_error: filing service unavailable, retry"
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "2139.0 / 530.4"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 4.032805
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "4.03x"
+      }
+    ],
+    "final_answer": "4.03x",
+    "injected_failure": "tool_error_ignored",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S31",
+    "qid": "Q31",
+    "question": "Which company reported higher revenue in FY2025: Northgate Financial or Cobalt Ridge Mining?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find both filings, read the same section for each, compare the values."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Northgate Financial"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Northgate Financial",
+              "ticker": "NGF",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Northgate Financial",
+              "ticker": "NGF",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Cobalt Ridge Mining"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "NGF",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Northgate Financial (NGF) FY2025 income statement. Total revenue: USD 3,520.0 million. Net income: USD 655.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "CRM",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Cobalt Ridge Mining (CRM) FY2025 income statement. Total revenue: USD 1,910.0 million. Net income: USD 341.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Northgate Financial (3,520.0 vs 1,910.0 USD million). Management guided to USD 3,942 million of revenue next year."
+      }
+    ],
+    "final_answer": "Northgate Financial (3,520.0 vs 1,910.0 USD million). Management guided to USD 3,942 million of revenue next year.",
+    "injected_failure": "unsupported_claim",
+    "gold_scores": {
+      "C1": 1,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S32",
+    "qid": "Q32",
+    "question": "Which company reported higher net income in FY2024: Pinecrest Healthcare or Northgate Financial?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find both filings, read the same section for each, compare the values."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Pinecrest Healthcare"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Pinecrest Healthcare",
+              "ticker": "PCH",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Pinecrest Healthcare",
+              "ticker": "PCH",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Northgate Financial"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Northgate Financial",
+              "ticker": "NGF",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Northgate Financial",
+              "ticker": "NGF",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "PCH",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "error": "transient_error: filing service unavailable, retry"
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "NGF",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Northgate Financial (NGF) FY2024 income statement. Total revenue: USD 3,340.0 million. Net income: USD 610.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Pinecrest Healthcare (640.5 vs 152.0 USD million)"
+      }
+    ],
+    "final_answer": "Pinecrest Healthcare (640.5 vs 152.0 USD million)",
+    "injected_failure": "tool_error_ignored",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S33",
+    "qid": "Q33",
+    "question": "Which company reported higher revenue in FY2025: Atlas Shipping Benchmarks or Verdant Foods?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find both filings, read the same section for each, compare the values."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Atlas Shipping Benchmarks"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Verdant Foods"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Verdant Foods",
+              "ticker": "VRF",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Verdant Foods",
+              "ticker": "VRF",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Atlas Shipping Benchmarks (5,974.5 vs 669.8 USD million)"
+      }
+    ],
+    "final_answer": "Atlas Shipping Benchmarks (5,974.5 vs 669.8 USD million)",
+    "injected_failure": "premature_termination",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S34",
+    "qid": "Q34",
+    "question": "Which company reported higher net income in FY2024: Cobalt Ridge Mining or Halvard Energy?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find both filings, read the same section for each, compare the values."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Cobalt Ridge Mining"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Halvard Energy"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Halvard Energy",
+              "ticker": "HVE",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Halvard Energy",
+              "ticker": "HVE",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "CRM",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Cobalt Ridge Mining (CRM) FY2024 income statement. Total revenue: USD 1,580.0 million. Net income: USD 220.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "HVE",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Halvard Energy (HVE) FY2024 income statement. Total revenue: USD 4,120.0 million. Net income: USD 312.5 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Halvard Energy (312.5 vs 220.0 USD million)"
+      }
+    ],
+    "final_answer": "Halvard Energy (312.5 vs 220.0 USD million)",
+    "injected_failure": "clean",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S35",
+    "qid": "Q35",
+    "question": "Which company reported higher revenue in FY2025: Atlas Shipping Benchmarks or Meridian Logistics?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find both filings, read the same section for each, compare the values."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Atlas Shipping Benchmarks"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Meridian Logistics"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Meridian Logistics",
+              "ticker": "MRL",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Meridian Logistics",
+              "ticker": "MRL",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "ASB",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Atlas Shipping Benchmarks (ASB) FY2024 income statement. Total revenue: USD 640.0 million. Net income: USD 88.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "MRL",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Meridian Logistics (MRL) FY2024 income statement. Total revenue: USD 2,210.0 million. Net income: USD 145.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Meridian Logistics (2,210.0 vs 640.0 USD million)"
+      }
+    ],
+    "final_answer": "Meridian Logistics (2,210.0 vs 640.0 USD million)",
+    "injected_failure": "stale_context",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S36",
+    "qid": "Q36",
+    "question": "Which company reported higher net income in FY2024: Lumen Semiconductor or Atlas Shipping Benchmarks?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find both filings, read the same section for each, compare the values."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Lumen Semiconductor"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Atlas Shipping Benchmarks"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Lumen Semiconductor (LMS) FY2024 income statement. Total revenue: USD 2,890.0 million. Net income: USD 455.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Lumen Semiconductor (LMS) FY2024 income statement. Total revenue: USD 2,890.0 million. Net income: USD 455.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Lumen Semiconductor (LMS) FY2024 income statement. Total revenue: USD 2,890.0 million. Net income: USD 455.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Lumen Semiconductor (LMS) FY2024 income statement. Total revenue: USD 2,890.0 million. Net income: USD 455.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "ASB",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Atlas Shipping Benchmarks (ASB) FY2024 income statement. Total revenue: USD 640.0 million. Net income: USD 88.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Lumen Semiconductor (455.0 vs 88.0 USD million)"
+      }
+    ],
+    "final_answer": "Lumen Semiconductor (455.0 vs 88.0 USD million)",
+    "injected_failure": "loop",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    }
+  },
+  {
+    "tid": "S37",
+    "qid": "Q37",
+    "question": "Which company reported higher revenue in FY2025: Cobalt Ridge Mining or Lumen Semiconductor?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find both filings, read the same section for each, compare the values."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Cobalt Ridge Mining"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Lumen Semiconductor"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "CRM",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Cobalt Ridge Mining (CRM) FY2025 income statement. Total revenue: USD 1,910.0 million. Net income: USD 341.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Lumen Semiconductor (LMS) FY2025 income statement. Total revenue: USD 3,610.0 million. Net income: USD 702.0 million."
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Lumen Semiconductor (3,610.0 vs 1,910.0 USD million)"
+      }
+    ],
+    "final_answer": "Lumen Semiconductor (3,610.0 vs 1,910.0 USD million)",
+    "injected_failure": "clean",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S38",
+    "qid": "Q38",
+    "question": "Which company reported higher net income in FY2024: Pinecrest Healthcare or Atlas Shipping Benchmarks?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Compute the figure directly with the calculator."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "Which company reported higher net income in FY2024: Pinecrest Healthcare or Atlas Shipping Benchmarks? figure"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "error": "calc_error: invalid syntax (<unknown>, line 1)"
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Atlas Shipping Benchmarks (168.0 vs 83.6 USD million)"
+      }
+    ],
+    "final_answer": "Atlas Shipping Benchmarks (168.0 vs 83.6 USD million)",
+    "injected_failure": "wrong_tool",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 1,
+      "C4": 0,
+      "C5": 0,
+      "C6": 1,
+      "C7": 1
+    }
+  },
+  {
+    "tid": "S39",
+    "qid": "Q39",
+    "question": "What does Cobalt Ridge Mining list as its highest-priority risk factor in its FY2025 filing?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the risk factors section, report the first-listed item."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Cobalt Ridge Mining"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Permitting delays"
+      }
+    ],
+    "final_answer": "Permitting delays",
+    "injected_failure": "premature_termination",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S40",
+    "qid": "Q40",
+    "question": "What does Lumen Semiconductor list as its highest-priority risk factor in its FY2024 filing?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the risk factors section, report the first-listed item."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Lumen Semiconductor"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2025",
+            "section": "risk_factors"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2025",
+          "section": "risk_factors",
+          "text": "Lumen Semiconductor (LMS) FY2025 risk factors, in order of stated priority: (1) Single-foundry dependency (2) Export control exposure (3) Demand cyclicality"
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Single-foundry dependency"
+      }
+    ],
+    "final_answer": "Single-foundry dependency",
+    "injected_failure": "stale_context",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 0,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S41",
+    "qid": "Q41",
+    "question": "What does Northgate Financial list as its highest-priority risk factor in its FY2025 filing?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Compute the figure directly with the calculator."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "What does Northgate Financial list as its highest-priority risk factor in its FY2025 filing? figure"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "error": "calc_error: invalid syntax (<unknown>, line 1)"
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Deposit outflow"
+      }
+    ],
+    "final_answer": "Deposit outflow",
+    "injected_failure": "wrong_tool",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 1,
+      "C4": 0,
+      "C5": 0,
+      "C6": 1,
+      "C7": 1
+    }
+  },
+  {
+    "tid": "S42",
+    "qid": "Q42",
+    "question": "What does Verdant Foods list as its highest-priority risk factor in its FY2024 filing?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the risk factors section, report the first-listed item."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Verdant Foods"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Verdant Foods",
+              "ticker": "VRF",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Verdant Foods",
+              "ticker": "VRF",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "VRF",
+            "fiscal_year": "FY2024",
+            "section": "risk_factors"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2024",
+          "section": "risk_factors",
+          "text": "Verdant Foods (VRF) FY2024 risk factors, in order of stated priority: (1) Input cost inflation (2) Retailer concentration (3) Product recall"
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "VRF",
+            "fiscal_year": "FY2024",
+            "section": "risk_factors"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2024",
+          "section": "risk_factors",
+          "text": "Verdant Foods (VRF) FY2024 risk factors, in order of stated priority: (1) Input cost inflation (2) Retailer concentration (3) Product recall"
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "VRF",
+            "fiscal_year": "FY2024",
+            "section": "risk_factors"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2024",
+          "section": "risk_factors",
+          "text": "Verdant Foods (VRF) FY2024 risk factors, in order of stated priority: (1) Input cost inflation (2) Retailer concentration (3) Product recall"
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "VRF",
+            "fiscal_year": "FY2024",
+            "section": "risk_factors"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2024",
+          "section": "risk_factors",
+          "text": "Verdant Foods (VRF) FY2024 risk factors, in order of stated priority: (1) Input cost inflation (2) Retailer concentration (3) Product recall"
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Input cost inflation"
+      }
+    ],
+    "final_answer": "Input cost inflation",
+    "injected_failure": "loop",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 0
+    }
+  },
+  {
+    "tid": "S43",
+    "qid": "Q43",
+    "question": "What does Cobalt Ridge Mining list as its highest-priority risk factor in its FY2025 filing?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the risk factors section, report the first-listed item."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Cobalt Ridge Mining"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Permitting delays"
+      }
+    ],
+    "final_answer": "Permitting delays",
+    "injected_failure": "premature_termination",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S44",
+    "qid": "Q44",
+    "question": "What does Lumen Semiconductor list as its highest-priority risk factor in its FY2024 filing?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the risk factors section, report the first-listed item."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Lumen Semiconductor"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2024",
+            "section": "risk_factors"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "risk_factors",
+          "text": "Lumen Semiconductor (LMS) FY2024 risk factors, in order of stated priority: (1) Export control exposure (2) Single-foundry dependency (3) Demand cyclicality"
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "Export control exposure"
+      }
+    ],
+    "final_answer": "Export control exposure",
+    "injected_failure": "clean",
+    "gold_scores": {
+      "C1": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S45",
+    "qid": "Q45",
+    "question": "What was Halvard Energy's net profit margin in FY2024?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the income statement, compute net income over revenue."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Halvard Energy"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Halvard Energy",
+              "ticker": "HVE",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Halvard Energy",
+              "ticker": "HVE",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "HVE",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Halvard Energy (HVE) FY2024 income statement. Total revenue: USD 4,120.0 million. Net income: USD 312.5 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "4120.0 / 312.5 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 1318.4
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "1318.4%"
+      }
+    ],
+    "final_answer": "1318.4%",
+    "injected_failure": "arithmetic_error",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S46",
+    "qid": "Q46",
+    "question": "What was Northgate Financial's net profit margin in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the income statement, compute net income over revenue."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Northgate Financial"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Northgate Financial",
+              "ticker": "NGF",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Northgate Financial",
+              "ticker": "NGF",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "20.1%"
+      }
+    ],
+    "final_answer": "20.1%",
+    "injected_failure": "premature_termination",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S47",
+    "qid": "Q47",
+    "question": "What was Atlas Shipping Benchmarks's net profit margin in FY2024?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the income statement, compute net income over revenue."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Atlas Shipping Benchmarks"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Atlas Shipping Benchmarks",
+              "ticker": "ASB",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "ASB",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Atlas Shipping Benchmarks (ASB) FY2024 income statement. Total revenue: USD 640.0 million. Net income: USD 88.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "640.0 / 88.0 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 727.272727
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "727.3%"
+      }
+    ],
+    "final_answer": "727.3%",
+    "injected_failure": "arithmetic_error",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S48",
+    "qid": "Q48",
+    "question": "What was Lumen Semiconductor's net profit margin in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the income statement, compute net income over revenue."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Lumen Semiconductor"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Lumen Semiconductor",
+              "ticker": "LMS",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "LMS",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2025",
+          "section": "income_statement",
+          "text": "Lumen Semiconductor (LMS) FY2025 income statement. Total revenue: USD 3,610.0 million. Net income: USD 702.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "3610.0 / 702.0 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 514.245014
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "514.2%"
+      }
+    ],
+    "final_answer": "514.2%",
+    "injected_failure": "arithmetic_error",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S49",
+    "qid": "Q49",
+    "question": "What was Pinecrest Healthcare's net profit margin in FY2024?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the income statement, compute net income over revenue."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Pinecrest Healthcare"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Pinecrest Healthcare",
+              "ticker": "PCH",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Pinecrest Healthcare",
+              "ticker": "PCH",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "PCH",
+            "fiscal_year": "FY2024",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "ticker": "PCH",
+          "fiscal_year": "FY2024",
+          "section": "income_statement",
+          "text": "Pinecrest Healthcare (PCH) FY2024 income statement. Total revenue: USD 1,975.0 million. Net income: USD 160.0 million."
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "1975.0 / 160.0 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 1234.375
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "1234.4%"
+      }
+    ],
+    "final_answer": "1234.4%",
+    "injected_failure": "arithmetic_error",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 0,
+      "C4": 2,
+      "C5": 1,
+      "C6": 2,
+      "C7": 2
+    }
+  },
+  {
+    "tid": "S50",
+    "qid": "Q50",
+    "question": "What was Cobalt Ridge Mining's net profit margin in FY2025?",
+    "source": "simulated",
+    "steps": [
+      {
+        "kind": "plan",
+        "content": "Find the filing, read the income statement, compute net income over revenue."
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "search_filings",
+          "args": {
+            "query": "Cobalt Ridge Mining"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "results": [
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2024"
+            },
+            {
+              "company": "Cobalt Ridge Mining",
+              "ticker": "CRM",
+              "fiscal_year": "FY2025"
+            }
+          ]
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "get_section",
+          "args": {
+            "ticker": "CRM",
+            "fiscal_year": "FY2025",
+            "section": "income_statement"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "error": "transient_error: filing service unavailable, retry"
+        }
+      },
+      {
+        "kind": "tool_call",
+        "content": {
+          "tool": "calculate",
+          "args": {
+            "expression": "317.1 / 1986.4 * 100"
+          }
+        }
+      },
+      {
+        "kind": "tool_result",
+        "content": {
+          "result": 15.963552
+        }
+      },
+      {
+        "kind": "final_answer",
+        "content": "16.0%"
+      }
+    ],
+    "final_answer": "16.0%",
+    "injected_failure": "tool_error_ignored",
+    "gold_scores": {
+      "C1": 0,
+      "C2": 2,
+      "C3": 2,
+      "C4": 0,
+      "C5": 0,
+      "C6": 0,
+      "C7": 2
+    }
+  }
+]

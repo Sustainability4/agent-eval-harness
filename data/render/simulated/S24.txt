@@ -1,0 +1,11 @@
+TRAJECTORY S24
+QUESTION: What was Cobalt Ridge Mining's ratio of total debt to cash and equivalents in FY2024?
+
+[plan] Find the filing, read the balance sheet, divide total debt by cash.
+[tool_call #1] search_filings({"query": "Cobalt Ridge Mining"})
+[tool_result #1] {"results": [{"company": "Cobalt Ridge Mining", "ticker": "CRM", "fiscal_year": "FY2024"}, {"company": "Cobalt Ridge Mining", "ticker": "CRM", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "CRM", "fiscal_year": "FY2024", "section": "balance_sheet"})
+[tool_result #2] {"ticker": "CRM", "fiscal_year": "FY2024", "section": "balance_sheet", "text": "Cobalt Ridge Mining (CRM) FY2024 balance sheet. Total debt: USD 450.0 million. Cash and equivalents: USD 380.0 million."}
+[tool_call #3] calculate({"expression": "450.0 / 380.0"})
+[tool_result #3] {"result": 1.184211}
+[final_answer] 1.18x

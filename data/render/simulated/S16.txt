@@ -1,0 +1,13 @@
+TRAJECTORY S16
+QUESTION: By what percentage did Pinecrest Healthcare's cash and equivalents change from FY2024 to FY2025?
+
+[plan] Find the filing, read both fiscal years, compute the percentage change.
+[tool_call #1] search_filings({"query": "Pinecrest Healthcare"})
+[tool_result #1] {"results": [{"company": "Pinecrest Healthcare", "ticker": "PCH", "fiscal_year": "FY2024"}, {"company": "Pinecrest Healthcare", "ticker": "PCH", "fiscal_year": "FY2025"}]}
+[tool_call #2] get_section({"ticker": "PCH", "fiscal_year": "FY2024", "section": "balance_sheet"})
+[tool_result #2] {"ticker": "PCH", "fiscal_year": "FY2024", "section": "balance_sheet", "text": "Pinecrest Healthcare (PCH) FY2024 balance sheet. Total debt: USD 820.0 million. Cash and equivalents: USD 300.0 million."}
+[tool_call #3] get_section({"ticker": "PCH", "fiscal_year": "FY2025", "section": "balance_sheet"})
+[tool_result #3] {"ticker": "PCH", "fiscal_year": "FY2025", "section": "balance_sheet", "text": "Pinecrest Healthcare (PCH) FY2025 balance sheet. Total debt: USD 790.0 million. Cash and equivalents: USD 350.0 million."}
+[tool_call #4] calculate({"expression": "(350.0 - 300.0) / 300.0 * 100"})
+[tool_result #4] {"result": 16.666667}
+[final_answer] +16.7%

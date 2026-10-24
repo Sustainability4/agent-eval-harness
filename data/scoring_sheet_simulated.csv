@@ -1,0 +1,51 @@
+order,tid,question,C1,C2,C3,C4,C5,C6,C7,notes
+1,S26,What was Lumen Semiconductor's ratio of total debt to cash and equivalents in FY2024?,0,1,0,0,0,0,1,"The calculation despite the error was an un-necessary step, answer did not match the final answer, after error right kind of tool was not used in some cases"
+2,S50,What was Cobalt Ridge Mining's net profit margin in FY2025?,0,1,0,0,0,0,1,Similar to the previous graded question where one call returned a redundand answer.
+3,S12,What was Lumen Semiconductor's net income in FY2025?,0,2,0,0,2,2,2,It was a misspass to one of the tool calls
+4,S18,By what percentage did Atlas Shipping Benchmarks's net income change from FY2024 to FY2025?,0,1,2,1,0,0,1,"if you did not receive the answer at one stage of tool call, you should stop immidietely"
+5,S04,What was Lumen Semiconductor's cash and equivalents in FY2024?,2,1,2,2,2,0,0,Agent called multiple steps
+6,S23,What was Atlas Shipping Benchmarks's ratio of total debt to cash and equivalents in FY2025?,0,2,0,2,2,2,2,It flipped the values to calculate things
+7,S20,By what percentage did Halvard Energy's cash and equivalents change from FY2024 to FY2025?,0,2,0,2,2,2,2,The expression was passed incorrectly
+8,S47,What was Atlas Shipping Benchmarks's net profit margin in FY2024?,0,2,0,2,2,2,2,Expression passed is incorrect
+9,S11,What was Halvard Energy's revenue in FY2025?,2,2,2,2,2,2,0,Loop issue
+10,S07,What was Pinecrest Healthcare's net income in FY2024?,2,2,2,2,2,2,2,Its all good
+11,S46,What was Northgate Financial's net profit margin in FY2025?,0,0,2,0,0,2,2,Agent Missed critical steps
+12,S27,What was Meridian Logistics's ratio of total debt to cash and equivalents in FY2025?,2,2,2,2,2,2,2,Its perfect
+13,S25,What was Halvard Energy's ratio of total debt to cash and equivalents in FY2025?,1,2,2,1,1,2,2,Agent provided an extra answer which was not asked or needed
+14,S48,What was Lumen Semiconductor's net profit margin in FY2025?,0,2,0,2,2,2,2,Wrong expression passed
+15,S14,By what percentage did Meridian Logistics's net income change from FY2024 to FY2025?,2,2,2,1,1,2,2,Additional information
+16,S22,By what percentage did Meridian Logistics's net income change from FY2024 to FY2025?,2,2,2,2,2,2,0,Loop
+17,S10,What was Cobalt Ridge Mining's year-end employee count in FY2024?,0,2,0,0,2,2,2,Wrong argument passed which fetched wrong data
+18,S02,What was Cobalt Ridge Mining's net income in FY2025?,0,2,2,2,1,2,2,Unnecessary answers provided
+19,S19,By what percentage did Cobalt Ridge Mining's total debt change from FY2024 to FY2025?,0,0,0,0,0,0,2,Missing necessary tool calls
+20,S06,What was Northgate Financial's revenue in FY2025?,0,0,2,0,0,2,2,Missing tool calls
+21,S03,What was Halvard Energy's total debt in FY2025?,2,2,2,1,1,2,2,Extra Information
+22,S40,What does Lumen Semiconductor list as its highest-priority risk factor in its FY2024 filing?,0,2,2,1,2,2,2,The order retrieved by the tool was incorrect
+23,S32,Which company reported higher net income in FY2024: Pinecrest Healthcare or Northgate Financial?,0,0,2,0,0,0,2,"Error, retrieved less infor, wrong tool call"
+24,S37,Which company reported higher revenue in FY2025: Cobalt Ridge Mining or Lumen Semiconductor?,2,0,2,2,2,2,2,A comparison tool was never called
+25,S29,What was Pinecrest Healthcare's ratio of total debt to cash and equivalents in FY2025?,0,0,0,0,0,0,2,All wrong calls and errors
+26,S30,What was Verdant Foods's ratio of total debt to cash and equivalents in FY2024?,0,2,0,0,0,0,2,Error which got unhandled
+27,S08,What was Verdant Foods's total debt in FY2025?,2,2,2,1,1,2,2,Extra info not supported
+28,S43,What does Cobalt Ridge Mining list as its highest-priority risk factor in its FY2025 filing?,0,0,2,1,0,2,2,Wrong answer owing to wrongly reading the list
+29,S28,What was Northgate Financial's ratio of total debt to cash and equivalents in FY2024?,0,0,2,0,0,2,2,Missing tool calls
+30,S21,By what percentage did Lumen Semiconductor's revenue change from FY2024 to FY2025?,0,0,0,0,0,0,2,"Wrong answer, error not handles"
+31,S34,Which company reported higher net income in FY2024: Cobalt Ridge Mining or Halvard Energy?,2,0,2,2,1,2,2,Calcuation tool call missing
+32,S33,Which company reported higher revenue in FY2025: Atlas Shipping Benchmarks or Verdant Foods?,1,0,2,0,0,2,2,Necssary calls missing
+33,S42,What does Verdant Foods list as its highest-priority risk factor in its FY2024 filing?,2,0,2,2,2,2,0,Loop and necessary tool to extract the most important risk factor never called
+34,S13,By what percentage did Lumen Semiconductor's revenue change from FY2024 to FY2025?,0,2,0,0,0,0,2,Error not handles
+35,S15,By what percentage did Northgate Financial's total debt change from FY2024 to FY2025?,2,2,2,2,2,2,0,Redundancy
+36,S36,Which company reported higher net income in FY2024: Lumen Semiconductor or Atlas Shipping Benchmarks?,2,0,2,2,2,2,0,Loops and comparison tool never called
+37,S17,By what percentage did Verdant Foods's revenue change from FY2024 to FY2025?,0,2,0,2,2,2,2,Wrong tool call
+38,S44,What does Lumen Semiconductor list as its highest-priority risk factor in its FY2024 filing?,2,0,2,2,2,2,2,finding the highest preference tool call never given
+39,S01,What was Atlas Shipping Benchmarks's revenue in FY2024?,2,2,2,2,2,2,2,Its all correct
+40,S45,What was Halvard Energy's net profit margin in FY2024?,0,2,0,2,2,2,2,Wrong expression passed to calculation
+41,S05,What was Meridian Logistics's year-end employee count in FY2025?,0,0,0,0,0,0,2,"Not enough calls, error not handled, etc"
+42,S49,What was Pinecrest Healthcare's net profit margin in FY2024?,0,2,0,2,2,2,2,Wrong expression send to calculation
+43,S41,What does Northgate Financial list as its highest-priority risk factor in its FY2025 filing?,0,0,0,2,0,0,2,"Error not handled, wrong tool call"
+44,S31,Which company reported higher revenue in FY2025: Northgate Financial or Cobalt Ridge Mining?,2,0,2,1,1,2,2,Comparison call never made and additional answer not supported
+45,S39,What does Cobalt Ridge Mining list as its highest-priority risk factor in its FY2025 filing?,0,0,2,2,0,2,2,Necessary tool calls not made directly jumped for the answer
+46,S24,What was Cobalt Ridge Mining's ratio of total debt to cash and equivalents in FY2024?,2,2,2,2,2,2,2,Perfect
+47,S09,What was Atlas Shipping Benchmarks's cash and equivalents in FY2025?,0,2,0,0,2,2,2,Wrong call for the year
+48,S35,Which company reported higher revenue in FY2025: Atlas Shipping Benchmarks or Meridian Logistics?,2,2,0,0,2,2,2,Wrong year used for comparison
+49,S38,Which company reported higher net income in FY2024: Pinecrest Healthcare or Atlas Shipping Benchmarks?,0,0,0,0,0,0,2,"Error not handled, wrong tool call"
+50,S16,By what percentage did Pinecrest Healthcare's cash and equivalents change from FY2024 to FY2025?,2,2,2,2,2,2,2,Perfect

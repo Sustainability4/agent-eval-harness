@@ -1,0 +1,1978 @@
+[
+  {
+    "qid": "Q01",
+    "qtype": "lookup",
+    "text": "What was Atlas Shipping Benchmarks's revenue in FY2024?",
+    "gold_answer": "640.0 USD million",
+    "gold_value": 640.0,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Atlas Shipping Benchmarks"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "ASB",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q02",
+    "qtype": "lookup",
+    "text": "What was Cobalt Ridge Mining's net income in FY2025?",
+    "gold_answer": "341.0 USD million",
+    "gold_value": 341.0,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Cobalt Ridge Mining"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "CRM",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q03",
+    "qtype": "lookup",
+    "text": "What was Halvard Energy's total debt in FY2025?",
+    "gold_answer": "1,720.0 USD million",
+    "gold_value": 1720.0,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Halvard Energy"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "HVE",
+        "fiscal_year": "FY2025",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q04",
+    "qtype": "lookup",
+    "text": "What was Lumen Semiconductor's cash and equivalents in FY2024?",
+    "gold_answer": "1,250.0 USD million",
+    "gold_value": 1250.0,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Lumen Semiconductor"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "LMS",
+        "fiscal_year": "FY2024",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q05",
+    "qtype": "lookup",
+    "text": "What was Meridian Logistics's year-end employee count in FY2025?",
+    "gold_answer": "14,100 employees",
+    "gold_value": 14100.0,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Meridian Logistics"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2025",
+          "section": "operations"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "MRL",
+        "fiscal_year": "FY2025",
+        "section": "operations"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q06",
+    "qtype": "lookup",
+    "text": "What was Northgate Financial's revenue in FY2025?",
+    "gold_answer": "3,520.0 USD million",
+    "gold_value": 3520.0,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Northgate Financial"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "NGF",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q07",
+    "qtype": "lookup",
+    "text": "What was Pinecrest Healthcare's net income in FY2024?",
+    "gold_answer": "160.0 USD million",
+    "gold_value": 160.0,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Pinecrest Healthcare"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "PCH",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "PCH",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q08",
+    "qtype": "lookup",
+    "text": "What was Verdant Foods's total debt in FY2025?",
+    "gold_answer": "2,450.0 USD million",
+    "gold_value": 2450.0,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Verdant Foods"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "VRF",
+        "fiscal_year": "FY2025",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q09",
+    "qtype": "lookup",
+    "text": "What was Atlas Shipping Benchmarks's cash and equivalents in FY2025?",
+    "gold_answer": "80.0 USD million",
+    "gold_value": 80.0,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Atlas Shipping Benchmarks"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "ASB",
+        "fiscal_year": "FY2025",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q10",
+    "qtype": "lookup",
+    "text": "What was Cobalt Ridge Mining's year-end employee count in FY2024?",
+    "gold_answer": "3,900 employees",
+    "gold_value": 3900.0,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Cobalt Ridge Mining"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2024",
+          "section": "operations"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "CRM",
+        "fiscal_year": "FY2024",
+        "section": "operations"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q11",
+    "qtype": "lookup",
+    "text": "What was Halvard Energy's revenue in FY2025?",
+    "gold_answer": "4,575.0 USD million",
+    "gold_value": 4575.0,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Halvard Energy"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "HVE",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q12",
+    "qtype": "lookup",
+    "text": "What was Lumen Semiconductor's net income in FY2025?",
+    "gold_answer": "702.0 USD million",
+    "gold_value": 702.0,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Lumen Semiconductor"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "LMS",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q13",
+    "qtype": "yoy_change",
+    "text": "By what percentage did Lumen Semiconductor's revenue change from FY2024 to FY2025?",
+    "gold_answer": "+24.9%",
+    "gold_value": 24.91,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Lumen Semiconductor"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "(3610.0 - 2890.0) / 2890.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "LMS",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "LMS",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q14",
+    "qtype": "yoy_change",
+    "text": "By what percentage did Meridian Logistics's net income change from FY2024 to FY2025?",
+    "gold_answer": "-32.1%",
+    "gold_value": -32.07,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Meridian Logistics"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "(98.5 - 145.0) / 145.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "MRL",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "MRL",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q15",
+    "qtype": "yoy_change",
+    "text": "By what percentage did Northgate Financial's total debt change from FY2024 to FY2025?",
+    "gold_answer": "+3.5%",
+    "gold_value": 3.47,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Northgate Financial"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "(7450.0 - 7200.0) / 7200.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "NGF",
+        "fiscal_year": "FY2024",
+        "section": "balance_sheet"
+      },
+      {
+        "ticker": "NGF",
+        "fiscal_year": "FY2025",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q16",
+    "qtype": "yoy_change",
+    "text": "By what percentage did Pinecrest Healthcare's cash and equivalents change from FY2024 to FY2025?",
+    "gold_answer": "+16.7%",
+    "gold_value": 16.67,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Pinecrest Healthcare"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "PCH",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "PCH",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "(350.0 - 300.0) / 300.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "PCH",
+        "fiscal_year": "FY2024",
+        "section": "balance_sheet"
+      },
+      {
+        "ticker": "PCH",
+        "fiscal_year": "FY2025",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q17",
+    "qtype": "yoy_change",
+    "text": "By what percentage did Verdant Foods's revenue change from FY2024 to FY2025?",
+    "gold_answer": "+5.2%",
+    "gold_value": 5.18,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Verdant Foods"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "(5690.0 - 5410.0) / 5410.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "VRF",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "VRF",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q18",
+    "qtype": "yoy_change",
+    "text": "By what percentage did Atlas Shipping Benchmarks's net income change from FY2024 to FY2025?",
+    "gold_answer": "-30.7%",
+    "gold_value": -30.68,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Atlas Shipping Benchmarks"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "(61.0 - 88.0) / 88.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "ASB",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "ASB",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q19",
+    "qtype": "yoy_change",
+    "text": "By what percentage did Cobalt Ridge Mining's total debt change from FY2024 to FY2025?",
+    "gold_answer": "-6.7%",
+    "gold_value": -6.67,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Cobalt Ridge Mining"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "(420.0 - 450.0) / 450.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "CRM",
+        "fiscal_year": "FY2024",
+        "section": "balance_sheet"
+      },
+      {
+        "ticker": "CRM",
+        "fiscal_year": "FY2025",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q20",
+    "qtype": "yoy_change",
+    "text": "By what percentage did Halvard Energy's cash and equivalents change from FY2024 to FY2025?",
+    "gold_answer": "+23.4%",
+    "gold_value": 23.44,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Halvard Energy"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "(790.0 - 640.0) / 640.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "HVE",
+        "fiscal_year": "FY2024",
+        "section": "balance_sheet"
+      },
+      {
+        "ticker": "HVE",
+        "fiscal_year": "FY2025",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q21",
+    "qtype": "yoy_change",
+    "text": "By what percentage did Lumen Semiconductor's revenue change from FY2024 to FY2025?",
+    "gold_answer": "+24.9%",
+    "gold_value": 24.91,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Lumen Semiconductor"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "(3610.0 - 2890.0) / 2890.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "LMS",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "LMS",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q22",
+    "qtype": "yoy_change",
+    "text": "By what percentage did Meridian Logistics's net income change from FY2024 to FY2025?",
+    "gold_answer": "-32.1%",
+    "gold_value": -32.07,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Meridian Logistics"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "(98.5 - 145.0) / 145.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "MRL",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "MRL",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q23",
+    "qtype": "ratio",
+    "text": "What was Atlas Shipping Benchmarks's ratio of total debt to cash and equivalents in FY2025?",
+    "gold_answer": "1.75x",
+    "gold_value": 1.75,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Atlas Shipping Benchmarks"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "140.0 / 80.0"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "ASB",
+        "fiscal_year": "FY2025",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q24",
+    "qtype": "ratio",
+    "text": "What was Cobalt Ridge Mining's ratio of total debt to cash and equivalents in FY2024?",
+    "gold_answer": "1.18x",
+    "gold_value": 1.184,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Cobalt Ridge Mining"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "450.0 / 380.0"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "CRM",
+        "fiscal_year": "FY2024",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q25",
+    "qtype": "ratio",
+    "text": "What was Halvard Energy's ratio of total debt to cash and equivalents in FY2025?",
+    "gold_answer": "2.18x",
+    "gold_value": 2.177,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Halvard Energy"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "1720.0 / 790.0"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "HVE",
+        "fiscal_year": "FY2025",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q26",
+    "qtype": "ratio",
+    "text": "What was Lumen Semiconductor's ratio of total debt to cash and equivalents in FY2024?",
+    "gold_answer": "0.24x",
+    "gold_value": 0.24,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Lumen Semiconductor"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "300.0 / 1250.0"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "LMS",
+        "fiscal_year": "FY2024",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q27",
+    "qtype": "ratio",
+    "text": "What was Meridian Logistics's ratio of total debt to cash and equivalents in FY2025?",
+    "gold_answer": "5.62x",
+    "gold_value": 5.622,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Meridian Logistics"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "1040.0 / 185.0"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "MRL",
+        "fiscal_year": "FY2025",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q28",
+    "qtype": "ratio",
+    "text": "What was Northgate Financial's ratio of total debt to cash and equivalents in FY2024?",
+    "gold_answer": "2.48x",
+    "gold_value": 2.483,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Northgate Financial"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "7200.0 / 2900.0"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "NGF",
+        "fiscal_year": "FY2024",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q29",
+    "qtype": "ratio",
+    "text": "What was Pinecrest Healthcare's ratio of total debt to cash and equivalents in FY2025?",
+    "gold_answer": "2.26x",
+    "gold_value": 2.257,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Pinecrest Healthcare"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "PCH",
+          "fiscal_year": "FY2025",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "790.0 / 350.0"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "PCH",
+        "fiscal_year": "FY2025",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q30",
+    "qtype": "ratio",
+    "text": "What was Verdant Foods's ratio of total debt to cash and equivalents in FY2024?",
+    "gold_answer": "4.51x",
+    "gold_value": 4.51,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Verdant Foods"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2024",
+          "section": "balance_sheet"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "2300.0 / 510.0"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "VRF",
+        "fiscal_year": "FY2024",
+        "section": "balance_sheet"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q31",
+    "qtype": "compare",
+    "text": "Which company reported higher revenue in FY2025: Northgate Financial or Cobalt Ridge Mining?",
+    "gold_answer": "Northgate Financial (3,520.0 vs 1,910.0 USD million)",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Northgate Financial"
+        }
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Cobalt Ridge Mining"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "NGF",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "CRM",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q32",
+    "qtype": "compare",
+    "text": "Which company reported higher net income in FY2024: Pinecrest Healthcare or Northgate Financial?",
+    "gold_answer": "Northgate Financial (610.0 vs 160.0 USD million)",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Pinecrest Healthcare"
+        }
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Northgate Financial"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "PCH",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "PCH",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "NGF",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q33",
+    "qtype": "compare",
+    "text": "Which company reported higher revenue in FY2025: Atlas Shipping Benchmarks or Verdant Foods?",
+    "gold_answer": "Verdant Foods (5,690.0 vs 705.0 USD million)",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Atlas Shipping Benchmarks"
+        }
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Verdant Foods"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "ASB",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "VRF",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q34",
+    "qtype": "compare",
+    "text": "Which company reported higher net income in FY2024: Cobalt Ridge Mining or Halvard Energy?",
+    "gold_answer": "Halvard Energy (312.5 vs 220.0 USD million)",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Cobalt Ridge Mining"
+        }
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Halvard Energy"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "CRM",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "HVE",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q35",
+    "qtype": "compare",
+    "text": "Which company reported higher revenue in FY2025: Atlas Shipping Benchmarks or Meridian Logistics?",
+    "gold_answer": "Meridian Logistics (2,065.0 vs 705.0 USD million)",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Atlas Shipping Benchmarks"
+        }
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Meridian Logistics"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "MRL",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "ASB",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "MRL",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q36",
+    "qtype": "compare",
+    "text": "Which company reported higher net income in FY2024: Lumen Semiconductor or Atlas Shipping Benchmarks?",
+    "gold_answer": "Lumen Semiconductor (455.0 vs 88.0 USD million)",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Lumen Semiconductor"
+        }
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Atlas Shipping Benchmarks"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "LMS",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "ASB",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q37",
+    "qtype": "compare",
+    "text": "Which company reported higher revenue in FY2025: Cobalt Ridge Mining or Lumen Semiconductor?",
+    "gold_answer": "Lumen Semiconductor (3,610.0 vs 1,910.0 USD million)",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Cobalt Ridge Mining"
+        }
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Lumen Semiconductor"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "CRM",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "LMS",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q38",
+    "qtype": "compare",
+    "text": "Which company reported higher net income in FY2024: Pinecrest Healthcare or Atlas Shipping Benchmarks?",
+    "gold_answer": "Pinecrest Healthcare (160.0 vs 88.0 USD million)",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Pinecrest Healthcare"
+        }
+      },
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Atlas Shipping Benchmarks"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "PCH",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "PCH",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      },
+      {
+        "ticker": "ASB",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q39",
+    "qtype": "risk",
+    "text": "What does Cobalt Ridge Mining list as its highest-priority risk factor in its FY2025 filing?",
+    "gold_answer": "Battery demand concentration",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Cobalt Ridge Mining"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2025",
+          "section": "risk_factors"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "CRM",
+        "fiscal_year": "FY2025",
+        "section": "risk_factors"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q40",
+    "qtype": "risk",
+    "text": "What does Lumen Semiconductor list as its highest-priority risk factor in its FY2024 filing?",
+    "gold_answer": "Export control exposure",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Lumen Semiconductor"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "risk_factors"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "LMS",
+        "fiscal_year": "FY2024",
+        "section": "risk_factors"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q41",
+    "qtype": "risk",
+    "text": "What does Northgate Financial list as its highest-priority risk factor in its FY2025 filing?",
+    "gold_answer": "Model risk in credit scoring",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Northgate Financial"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2025",
+          "section": "risk_factors"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "NGF",
+        "fiscal_year": "FY2025",
+        "section": "risk_factors"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q42",
+    "qtype": "risk",
+    "text": "What does Verdant Foods list as its highest-priority risk factor in its FY2024 filing?",
+    "gold_answer": "Input cost inflation",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Verdant Foods"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "VRF",
+          "fiscal_year": "FY2024",
+          "section": "risk_factors"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "VRF",
+        "fiscal_year": "FY2024",
+        "section": "risk_factors"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q43",
+    "qtype": "risk",
+    "text": "What does Cobalt Ridge Mining list as its highest-priority risk factor in its FY2025 filing?",
+    "gold_answer": "Battery demand concentration",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Cobalt Ridge Mining"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2025",
+          "section": "risk_factors"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "CRM",
+        "fiscal_year": "FY2025",
+        "section": "risk_factors"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q44",
+    "qtype": "risk",
+    "text": "What does Lumen Semiconductor list as its highest-priority risk factor in its FY2024 filing?",
+    "gold_answer": "Export control exposure",
+    "gold_value": null,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Lumen Semiconductor"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2024",
+          "section": "risk_factors"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "LMS",
+        "fiscal_year": "FY2024",
+        "section": "risk_factors"
+      }
+    ],
+    "tolerance": 0.01
+  },
+  {
+    "qid": "Q45",
+    "qtype": "margin",
+    "text": "What was Halvard Energy's net profit margin in FY2024?",
+    "gold_answer": "7.6%",
+    "gold_value": 7.58,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Halvard Energy"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "HVE",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "312.5 / 4120.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "HVE",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q46",
+    "qtype": "margin",
+    "text": "What was Northgate Financial's net profit margin in FY2025?",
+    "gold_answer": "18.6%",
+    "gold_value": 18.61,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Northgate Financial"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "NGF",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "655.0 / 3520.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "NGF",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q47",
+    "qtype": "margin",
+    "text": "What was Atlas Shipping Benchmarks's net profit margin in FY2024?",
+    "gold_answer": "13.8%",
+    "gold_value": 13.75,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Atlas Shipping Benchmarks"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "ASB",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "88.0 / 640.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "ASB",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q48",
+    "qtype": "margin",
+    "text": "What was Lumen Semiconductor's net profit margin in FY2025?",
+    "gold_answer": "19.4%",
+    "gold_value": 19.45,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Lumen Semiconductor"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "LMS",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "702.0 / 3610.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "LMS",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q49",
+    "qtype": "margin",
+    "text": "What was Pinecrest Healthcare's net profit margin in FY2024?",
+    "gold_answer": "8.1%",
+    "gold_value": 8.1,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Pinecrest Healthcare"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "PCH",
+          "fiscal_year": "FY2024",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "160.0 / 1975.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "PCH",
+        "fiscal_year": "FY2024",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.02
+  },
+  {
+    "qid": "Q50",
+    "qtype": "margin",
+    "text": "What was Cobalt Ridge Mining's net profit margin in FY2025?",
+    "gold_answer": "17.9%",
+    "gold_value": 17.85,
+    "gold_plan": [
+      {
+        "tool": "search_filings",
+        "args": {
+          "query": "Cobalt Ridge Mining"
+        }
+      },
+      {
+        "tool": "get_section",
+        "args": {
+          "ticker": "CRM",
+          "fiscal_year": "FY2025",
+          "section": "income_statement"
+        }
+      },
+      {
+        "tool": "calculate",
+        "args": {
+          "expression": "341.0 / 1910.0 * 100"
+        }
+      }
+    ],
+    "required_sources": [
+      {
+        "ticker": "CRM",
+        "fiscal_year": "FY2025",
+        "section": "income_statement"
+      }
+    ],
+    "tolerance": 0.02
+  }
+]

@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+*.tmp
+data/trajectories_llm.json
+data/scoring_sheet_llm.csv
+data/render/llm/
+
+# secrets
+.env
