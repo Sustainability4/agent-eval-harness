@@ -92,10 +92,23 @@ Run logs: [`data/LLM/run_log.csv`](data/LLM/run_log.csv).
 * One human rater, who had seen the generator code before scoring.
 * 50 short synthetic trajectories; the planted mistakes are fairly easy to spot.
 * The LLM-agent set (natural failures) has not been scored yet.
-* Section choice was not tested: no planted mistake reads the wrong section of a filing, so that part of C3 and C4 was never exercised. `data/corpus.json`, the file given to judges, holds raw fields with no section structure, so a judge must infer which section holds which figure.
+* Some parts of the rubric were never exercised by the data; see [Known gaps and next steps](#known-gaps-and-next-steps).
 * Claude judges were run by hand in claude.ai chat: temperature and the product's system prompt were not controlled, and each message held 10 trajectories. Gemini ran through its API with the same prompts. Fable 5.1 ran in chat only, because of API cost.
 * Four judges from Anthropic and one from Google; OpenAI models could not be run on the free tier.
 * The answer key has four known errors, documented in [`GOLD_CONFLICTS.md`](GOLD_CONFLICTS.md) and left unchanged.
+
+## Known gaps and next steps
+
+The current study's data stays as it is, so its results remain comparable. These changes are for the next version.
+
+| Gap | Why it matters | Next step |
+| --- | --- | --- |
+| Section choice not tested | No planted mistake reads the wrong section, so that part of C3 and C4 was never exercised | Add a `wrong_section` failure mode to the simulated agent |
+| Judge corpus has no sections | `data/corpus.json` holds raw fields; a judge must infer which section holds which figure | Give judges a corpus laid out by section, exactly as `get_section` returns it, as a new file |
+| No ties or close comparisons | The eight comparison questions differ by 30% to 88%, no values are equal, and the code always names the second company on a tie | Handle ties explicitly (gold answer "Both reported …"), and add one tie and one near-tie question |
+| Real-agent failures not scored | Planted failures are cleaner than natural ones | Generate the LLM-agent set with `llm-agent`, hand-score it, and judge it |
+| Rubric wording | "Material", "wrong magnitude" and the scope of C3 are read differently by raters ([`GOLD_CONFLICTS.md`](GOLD_CONFLICTS.md)) | Write a clarified rubric v2 and test whether agreement and run-to-run stability improve |
+| One human rater | No human-to-human agreement baseline | Add a blind second rater, or re-score after a gap to measure self-consistency |
 
 ## Licence
 
