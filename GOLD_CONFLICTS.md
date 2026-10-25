@@ -144,11 +144,9 @@ for the four Claude judges.
 ## Caveats
 
 - One human rater, who had seen the generator code before scoring.
-- Claude judges were run by hand in a chat interface, with temperature and the
-  product's system prompt not controlled, and 10 trajectories per message.
-  Fable 5.1 was run in chat only; it was left out of API runs because of cost.
-- Gemini was called through the API with the same batch prompts. Same inputs,
-  different interface.
+- Claude judges were run by hand in claude.ai chat rather than through the
+  API, mainly because of API cost, with temperature and the product's system
+  prompt not controlled, and 10 trajectories per message.
 - Four of the five judges come from one model family and may share blind spots,
   which is why agreement alone is not treated as grounds for a conflict. The
   one judge from another family, Gemini 3 Flash, departed from gold in the

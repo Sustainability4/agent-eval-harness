@@ -47,10 +47,13 @@ model truncates its replies). That rewrites only `prompts/`.
      carries over between chats.
    - Pick the model. Leave other settings (extended thinking, styles) the same
      for every batch in a run, and write them in `run_log.csv`.
-   - **Corpus mode only:** attach `data/corpus.json` (the file one level up from
-     this folder) to the message. Attach it in every new chat, as files do not
-     carry over. Keep the filename `corpus.json`, because the prompt refers to it by name.
-   - Paste the whole of `prompts/<mode>/batch_NN.txt` as the only message. Add nothing.
+   - **Corpus mode only:** include `data/corpus.json` (the file one level up from
+     this folder) in every new chat, as nothing carries over between chats. The
+     runs in this study pasted its contents into the message ahead of the prompt;
+     attaching it as a file named `corpus.json` also works, since the prompt
+     refers to it by that name.
+   - Paste the whole of `prompts/<mode>/batch_NN.txt` (after the corpus, in
+     corpus mode) as one message. Add nothing else.
    - Copy the whole reply and save it as `responses/<run>/batch_NN.txt`. Do not
      edit it, even if it is malformed or wrapped in a code fence; the importer
      handles fences and records anything it cannot parse.

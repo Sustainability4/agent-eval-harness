@@ -73,7 +73,7 @@ Everything also runs with `--backend mock` (no key), so the plumbing can be test
 1. **Generate** the corpus, questions, 50 simulated trajectories, readable renders and a blank, shuffled scoring sheet: `python -m agenteval.cli generate`. This overwrites `data/scoring_sheet_simulated.csv`.
 2. **Hand-score** in the terminal, with the rubric anchors on screen: `python -m agenteval.cli score`. It saves after every trajectory and resumes where you stopped. Do not open `data/trajectories_simulated.json` while scoring: it holds the answer key.
 3. **Write the judge prompts** (10 trajectories per batch, in the sheet's order): `python -m agenteval.cli chat-prompts`.
-4. **Judge in a chat UI.** For each batch, open a fresh chat, attach `data/corpus.json`, paste `data/LLM/prompts/corpus/batch_NN.txt`, and save the reply verbatim as `data/LLM/responses/<Model>_corpus[_r2|_r3]/batch_NN.txt`. Then `python -m agenteval.cli chat-import <Model>_corpus`. Details: [`data/LLM/README.md`](data/LLM/README.md).
+4. **Judge in a chat UI.** For each batch, open a fresh chat, paste the contents of `data/corpus.json` followed by `data/LLM/prompts/corpus/batch_NN.txt` as one message, and save the reply verbatim as `data/LLM/responses/<Model>_corpus[_r2|_r3]/batch_NN.txt`. Then `python -m agenteval.cli chat-import <Model>_corpus`. Details: [`data/LLM/README.md`](data/LLM/README.md).
 5. **Or judge through an API** with the same prompts: `python -m agenteval.cli batch-judge Gemini-3-Flash_corpus --backend gemini --model gemini-3-flash-preview --rpm 5`. Keys come from the environment or a `.env` file (`ANTHROPIC_API_KEY`, `GEMINI_API_KEY`, `OPENAI_API_KEY`).
 6. **One trajectory per call** instead: `python -m agenteval.cli judge --backend anthropic --mode corpus --repeats 3`. It resumes after interruptions and prints token use and cost.
 7. **Report:** `python -m agenteval.cli report`.
@@ -93,7 +93,7 @@ Run logs: [`data/LLM/run_log.csv`](data/LLM/run_log.csv).
 * 50 short synthetic trajectories; the planted mistakes are fairly easy to spot.
 * The LLM-agent set (natural failures) has not been scored yet.
 * Some parts of the rubric were never exercised by the data; see [Known gaps and next steps](#known-gaps-and-next-steps).
-* Claude judges were run by hand in claude.ai chat: temperature and the product's system prompt were not controlled, and each message held 10 trajectories. Gemini ran through its API with the same prompts. Fable 5.1 ran in chat only, because of API cost.
+* Claude judges were run by hand in claude.ai chat rather than through the API, mainly because of API cost: temperature and the product's system prompt were not controlled, and each message held 10 trajectories.
 * Four judges from Anthropic and one from Google; OpenAI models could not be run on the free tier.
 * The answer key has four known errors, documented in [`GOLD_CONFLICTS.md`](GOLD_CONFLICTS.md) and left unchanged.
 
