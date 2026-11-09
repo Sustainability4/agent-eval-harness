@@ -56,7 +56,51 @@ This is a method demonstration, not a benchmark. See [Limitations](#limitations)
 
 Full anchors: [`RUBRIC.md`](RUBRIC.md) or `python -m agenteval.cli rubric`.
 
+How each criterion maps to common LLM and agent eval terms:
+
+| ID | Standard eval term(s) | Level |
+| --- | --- | --- |
+| C1 | [Answer correctness][ragas-ac] / [task completion][de-task]; [answer relevance][ragas-ar] | Outcome |
+| C2 | [Tool correctness][de-tool] / [function-calling accuracy][bfcl] | Trajectory |
+| C3 | [Argument correctness][de-args] (function calling) | Trajectory |
+| C4 | [Context relevance][rag-triad] / [context precision][ragas-cp] and [context recall][ragas-cr]; temporal grounding | Retrieval |
+| C5 | [Groundedness][rag-triad] / [faithfulness][ragas-faith] / attribution (inverse of [hallucination][halluc]) | Generation |
+| C6 | Error handling / robustness / error recovery | Trajectory |
+| C7 | [Step efficiency][de-steps] / step count / cost | Trajectory |
+
 Failure modes in the simulated set: `clean` (8 trajectories) and six each of `wrong_tool`, `stale_context`, `unsupported_claim`, `tool_error_ignored`, `loop`, `premature_termination` and `arithmetic_error`. Each mode maps to a fixed gold score vector, which is what lets a judge's *accuracy* be measured, not just its agreement with a human.
+
+How each mode maps to common LLM and agent eval terms:
+
+| Failure mode | Standard eval term(s) | What it tests | Gold scores below 2 |
+| --- | --- | --- | --- |
+| `clean` | Baseline / positive control | The judge does not penalise a good trajectory (false positives) | none |
+| `unsupported_claim` | [Hallucination][halluc]; [groundedness][rag-triad] / [faithfulness][ragas-faith]; attribution | A claim in the answer that no retrieved source supports | C5=0, C1=1 |
+| `stale_context` | [Context relevance][rag-triad] / [context precision][ragas-cp]; temporal grounding | Retrieving the wrong year of an otherwise right document | C1=0, C3=0, C4=0 |
+| `wrong_tool` | [Tool correctness][de-tool] / [function-calling accuracy][bfcl] | Picking the right tool for the step | C1, C2, C4, C5 = 0; C3, C6, C7 = 1 |
+| `tool_error_ignored` | Error handling / robustness / error recovery (silent failure) | Noticing a failed call instead of carrying on as if it succeeded | C1, C4, C5, C6 = 0 |
+| `loop` | [Step efficiency][de-steps]; repetitive actions | Repeating identical calls without progress | C7=0 |
+| `premature_termination` | [Task completion][de-task] / goal completion; [context recall][ragas-cr] | Stopping before the required evidence is fetched | C1, C2, C4, C5 = 0 |
+| `arithmetic_error` | Reasoning correctness / [numerical reasoning][gsm8k] | Right inputs, wrong calculation (YoY, ratio, margin) | C1=0, C3=0, C5=1 |
+
+C1 is the outcome-level check; C2, C3, C6 and C7 are trajectory-level (process) checks; C4, C5 and C1 together cover the [RAG triad][rag-triad] of context relevance, groundedness and answer relevance. The planted failures make the simulated set a controlled fault-injection set, used for judge validation ([LLM-as-a-judge][llm-judge] meta-evaluation) rather than for benchmarking the agent.
+
+Term definitions come from [Ragas][ragas-faith], [TruLens][rag-triad], [DeepEval][de-task] and [BFCL][bfcl]; error handling has no single standard metric, so it is left unlinked.
+
+[ragas-ac]: https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/answer_correctness/
+[ragas-ar]: https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/answer_relevance/
+[ragas-cp]: https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/context_precision/
+[ragas-cr]: https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/context_recall/
+[ragas-faith]: https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/faithfulness/
+[rag-triad]: https://www.trulens.org/getting_started/core_concepts/rag_triad/
+[de-task]: https://deepeval.com/docs/metrics-task-completion
+[de-tool]: https://deepeval.com/docs/metrics-tool-correctness
+[de-args]: https://deepeval.com/docs/metrics-argument-correctness
+[de-steps]: https://deepeval.com/docs/metrics-step-efficiency
+[bfcl]: https://gorilla.cs.berkeley.edu/leaderboard.html
+[halluc]: https://arxiv.org/abs/2202.03629
+[gsm8k]: https://arxiv.org/abs/2110.14168
+[llm-judge]: https://arxiv.org/abs/2306.05685
 
 ## Quick start
 

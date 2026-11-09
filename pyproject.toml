@@ -12,6 +12,7 @@ gemini = ["google-genai>=1.0"]
 openai = ["openai>=1.40"]
 all = ["anthropic>=0.40", "google-genai>=1.0", "openai>=1.40"]
 dev = ["pytest>=8"]
+plots = ["matplotlib>=3.7"]
 
 [project.scripts]
 agenteval = "agenteval.cli:main"
